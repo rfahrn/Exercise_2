@@ -1,5 +1,4 @@
 token	lemma	pos	onset	offset	entity	babelfy_id(iob)	link
-<p orig_string='Russian forces have already triggered a humanitarian catastrophe in the east, reducing Mariupol to ruins, but they have failed to inflict defeat on Ukraine's military. Warning of a new onslaught on the east, President Volodymyr Zelensky vowed: "We will fight for every metre of our land."'>
 Russian	russian	ADJ	0	1
 forces	force	NOUN	1	2
 have	have	AUX	2	3
@@ -55,7 +54,6 @@ our	our	PRON	51	52
 land	land	NOUN	52	53
 .	.	PUNCT	53	54
 "	"	PUNCT	54	55
-<p orig_string='Ukraine had already stationed its best-trained forces in the east because of an eight-year war with Russian-backed separatists. They are thought to have suffered heavy losses but are still a significant challenge to Russia's invading army.'>
 Ukraine	Ukraine	PROPN	0	1
 had	have	AUX	1	2
 already	already	ADV	2	3
@@ -101,7 +99,6 @@ Russia	Russia	PROPN	40	41
 invading	invade	VERB	42	43
 army	army	NOUN	43	44
 .	.	PUNCT	44	45
-<p orig_string='When President Putin talks of Donbas, he is referring to Ukraine's old coal and steel-producing area. But he really means the entirety of two big eastern regions, Luhansk and Donetsk, which run from outside Mariupol in the south all the way to the northern border.'>
 When	when	SCONJ	0	1
 President	President	PROPN	1	2
 Putin	Putin	PROPN	2	3
@@ -155,7 +152,6 @@ the	the	DET	49	50
 northern	northern	ADJ	50	51
 border	border	NOUN	51	52
 .	.	PUNCT	52	53
-<p orig_string='Russian forces are trying to encircle Ukraine's army in the east. They have taken control of Izyum - a strategic town on the road between Ukraine's second city Kharkiv and the separatist areas - and have bombarded a succession of Luhansk towns, including Rubizhne, Lysychansk, Popasna and Severodonetsk, destroying blocks of flats and killing civilians in their homes.'>
 Russian	russian	ADJ	0	1
 forces	force	NOUN	1	2
 are	be	AUX	2	3
@@ -222,7 +218,6 @@ in	in	ADP	62	63
 their	their	PRON	63	64
 homes	home	NOUN	64	65
 .	.	PUNCT	65	66
-<p orig_string='Civilians are being moved out ahead of the Russian advance. Local leader Serhiy Haidai said 20 children were led to safety from the basement of a kindergarten in Lysychansk on Thursday and some 200 civilians climbed on to buses in Severodonetsk.'>
 Civilians	civilian	NOUN	0	1
 are	be	AUX	1	2
 being	be	AUX	2	3

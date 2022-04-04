@@ -36,17 +36,16 @@ def write_file(lines):
         onset = 0
         offset = 0
         for line in lines:
-            f.write(f"<p orig_string='{line}'>\n")
+            #f.write(f"<p orig_string='{line}'>\n")
             doc = nlp(line)
             for i,token in enumerate(doc):
                 onset = i
                 offset = i + 1
                 f.write(f"{token.text}\t{token.lemma_}\t{token.pos_}\t{onset}\t{offset}\n")
 
-def create_json_file(response):
+def create_json_file(data):
     with open('json_response.json','w') as f:
-        json.dump(response.json(),f,indent=4)
-
+        f.write(json.dumps(data,indent=4))
 
 
 def largest_span_(tokenFragment):
@@ -57,11 +56,13 @@ def main():
     lines = read_file()
     write_file(lines)
 
-    for text in params['text']:
+    data = {}
+    for i,text in enumerate(params['text'],start=1):
         params['text'] = text
         response = requests.get(service_url,params = params,headers=headers)
-        #create_json_file(response)
-
+        json_data = response.json()
+        data[str(i)+str(' text')] = json_data
+    create_json_file(data)
 
 if __name__ == "__main__":
     main()
