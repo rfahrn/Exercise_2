@@ -22,23 +22,15 @@ def tag(lines):
 		for token in doc:
 			row.extend([token.text, token.lemma_, token.pos_])
 			rows.append(row)
+			row = []
 
 	return rows
-
-
-# def write_file(lines):
-# 	with open('three_col.txt', 'w') as f:
-# 		for line in lines:
-# 			f.write(f"<p orig_string='{line}'>\n")
-# 			doc = nlp(line)
-# 			for token in doc:
-# 				f.write(f"{token.text}\t{token.pos_}\t{token.lemma_}\n")
 
 
 def main():
 	lines = read_file()
 	rows = tag(lines)
-	print(len(rows))
+	print(rows)
 
 
 if __name__ == "__main__":
