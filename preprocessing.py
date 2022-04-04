@@ -22,7 +22,6 @@ params = {
     'key': key,
 }
 
-
 def read_file():
     with open('bbc_article.txt', 'r') as f:
         lines = [line.rstrip() for line in f if not line == '\n']
@@ -44,25 +43,24 @@ def write_file(lines):
                 offset = i + 1
                 f.write(f"{token.text}\t{token.lemma_}\t{token.pos_}\t{onset}\t{offset}\n")
 
-def get_data(params,headers,service_url):
-    """returns data"""
-    for text in params['text']:
-        params['text'] = text
-        response = requests.get(service_url,params = params,headers=headers)
-        data = response.json()
-        return data
+def create_json_file(response):
+    with open('json_response.json','w') as f:
+        json.dump(response.json(),f,indent=4)
+
+
 
 def largest_span_(tokenFragment):
     pass
 
 
-
-
 def main():
     lines = read_file()
     write_file(lines)
-    get_data(params=params,headers=headers,service_url=service_url)
 
+    for text in params['text']:
+        params['text'] = text
+        response = requests.get(service_url,params = params,headers=headers)
+        #create_json_file(response)
 
 
 if __name__ == "__main__":
