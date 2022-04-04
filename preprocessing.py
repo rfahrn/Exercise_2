@@ -12,20 +12,33 @@ def read_file():
 	return lines
 
 
-def write_file(lines):
+def tag(lines):
 	nlp = spacy.load("en_core_web_sm")
+	row = []
+	rows = []
 
-	with open('three_col.txt', 'w') as f:
-		for line in lines:
-			f.write(f"<p orig_string='{line}'>\n")
-			doc = nlp(line)
-			for token in doc:
-				f.write(f"{token.text}\t{token.pos_}\t{token.lemma_}\n")
+	for line in lines:
+		doc = nlp(line)
+		for token in doc:
+			row.extend([token.text, token.lemma_, token.pos_])
+			rows.append(row)
+
+	return rows
+
+
+# def write_file(lines):
+# 	with open('three_col.txt', 'w') as f:
+# 		for line in lines:
+# 			f.write(f"<p orig_string='{line}'>\n")
+# 			doc = nlp(line)
+# 			for token in doc:
+# 				f.write(f"{token.text}\t{token.pos_}\t{token.lemma_}\n")
 
 
 def main():
 	lines = read_file()
-	write_file(lines)
+	rows = tag(lines)
+	print(len(rows))
 
 
 if __name__ == "__main__":
