@@ -1,342 +1,268 @@
-<p orig_string='Brexit: Lord Frost accuses EU of 'ill will' over UK exit'>
-Brexit	PROPN	Brexit
-:	PUNCT	:
-Lord	PROPN	Lord
-Frost	PROPN	Frost
-accuses	VERB	accuse
-EU	PROPN	EU
-of	ADP	of
-'	PUNCT	'
-ill	ADJ	ill
-will	AUX	will
-'	PUNCT	'
-over	ADP	over
-UK	PROPN	UK
-exit	NOUN	exit
-<p orig_string='8 March 2021'>
-8	NUM	8
-March	PROPN	March
-2021	NUM	2021
-<p orig_string='The UK's lead Brexit minister has called on the EU to "shake off any remaining ill will" over the UK's decision to leave the organisation.'>
-The	DET	the
-UK	PROPN	UK
-'s	PART	's
-lead	NOUN	lead
-Brexit	PROPN	Brexit
-minister	NOUN	minister
-has	AUX	have
-called	VERB	call
-on	ADP	on
-the	DET	the
-EU	PROPN	EU
-to	PART	to
-"	PUNCT	"
-shake	VERB	shake
-off	ADP	off
-any	DET	any
-remaining	VERB	remain
-ill	ADJ	ill
-will	AUX	will
-"	PUNCT	"
-over	ADP	over
-the	DET	the
-UK	PROPN	UK
-'s	PART	's
-decision	NOUN	decision
-to	PART	to
-leave	VERB	leave
-the	DET	the
-organisation	NOUN	organisation
-.	PUNCT	.
-<p orig_string='Lord Frost said the EU's previous threat to block vaccine exports had "significantly undermined" post-Brexit measures in Northern Ireland.'>
-Lord	PROPN	Lord
-Frost	PROPN	Frost
-said	VERB	say
-the	DET	the
-EU	PROPN	EU
-'s	PART	's
-previous	ADJ	previous
-threat	NOUN	threat
-to	PART	to
-block	VERB	block
-vaccine	NOUN	vaccine
-exports	NOUN	export
-had	VERB	have
-"	PUNCT	"
-significantly	ADV	significantly
-undermined	VERB	undermine
-"	PUNCT	"
-post	ADJ	post
--	ADJ	-
-Brexit	ADJ	brexit
-measures	NOUN	measure
-in	ADP	in
-Northern	PROPN	Northern
-Ireland	PROPN	Ireland
-.	PUNCT	.
-<p orig_string='He insisted the UK's unilateral move to extend grace periods on border checks was legal under the Brexit trade deal.'>
-He	PRON	he
-insisted	VERB	insist
-the	DET	the
-UK	PROPN	UK
-'s	PART	's
-unilateral	ADJ	unilateral
-move	NOUN	move
-to	PART	to
-extend	VERB	extend
-grace	NOUN	grace
-periods	NOUN	period
-on	ADP	on
-border	NOUN	border
-checks	NOUN	check
-was	AUX	be
-legal	ADJ	legal
-under	ADP	under
-the	DET	the
-Brexit	PROPN	Brexit
-trade	NOUN	trade
-deal	NOUN	deal
-.	PUNCT	.
-<p orig_string='The EU disputes this, and is preparing to launch a legal challenge.'>
-The	DET	the
-EU	PROPN	EU
-disputes	VERB	dispute
-this	PRON	this
-,	PUNCT	,
-and	CCONJ	and
-is	AUX	be
-preparing	VERB	prepare
-to	PART	to
-launch	VERB	launch
-a	DET	a
-legal	ADJ	legal
-challenge	NOUN	challenge
-.	PUNCT	.
-<p orig_string='The UK has said it will delay new checks on goods arriving into Northern Ireland from Great Britain, agreed as part of the UK's withdrawal deal.'>
-The	DET	the
-UK	PROPN	UK
-has	AUX	have
-said	VERB	say
-it	PRON	it
-will	AUX	will
-delay	VERB	delay
-new	ADJ	new
-checks	NOUN	check
-on	ADP	on
-goods	NOUN	good
-arriving	VERB	arrive
-into	ADP	into
-Northern	PROPN	Northern
-Ireland	PROPN	Ireland
-from	ADP	from
-Great	PROPN	Great
-Britain	PROPN	Britain
-,	PUNCT	,
-agreed	VERB	agree
-as	ADP	as
-part	NOUN	part
-of	ADP	of
-the	DET	the
-UK	PROPN	UK
-'s	PART	's
-withdrawal	NOUN	withdrawal
-deal	NOUN	deal
-.	PUNCT	.
-<p orig_string='EU Commission Vice-President Maroš Šefčovič has called it a "violation" of the part of the deal relating to Northern Ireland and said legal action was imminent.'>
-EU	PROPN	EU
-Commission	PROPN	Commission
-Vice	PROPN	Vice
--	PROPN	-
-President	PROPN	President
-Maroš	PROPN	Maroš
-Šefčovič	PROPN	Šefčovič
-has	AUX	have
-called	VERB	call
-it	PRON	it
-a	DET	a
-"	PUNCT	"
-violation	NOUN	violation
-"	PUNCT	"
-of	ADP	of
-the	DET	the
-part	NOUN	part
-of	ADP	of
-the	DET	the
-deal	NOUN	deal
-relating	VERB	relate
-to	ADP	to
-Northern	PROPN	Northern
-Ireland	PROPN	Ireland
-and	CCONJ	and
-said	VERB	say
-legal	ADJ	legal
-action	NOUN	action
-was	AUX	be
-imminent	ADJ	imminent
-.	PUNCT	.
-<p orig_string='EU legal action imminent over UK extensions'>
-EU	PROPN	EU
-legal	ADJ	legal
-action	NOUN	action
-imminent	ADJ	imminent
-over	ADP	over
-UK	PROPN	UK
-extensions	NOUN	extension
-<p orig_string='EU backtracks on vaccine export controls for NI'>
-EU	PROPN	EU
-backtracks	NOUN	backtrack
-on	ADP	on
-vaccine	NOUN	vaccine
-export	NOUN	export
-controls	NOUN	control
-for	ADP	for
-NI	PROPN	NI
-<p orig_string='Lord Frost to join cabinet in Brexit role'>
-Lord	PROPN	Lord
-Frost	PROPN	Frost
-to	PART	to
-join	VERB	join
-cabinet	NOUN	cabinet
-in	ADP	in
-Brexit	PROPN	Brexit
-role	NOUN	role
-<p orig_string='Writing in the Sunday Telegraph, Lord Frost insisted the delayed border checks was a "temporary" measure justified to implement the so-called Northern Ireland Protocol.'>
-Writing	VERB	write
-in	ADP	in
-the	DET	the
-Sunday	PROPN	Sunday
-Telegraph	PROPN	Telegraph
-,	PUNCT	,
-Lord	PROPN	Lord
-Frost	PROPN	Frost
-insisted	VERB	insist
-the	DET	the
-delayed	ADJ	delayed
-border	NOUN	border
-checks	NOUN	check
-was	AUX	be
-a	DET	a
-"	PUNCT	"
-temporary	ADJ	temporary
-"	PUNCT	"
-measure	NOUN	measure
-justified	VERB	justify
-to	PART	to
-implement	VERB	implement
-the	DET	the
-so	ADV	so
--	PUNCT	-
-called	VERB	call
-Northern	PROPN	Northern
-Ireland	PROPN	Ireland
-Protocol	PROPN	Protocol
-.	PUNCT	.
-<p orig_string='The Cabinet Office minister added that the measures were justified by the "fragile" situation in Northern Ireland.'>
-The	DET	the
-Cabinet	PROPN	Cabinet
-Office	PROPN	Office
-minister	NOUN	minister
-added	VERB	add
-that	SCONJ	that
-the	DET	the
-measures	NOUN	measure
-were	AUX	be
-justified	VERB	justify
-by	ADP	by
-the	DET	the
-"	PUNCT	"
-fragile	ADJ	fragile
-"	PUNCT	"
-situation	NOUN	situation
-in	ADP	in
-Northern	PROPN	Northern
-Ireland	PROPN	Ireland
-.	PUNCT	.
-<p orig_string='"They are about protecting the everyday lives of people in Northern Ireland, making sure they can receive parcels and buy the usual groceries from the supermarket.'>
-"	PUNCT	"
-They	PRON	they
-are	AUX	be
-about	ADP	about
-protecting	VERB	protect
-the	DET	the
-everyday	ADJ	everyday
-lives	NOUN	life
-of	ADP	of
-people	NOUN	people
-in	ADP	in
-Northern	PROPN	Northern
-Ireland	PROPN	Ireland
-,	PUNCT	,
-making	VERB	make
-sure	ADJ	sure
-they	PRON	they
-can	AUX	can
-receive	VERB	receive
-parcels	NOUN	parcel
-and	CCONJ	and
-buy	VERB	buy
-the	DET	the
-usual	ADJ	usual
-groceries	NOUN	grocery
-from	ADP	from
-the	DET	the
-supermarket	NOUN	supermarket
-.	PUNCT	.
-<p orig_string='"Without this threat of disruption, we can continue our discussions with the EU to resolve difficulties arising from the Protocol constructively," he added.'>
-"	PUNCT	"
-Without	ADP	without
-this	DET	this
-threat	NOUN	threat
-of	ADP	of
-disruption	NOUN	disruption
-,	PUNCT	,
-we	PRON	we
-can	AUX	can
-continue	VERB	continue
-our	PRON	our
-discussions	NOUN	discussion
-with	ADP	with
-the	DET	the
-EU	PROPN	EU
-to	PART	to
-resolve	VERB	resolve
-difficulties	NOUN	difficulty
-arising	VERB	arise
-from	ADP	from
-the	DET	the
-Protocol	PROPN	Protocol
-constructively	ADV	constructively
-,	PUNCT	,
-"	PUNCT	"
-he	PRON	he
-added	VERB	add
-.	PUNCT	.
-<p orig_string='Northern Ireland has remained a part of the EU's single market for goods, so products arriving from Great Britain have to undergo EU import procedures.'>
-Northern	PROPN	Northern
-Ireland	PROPN	Ireland
-has	AUX	have
-remained	VERB	remain
-a	DET	a
-part	NOUN	part
-of	ADP	of
-the	DET	the
-EU	PROPN	EU
-'s	PART	's
-single	ADJ	single
-market	NOUN	market
-for	ADP	for
-goods	NOUN	good
-,	PUNCT	,
-so	SCONJ	so
-products	NOUN	product
-arriving	VERB	arrive
-from	ADP	from
-Great	PROPN	Great
-Britain	PROPN	Britain
-have	VERB	have
-to	PART	to
-undergo	VERB	undergo
-EU	PROPN	EU
-import	NOUN	import
-procedures	NOUN	procedure
-.	PUNCT	.
+token	lemma	pos	onset	offset	entity	babelfy_id(iob)	link
+<p orig_string='Russian forces have already triggered a humanitarian catastrophe in the east, reducing Mariupol to ruins, but they have failed to inflict defeat on Ukraine's military. Warning of a new onslaught on the east, President Volodymyr Zelensky vowed: "We will fight for every metre of our land."'>
+Russian	russian	ADJ	0	1
+forces	force	NOUN	1	2
+have	have	AUX	2	3
+already	already	ADV	3	4
+triggered	trigger	VERB	4	5
+a	a	DET	5	6
+humanitarian	humanitarian	ADJ	6	7
+catastrophe	catastrophe	NOUN	7	8
+in	in	ADP	8	9
+the	the	DET	9	10
+east	east	NOUN	10	11
+,	,	PUNCT	11	12
+reducing	reduce	VERB	12	13
+Mariupol	Mariupol	PROPN	13	14
+to	to	PART	14	15
+ruins	ruin	VERB	15	16
+,	,	PUNCT	16	17
+but	but	CCONJ	17	18
+they	they	PRON	18	19
+have	have	AUX	19	20
+failed	fail	VERB	20	21
+to	to	PART	21	22
+inflict	inflict	VERB	22	23
+defeat	defeat	NOUN	23	24
+on	on	ADP	24	25
+Ukraine	Ukraine	PROPN	25	26
+'s	's	PART	26	27
+military	military	NOUN	27	28
+.	.	PUNCT	28	29
+Warning	warning	NOUN	29	30
+of	of	ADP	30	31
+a	a	DET	31	32
+new	new	ADJ	32	33
+onslaught	onslaught	NOUN	33	34
+on	on	ADP	34	35
+the	the	DET	35	36
+east	east	NOUN	36	37
+,	,	PUNCT	37	38
+President	President	PROPN	38	39
+Volodymyr	Volodymyr	PROPN	39	40
+Zelensky	Zelensky	PROPN	40	41
+vowed	vow	VERB	41	42
+:	:	PUNCT	42	43
+"	"	PUNCT	43	44
+We	we	PRON	44	45
+will	will	AUX	45	46
+fight	fight	VERB	46	47
+for	for	ADP	47	48
+every	every	DET	48	49
+metre	metre	NOUN	49	50
+of	of	ADP	50	51
+our	our	PRON	51	52
+land	land	NOUN	52	53
+.	.	PUNCT	53	54
+"	"	PUNCT	54	55
+<p orig_string='Ukraine had already stationed its best-trained forces in the east because of an eight-year war with Russian-backed separatists. They are thought to have suffered heavy losses but are still a significant challenge to Russia's invading army.'>
+Ukraine	Ukraine	PROPN	0	1
+had	have	AUX	1	2
+already	already	ADV	2	3
+stationed	station	VERB	3	4
+its	its	PRON	4	5
+best	well	ADV	5	6
+-	-	PUNCT	6	7
+trained	train	VERB	7	8
+forces	force	NOUN	8	9
+in	in	ADP	9	10
+the	the	DET	10	11
+east	east	NOUN	11	12
+because	because	SCONJ	12	13
+of	of	ADP	13	14
+an	an	DET	14	15
+eight	eight	NUM	15	16
+-	-	PUNCT	16	17
+year	year	NOUN	17	18
+war	war	NOUN	18	19
+with	with	ADP	19	20
+Russian	Russian	PROPN	20	21
+-	-	PUNCT	21	22
+backed	back	VERB	22	23
+separatists	separatist	NOUN	23	24
+.	.	PUNCT	24	25
+They	they	PRON	25	26
+are	be	AUX	26	27
+thought	think	VERB	27	28
+to	to	PART	28	29
+have	have	AUX	29	30
+suffered	suffer	VERB	30	31
+heavy	heavy	ADJ	31	32
+losses	loss	NOUN	32	33
+but	but	CCONJ	33	34
+are	be	AUX	34	35
+still	still	ADV	35	36
+a	a	DET	36	37
+significant	significant	ADJ	37	38
+challenge	challenge	NOUN	38	39
+to	to	ADP	39	40
+Russia	Russia	PROPN	40	41
+'s	's	PART	41	42
+invading	invade	VERB	42	43
+army	army	NOUN	43	44
+.	.	PUNCT	44	45
+<p orig_string='When President Putin talks of Donbas, he is referring to Ukraine's old coal and steel-producing area. But he really means the entirety of two big eastern regions, Luhansk and Donetsk, which run from outside Mariupol in the south all the way to the northern border.'>
+When	when	SCONJ	0	1
+President	President	PROPN	1	2
+Putin	Putin	PROPN	2	3
+talks	talk	NOUN	3	4
+of	of	ADP	4	5
+Donbas	Donbas	PROPN	5	6
+,	,	PUNCT	6	7
+he	he	PRON	7	8
+is	be	AUX	8	9
+referring	refer	VERB	9	10
+to	to	ADP	10	11
+Ukraine	Ukraine	PROPN	11	12
+'s	's	PART	12	13
+old	old	ADJ	13	14
+coal	coal	NOUN	14	15
+and	and	CCONJ	15	16
+steel	steel	NOUN	16	17
+-	-	PUNCT	17	18
+producing	produce	VERB	18	19
+area	area	NOUN	19	20
+.	.	PUNCT	20	21
+But	but	CCONJ	21	22
+he	he	PRON	22	23
+really	really	ADV	23	24
+means	mean	VERB	24	25
+the	the	DET	25	26
+entirety	entirety	NOUN	26	27
+of	of	ADP	27	28
+two	two	NUM	28	29
+big	big	ADJ	29	30
+eastern	eastern	ADJ	30	31
+regions	region	NOUN	31	32
+,	,	PUNCT	32	33
+Luhansk	Luhansk	PROPN	33	34
+and	and	CCONJ	34	35
+Donetsk	Donetsk	PROPN	35	36
+,	,	PUNCT	36	37
+which	which	PRON	37	38
+run	run	VERB	38	39
+from	from	ADP	39	40
+outside	outside	ADJ	40	41
+Mariupol	Mariupol	PROPN	41	42
+in	in	ADP	42	43
+the	the	DET	43	44
+south	south	NOUN	44	45
+all	all	DET	45	46
+the	the	DET	46	47
+way	way	NOUN	47	48
+to	to	ADP	48	49
+the	the	DET	49	50
+northern	northern	ADJ	50	51
+border	border	NOUN	51	52
+.	.	PUNCT	52	53
+<p orig_string='Russian forces are trying to encircle Ukraine's army in the east. They have taken control of Izyum - a strategic town on the road between Ukraine's second city Kharkiv and the separatist areas - and have bombarded a succession of Luhansk towns, including Rubizhne, Lysychansk, Popasna and Severodonetsk, destroying blocks of flats and killing civilians in their homes.'>
+Russian	russian	ADJ	0	1
+forces	force	NOUN	1	2
+are	be	AUX	2	3
+trying	try	VERB	3	4
+to	to	PART	4	5
+encircle	encircle	VERB	5	6
+Ukraine	Ukraine	PROPN	6	7
+'s	's	PART	7	8
+army	army	NOUN	8	9
+in	in	ADP	9	10
+the	the	DET	10	11
+east	east	NOUN	11	12
+.	.	PUNCT	12	13
+They	they	PRON	13	14
+have	have	AUX	14	15
+taken	take	VERB	15	16
+control	control	NOUN	16	17
+of	of	ADP	17	18
+Izyum	Izyum	PROPN	18	19
+-	-	PUNCT	19	20
+a	a	DET	20	21
+strategic	strategic	ADJ	21	22
+town	town	NOUN	22	23
+on	on	ADP	23	24
+the	the	DET	24	25
+road	road	NOUN	25	26
+between	between	ADP	26	27
+Ukraine	Ukraine	PROPN	27	28
+'s	's	PART	28	29
+second	second	ADJ	29	30
+city	city	NOUN	30	31
+Kharkiv	Kharkiv	PROPN	31	32
+and	and	CCONJ	32	33
+the	the	DET	33	34
+separatist	separatist	ADJ	34	35
+areas	area	NOUN	35	36
+-	-	PUNCT	36	37
+and	and	CCONJ	37	38
+have	have	AUX	38	39
+bombarded	bombard	VERB	39	40
+a	a	DET	40	41
+succession	succession	NOUN	41	42
+of	of	ADP	42	43
+Luhansk	Luhansk	PROPN	43	44
+towns	town	NOUN	44	45
+,	,	PUNCT	45	46
+including	include	VERB	46	47
+Rubizhne	Rubizhne	PROPN	47	48
+,	,	PUNCT	48	49
+Lysychansk	Lysychansk	PROPN	49	50
+,	,	PUNCT	50	51
+Popasna	Popasna	PROPN	51	52
+and	and	CCONJ	52	53
+Severodonetsk	Severodonetsk	PROPN	53	54
+,	,	PUNCT	54	55
+destroying	destroy	VERB	55	56
+blocks	block	NOUN	56	57
+of	of	ADP	57	58
+flats	flat	NOUN	58	59
+and	and	CCONJ	59	60
+killing	kill	VERB	60	61
+civilians	civilian	NOUN	61	62
+in	in	ADP	62	63
+their	their	PRON	63	64
+homes	home	NOUN	64	65
+.	.	PUNCT	65	66
+<p orig_string='Civilians are being moved out ahead of the Russian advance. Local leader Serhiy Haidai said 20 children were led to safety from the basement of a kindergarten in Lysychansk on Thursday and some 200 civilians climbed on to buses in Severodonetsk.'>
+Civilians	civilian	NOUN	0	1
+are	be	AUX	1	2
+being	be	AUX	2	3
+moved	move	VERB	3	4
+out	out	ADV	4	5
+ahead	ahead	ADV	5	6
+of	of	ADP	6	7
+the	the	DET	7	8
+Russian	russian	ADJ	8	9
+advance	advance	NOUN	9	10
+.	.	PUNCT	10	11
+Local	local	ADJ	11	12
+leader	leader	NOUN	12	13
+Serhiy	Serhiy	PROPN	13	14
+Haidai	Haidai	PROPN	14	15
+said	say	VERB	15	16
+20	20	NUM	16	17
+children	child	NOUN	17	18
+were	be	AUX	18	19
+led	lead	VERB	19	20
+to	to	ADP	20	21
+safety	safety	NOUN	21	22
+from	from	ADP	22	23
+the	the	DET	23	24
+basement	basement	NOUN	24	25
+of	of	ADP	25	26
+a	a	DET	26	27
+kindergarten	kindergarten	NOUN	27	28
+in	in	ADP	28	29
+Lysychansk	Lysychansk	PROPN	29	30
+on	on	ADP	30	31
+Thursday	Thursday	PROPN	31	32
+and	and	CCONJ	32	33
+some	some	DET	33	34
+200	200	NUM	34	35
+civilians	civilian	NOUN	35	36
+climbed	climb	VERB	36	37
+on	on	ADP	37	38
+to	to	ADP	38	39
+buses	bus	NOUN	39	40
+in	in	ADP	40	41
+Severodonetsk	Severodonetsk	PROPN	41	42
+.	.	PUNCT	42	43
