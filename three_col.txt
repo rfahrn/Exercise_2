@@ -1,263 +1,263 @@
 token	lemma	pos	onset	offset	entity	babelfy_id(iob)	link
-Russian	russian	ADJ	0	0
-forces	force	NOUN	0	0
-have	have	AUX	0	0
-already	already	ADV	0	0
-triggered	trigger	VERB	0	0
-a	a	DET	0	0
-humanitarian	humanitarian	ADJ	0	0
-catastrophe	catastrophe	NOUN	0	0
-in	in	ADP	0	0
-the	the	DET	0	0
-east	east	NOUN	0	0
-,	,	PUNCT	0	0
-reducing	reduce	VERB	0	0
-Mariupol	Mariupol	PROPN	0	0
-to	to	PART	0	0
-ruins	ruin	VERB	0	0
-,	,	PUNCT	0	0
-but	but	CCONJ	0	0
-they	they	PRON	0	0
-have	have	AUX	0	0
-failed	fail	VERB	0	0
-to	to	PART	0	0
-inflict	inflict	VERB	0	0
-defeat	defeat	NOUN	0	0
-on	on	ADP	0	0
-Ukraine	Ukraine	PROPN	0	0
-'s	's	PART	0	0
-military	military	NOUN	0	0
-.	.	PUNCT	0	0
-Warning	warning	NOUN	0	0
-of	of	ADP	0	0
-a	a	DET	0	0
-new	new	ADJ	0	0
-onslaught	onslaught	NOUN	0	0
-on	on	ADP	0	0
-the	the	DET	0	0
-east	east	NOUN	0	0
-,	,	PUNCT	0	0
-President	President	PROPN	0	0
-Volodymyr	Volodymyr	PROPN	0	0
-Zelensky	Zelensky	PROPN	0	0
-vowed	vow	VERB	0	0
-:	:	PUNCT	0	0
-"	"	PUNCT	0	0
-We	we	PRON	0	0
-will	will	AUX	0	0
-fight	fight	VERB	0	0
-for	for	ADP	0	0
-every	every	DET	0	0
-metre	metre	NOUN	0	0
-of	of	ADP	0	0
-our	our	PRON	0	0
-land	land	NOUN	0	0
-.	.	PUNCT	0	0
-"	"	PUNCT	0	0
-Ukraine	Ukraine	PROPN	0	0
-had	have	AUX	0	0
-already	already	ADV	0	0
-stationed	station	VERB	0	0
-its	its	PRON	0	0
-best	well	ADV	0	0
--	-	PUNCT	0	0
-trained	train	VERB	0	0
-forces	force	NOUN	0	0
-in	in	ADP	0	0
-the	the	DET	0	0
-east	east	NOUN	0	0
-because	because	SCONJ	0	0
-of	of	ADP	0	0
-an	an	DET	0	0
-eight	eight	NUM	0	0
--	-	PUNCT	0	0
-year	year	NOUN	0	0
-war	war	NOUN	0	0
-with	with	ADP	0	0
-Russian	Russian	PROPN	0	0
--	-	PUNCT	0	0
-backed	back	VERB	0	0
-separatists	separatist	NOUN	0	0
-.	.	PUNCT	0	0
-They	they	PRON	0	0
-are	be	AUX	0	0
-thought	think	VERB	0	0
-to	to	PART	0	0
-have	have	AUX	0	0
-suffered	suffer	VERB	0	0
-heavy	heavy	ADJ	0	0
-losses	loss	NOUN	0	0
-but	but	CCONJ	0	0
-are	be	AUX	0	0
-still	still	ADV	0	0
-a	a	DET	0	0
-significant	significant	ADJ	0	0
-challenge	challenge	NOUN	0	0
-to	to	ADP	0	0
-Russia	Russia	PROPN	0	0
-'s	's	PART	0	0
-invading	invade	VERB	0	0
-army	army	NOUN	0	0
-.	.	PUNCT	0	0
-When	when	SCONJ	0	0
-President	President	PROPN	0	0
-Putin	Putin	PROPN	0	0
-talks	talk	NOUN	0	0
-of	of	ADP	0	0
-Donbas	Donbas	PROPN	0	0
-,	,	PUNCT	0	0
-he	he	PRON	0	0
-is	be	AUX	0	0
-referring	refer	VERB	0	0
-to	to	ADP	0	0
-Ukraine	Ukraine	PROPN	0	0
-'s	's	PART	0	0
-old	old	ADJ	0	0
-coal	coal	NOUN	0	0
-and	and	CCONJ	0	0
-steel	steel	NOUN	0	0
--	-	PUNCT	0	0
-producing	produce	VERB	0	0
-area	area	NOUN	0	0
-.	.	PUNCT	0	0
-But	but	CCONJ	0	0
-he	he	PRON	0	0
-really	really	ADV	0	0
-means	mean	VERB	0	0
-the	the	DET	0	0
-entirety	entirety	NOUN	0	0
-of	of	ADP	0	0
-two	two	NUM	0	0
-big	big	ADJ	0	0
-eastern	eastern	ADJ	0	0
-regions	region	NOUN	0	0
-,	,	PUNCT	0	0
-Luhansk	Luhansk	PROPN	0	0
-and	and	CCONJ	0	0
-Donetsk	Donetsk	PROPN	0	0
-,	,	PUNCT	0	0
-which	which	PRON	0	0
-run	run	VERB	0	0
-from	from	ADP	0	0
-outside	outside	ADJ	0	0
-Mariupol	Mariupol	PROPN	0	0
-in	in	ADP	0	0
-the	the	DET	0	0
-south	south	NOUN	0	0
-all	all	DET	0	0
-the	the	DET	0	0
-way	way	NOUN	0	0
-to	to	ADP	0	0
-the	the	DET	0	0
-northern	northern	ADJ	0	0
-border	border	NOUN	0	0
-.	.	PUNCT	0	0
-Russian	russian	ADJ	0	0
-forces	force	NOUN	0	0
-are	be	AUX	0	0
-trying	try	VERB	0	0
-to	to	PART	0	0
-encircle	encircle	VERB	0	0
-Ukraine	Ukraine	PROPN	0	0
-'s	's	PART	0	0
-army	army	NOUN	0	0
-in	in	ADP	0	0
-the	the	DET	0	0
-east	east	NOUN	0	0
-.	.	PUNCT	0	0
-They	they	PRON	0	0
-have	have	AUX	0	0
-taken	take	VERB	0	0
-control	control	NOUN	0	0
-of	of	ADP	0	0
-Izyum	Izyum	PROPN	0	0
--	-	PUNCT	0	0
-a	a	DET	0	0
-strategic	strategic	ADJ	0	0
-town	town	NOUN	0	0
-on	on	ADP	0	0
-the	the	DET	0	0
-road	road	NOUN	0	0
-between	between	ADP	0	0
-Ukraine	Ukraine	PROPN	0	0
-'s	's	PART	0	0
-second	second	ADJ	0	0
-city	city	NOUN	0	0
-Kharkiv	Kharkiv	PROPN	0	0
-and	and	CCONJ	0	0
-the	the	DET	0	0
-separatist	separatist	ADJ	0	0
-areas	area	NOUN	0	0
--	-	PUNCT	0	0
-and	and	CCONJ	0	0
-have	have	AUX	0	0
-bombarded	bombard	VERB	0	0
-a	a	DET	0	0
-succession	succession	NOUN	0	0
-of	of	ADP	0	0
-Luhansk	Luhansk	PROPN	0	0
-towns	town	NOUN	0	0
-,	,	PUNCT	0	0
-including	include	VERB	0	0
-Rubizhne	Rubizhne	PROPN	0	0
-,	,	PUNCT	0	0
-Lysychansk	Lysychansk	PROPN	0	0
-,	,	PUNCT	0	0
-Popasna	Popasna	PROPN	0	0
-and	and	CCONJ	0	0
-Severodonetsk	Severodonetsk	PROPN	0	0
-,	,	PUNCT	0	0
-destroying	destroy	VERB	0	0
-blocks	block	NOUN	0	0
-of	of	ADP	0	0
-flats	flat	NOUN	0	0
-and	and	CCONJ	0	0
-killing	kill	VERB	0	0
-civilians	civilian	NOUN	0	0
-in	in	ADP	0	0
-their	their	PRON	0	0
-homes	home	NOUN	0	0
-.	.	PUNCT	0	0
-Civilians	civilian	NOUN	0	0
-are	be	AUX	0	0
-being	be	AUX	0	0
-moved	move	VERB	0	0
-out	out	ADV	0	0
-ahead	ahead	ADV	0	0
-of	of	ADP	0	0
-the	the	DET	0	0
-Russian	russian	ADJ	0	0
-advance	advance	NOUN	0	0
-.	.	PUNCT	0	0
-Local	local	ADJ	0	0
-leader	leader	NOUN	0	0
-Serhiy	Serhiy	PROPN	0	0
-Haidai	Haidai	PROPN	0	0
-said	say	VERB	0	0
-20	20	NUM	0	0
-children	child	NOUN	0	0
-were	be	AUX	0	0
-led	lead	VERB	0	0
-to	to	ADP	0	0
-safety	safety	NOUN	0	0
-from	from	ADP	0	0
-the	the	DET	0	0
-basement	basement	NOUN	0	0
-of	of	ADP	0	0
-a	a	DET	0	0
-kindergarten	kindergarten	NOUN	0	0
-in	in	ADP	0	0
-Lysychansk	Lysychansk	PROPN	0	0
-on	on	ADP	0	0
-Thursday	Thursday	PROPN	0	0
-and	and	CCONJ	0	0
-some	some	DET	0	0
-200	200	NUM	0	0
-civilians	civilian	NOUN	0	0
-climbed	climb	VERB	0	0
-on	on	ADP	0	0
-to	to	ADP	0	0
-buses	bus	NOUN	0	0
-in	in	ADP	0	0
-Severodonetsk	Severodonetsk	PROPN	0	0
-.	.	PUNCT	0	0
+Russian	russian	ADJ	
+forces	force	NOUN	
+have	have	AUX	
+already	already	ADV	
+triggered	trigger	VERB	
+a	a	DET	
+humanitarian	humanitarian	ADJ	
+catastrophe	catastrophe	NOUN	
+in	in	ADP	
+the	the	DET	
+east	east	NOUN	
+,	,	PUNCT	
+reducing	reduce	VERB	
+Mariupol	Mariupol	PROPN	
+to	to	PART	
+ruins	ruin	VERB	
+,	,	PUNCT	
+but	but	CCONJ	
+they	they	PRON	
+have	have	AUX	
+failed	fail	VERB	
+to	to	PART	
+inflict	inflict	VERB	
+defeat	defeat	NOUN	
+on	on	ADP	
+Ukraine	Ukraine	PROPN	
+'s	's	PART	
+military	military	NOUN	
+.	.	PUNCT	
+Warning	warning	NOUN	
+of	of	ADP	
+a	a	DET	
+new	new	ADJ	
+onslaught	onslaught	NOUN	
+on	on	ADP	
+the	the	DET	
+east	east	NOUN	
+,	,	PUNCT	
+President	President	PROPN	
+Volodymyr	Volodymyr	PROPN	
+Zelensky	Zelensky	PROPN	
+vowed	vow	VERB	
+:	:	PUNCT	
+"	"	PUNCT	
+We	we	PRON	
+will	will	AUX	
+fight	fight	VERB	
+for	for	ADP	
+every	every	DET	
+metre	metre	NOUN	
+of	of	ADP	
+our	our	PRON	
+land	land	NOUN	
+.	.	PUNCT	
+"	"	PUNCT	
+Ukraine	Ukraine	PROPN	
+had	have	AUX	
+already	already	ADV	
+stationed	station	VERB	
+its	its	PRON	
+best	well	ADV	
+-	-	PUNCT	
+trained	train	VERB	
+forces	force	NOUN	
+in	in	ADP	
+the	the	DET	
+east	east	NOUN	
+because	because	SCONJ	
+of	of	ADP	
+an	an	DET	
+eight	eight	NUM	
+-	-	PUNCT	
+year	year	NOUN	
+war	war	NOUN	
+with	with	ADP	
+Russian	Russian	PROPN	
+-	-	PUNCT	
+backed	back	VERB	
+separatists	separatist	NOUN	
+.	.	PUNCT	
+They	they	PRON	
+are	be	AUX	
+thought	think	VERB	
+to	to	PART	
+have	have	AUX	
+suffered	suffer	VERB	
+heavy	heavy	ADJ	
+losses	loss	NOUN	
+but	but	CCONJ	
+are	be	AUX	
+still	still	ADV	
+a	a	DET	
+significant	significant	ADJ	
+challenge	challenge	NOUN	
+to	to	ADP	
+Russia	Russia	PROPN	
+'s	's	PART	
+invading	invade	VERB	
+army	army	NOUN	
+.	.	PUNCT	
+When	when	SCONJ	
+President	President	PROPN	
+Putin	Putin	PROPN	
+talks	talk	NOUN	
+of	of	ADP	
+Donbas	Donbas	PROPN	
+,	,	PUNCT	
+he	he	PRON	
+is	be	AUX	
+referring	refer	VERB	
+to	to	ADP	
+Ukraine	Ukraine	PROPN	
+'s	's	PART	
+old	old	ADJ	
+coal	coal	NOUN	
+and	and	CCONJ	
+steel	steel	NOUN	
+-	-	PUNCT	
+producing	produce	VERB	
+area	area	NOUN	
+.	.	PUNCT	
+But	but	CCONJ	
+he	he	PRON	
+really	really	ADV	
+means	mean	VERB	
+the	the	DET	
+entirety	entirety	NOUN	
+of	of	ADP	
+two	two	NUM	
+big	big	ADJ	
+eastern	eastern	ADJ	
+regions	region	NOUN	
+,	,	PUNCT	
+Luhansk	Luhansk	PROPN	
+and	and	CCONJ	
+Donetsk	Donetsk	PROPN	
+,	,	PUNCT	
+which	which	PRON	
+run	run	VERB	
+from	from	ADP	
+outside	outside	ADJ	
+Mariupol	Mariupol	PROPN	
+in	in	ADP	
+the	the	DET	
+south	south	NOUN	
+all	all	DET	
+the	the	DET	
+way	way	NOUN	
+to	to	ADP	
+the	the	DET	
+northern	northern	ADJ	
+border	border	NOUN	
+.	.	PUNCT	
+Russian	russian	ADJ	
+forces	force	NOUN	
+are	be	AUX	
+trying	try	VERB	
+to	to	PART	
+encircle	encircle	VERB	
+Ukraine	Ukraine	PROPN	
+'s	's	PART	
+army	army	NOUN	
+in	in	ADP	
+the	the	DET	
+east	east	NOUN	
+.	.	PUNCT	
+They	they	PRON	
+have	have	AUX	
+taken	take	VERB	
+control	control	NOUN	
+of	of	ADP	
+Izyum	Izyum	PROPN	
+-	-	PUNCT	
+a	a	DET	
+strategic	strategic	ADJ	
+town	town	NOUN	
+on	on	ADP	
+the	the	DET	
+road	road	NOUN	
+between	between	ADP	
+Ukraine	Ukraine	PROPN	
+'s	's	PART	
+second	second	ADJ	
+city	city	NOUN	
+Kharkiv	Kharkiv	PROPN	
+and	and	CCONJ	
+the	the	DET	
+separatist	separatist	ADJ	
+areas	area	NOUN	
+-	-	PUNCT	
+and	and	CCONJ	
+have	have	AUX	
+bombarded	bombard	VERB	
+a	a	DET	
+succession	succession	NOUN	
+of	of	ADP	
+Luhansk	Luhansk	PROPN	
+towns	town	NOUN	
+,	,	PUNCT	
+including	include	VERB	
+Rubizhne	Rubizhne	PROPN	
+,	,	PUNCT	
+Lysychansk	Lysychansk	PROPN	
+,	,	PUNCT	
+Popasna	Popasna	PROPN	
+and	and	CCONJ	
+Severodonetsk	Severodonetsk	PROPN	
+,	,	PUNCT	
+destroying	destroy	VERB	
+blocks	block	NOUN	
+of	of	ADP	
+flats	flat	NOUN	
+and	and	CCONJ	
+killing	kill	VERB	
+civilians	civilian	NOUN	
+in	in	ADP	
+their	their	PRON	
+homes	home	NOUN	
+.	.	PUNCT	
+Civilians	civilian	NOUN	
+are	be	AUX	
+being	be	AUX	
+moved	move	VERB	
+out	out	ADV	
+ahead	ahead	ADV	
+of	of	ADP	
+the	the	DET	
+Russian	russian	ADJ	
+advance	advance	NOUN	
+.	.	PUNCT	
+Local	local	ADJ	
+leader	leader	NOUN	
+Serhiy	Serhiy	PROPN	
+Haidai	Haidai	PROPN	
+said	say	VERB	
+20	20	NUM	
+children	child	NOUN	
+were	be	AUX	
+led	lead	VERB	
+to	to	ADP	
+safety	safety	NOUN	
+from	from	ADP	
+the	the	DET	
+basement	basement	NOUN	
+of	of	ADP	
+a	a	DET	
+kindergarten	kindergarten	NOUN	
+in	in	ADP	
+Lysychansk	Lysychansk	PROPN	
+on	on	ADP	
+Thursday	Thursday	PROPN	
+and	and	CCONJ	
+some	some	DET	
+200	200	NUM	
+civilians	civilian	NOUN	
+climbed	climb	VERB	
+on	on	ADP	
+to	to	ADP	
+buses	bus	NOUN	
+in	in	ADP	
+Severodonetsk	Severodonetsk	PROPN	
+.	.	PUNCT	

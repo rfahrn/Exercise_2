@@ -4,6 +4,7 @@
 
 import requests
 import gzip
+import csv
 import re
 import json
 import spacy
@@ -50,11 +51,27 @@ def write_file(lines):
     nlp = spacy.load("en_core_web_sm")
     with open('three_col.txt', 'w') as f:
         f.write("token\tlemma\tpos\tonset\toffset\tentity\tbabelfy_id(iob)\tlink\n")
-        onset = 0
-        offset = 0
         json_content = read_json('json_response.json')
-        for i,texts in enumerate(json_content,start=1):
+
+        entities = []  # contains list of entities according to their chr-onset,offset
+        tok_on_off = []  # list containing tuple (onset,offset)
+        tokens = []
+        lemmas = []
+        pos = []
+        links = []
+        synsetIds = []
+
+        for i,texts in enumerate(json_content,start=0):
+
+            doc = nlp(lines[i])
+            print(lines[i])
             print(str(i)+'\n')
+
+            for o, token in enumerate(doc):
+                tokens.append(token.text)
+                lemmas.append(token.lemma_)
+                pos.append(token.pos_)
+
             results_per_text = json_content[texts]
             for result in results_per_text:
 
@@ -62,40 +79,78 @@ def write_file(lines):
                 tokenFragment = result.get('tokenFragment')
                 tfStart = tokenFragment.get('start')
                 tfEnd = tokenFragment.get('end')
-                print(str(tfStart) + "\t" + str(tfEnd) )
+                tok_on_off.append((tfStart, tfEnd))
 
                 # char from fragment retrival
                 charFragment = result.get('charFragment')
                 cfStart = charFragment.get('start')
                 cfEnd = charFragment.get('end')
-                print(str(cfStart) + "\t" + str(cfEnd))
+
+
+
 
                 # Babelsynset ID retrival
                 synsetId = result.get('babelSynsetID')
-                print(synsetId)
+                synsetIds.append(synsetId)
+                links.append(get_link(synsetId))
 
+                entity = get_entity(lines[i],cfStart,cfEnd)
+                entities.append(entity)
+
+            for o,token in enumerate(doc):
+                f.write(f"{token.text}\t{token.lemma_}\t{token.pos_}\t\n")
+
+        print(len(entities))
+        print(len(tokens))
+        print(len(pos))
+        print(len(lemmas))
+        print(tok_on_off)
+        print(len(tok_on_off))
+        data = [list(i) for i in zip(tokens, lemmas, pos, tok_on_off, entities,synsetId,links)]
+        return data
+
+
+            #for entity in entities:
+                #f.write(f'{entity}\n')
+
+
+"""
         for line in lines:
+            enity = get_entity(line,onset,offset)
             doc = nlp(line)
 
-            for i,token in enumerate(doc):
+            for i,token in enumerate(doc):"""
+
+                #f.write(f"{token.text}\t{token.lemma_}\t{token.pos_}\t{onset}\t{offset}\t{entity}\n")
 
 
-
-                f.write(f"{token.text}\t{token.lemma_}\t{token.pos_}\t{onset}\t{offset}\n")
+def write_csv(data): # data = list of list
+    with open('create_csv','w',encoding='UTF8',newline='')as f:
+        header = ['token', 'lemma', 'pos', 'onset', 'offset', 'entity', 'babelfy_id(iob)', 'link']
+        writer = csv.writer(f)
+        writer.writerow(header)
+        writer.writerows(data)
 
 def bebelfy_id_IOB(babelSynsetID):
     pass
+def get_link(babelsynsetID):
+    url = f'https://babelnet.org/synset?word={babelsynsetID}&lang=<EN>&langTrans=DE'
+    return url
+def get_entity(text,cfStart,cfEnd):
+    return text[cfStart:cfEnd+1]
 
-
-def largest_span_enity(enity1,entity2):
-    pass
+def largest_span_enity(entity1_onset,entity1_offset,entity2_offset,entity2_onset,text):
+    if entity1_onset >= entity2_onset and entity1_offset <= entity2_offset:
+        return get_entity(text,entity2_onset,entity2_offset)
+    else:
+        return get_entity(text,entity1_onset,entity1_offset)
 
 
 
 def read_json(file):
     with open(file,'r')as j:
-        contents = json.loads(j.read())
-        return contents
+        json_content = json.loads(j.read())
+        return json_content
 
 def create_json_file(data_disamiguate):
     with open('json_response.json','w') as f:
@@ -103,11 +158,10 @@ def create_json_file(data_disamiguate):
         #f.write(json.dumps(data_disamiguate,indent=4))
 
 
-
-
 def main():
     lines = read_file()
     write_file(lines)
+    write_csv(data=write_file(lines))
     datadis = {}
     for i,text in enumerate(params1['text'],start=1):
         params1['text'] = text
