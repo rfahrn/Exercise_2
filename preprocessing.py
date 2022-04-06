@@ -120,6 +120,7 @@ def write_csv(data):
 
 def bebelfy_id_IOB(babelSynsetID):
     """should return the IOB-encoding of the SynsetID"""
+    #TODO
     pass
 
 
@@ -154,6 +155,10 @@ def create_json_file(data_disamiguate):
     with open('json_response.json','w') as f:
         json.dump(data_disamiguate,f,indent=4)
 
+
+def calculate_IAA():
+    # TODO:
+    pass
 
 def main():
     lines = read_file()
