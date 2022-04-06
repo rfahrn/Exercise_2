@@ -1,44 +1,63 @@
-import sklearn
 from sklearn.metrics import cohen_kappa_score
-from sklearn.metrics import precision_recall_fscore_support
+import pandas as pd
 
-# example labeler
-#labeler1 = [2, 0, 2, 2, 0, 1]
-#labeler2 = [0, 0, 2, 2, 0, 2]
-
-# us
-Rebecka_labeling = []
-Jesica_labeling = []
-
-
-
-def get_TP_FP_FN_(file):
-    TP = []
-    FP = []
-    FN = []
-    """opens the csv-file of the annotations and returns 3 lists => TP: list, FP:list, FN:list"""
-    return TP,FP,FN
 
 def get_IAA_KAPPA(labeler1,labeler2):
+    """retuns Kappa-score"""
     return cohen_kappa_score(labeler1, labeler2)
 
-
 def precision_recall_fmeasure(tp,fp,fn):
+    """calculates precision recall f-measure"""
     precision = tp / (tp + fp)
     recall = tp / (tp + fn)
     fMeasure = (2 * precision * recall) / (precision + recall)
     return precision, recall, fMeasure
 
+
+def file_to_dataframe(file1,file2):
+    """opens two csv fils and creates pandas-dataframe and returns for each file TP/FP/FN"""
+    last3_df1 = pd.read_csv(file1).iloc[:,-3:].fillna(0)
+    last3_df2 = pd.read_csv(file2).iloc[:,-3:].fillna(0)
+
+    TP1 = last3_df1['TP'].to_numpy()
+    FP1 = last3_df1['FP'].to_numpy()
+    FN1 = last3_df1['FN'].to_numpy()
+    TP2 = last3_df2['TP'].to_numpy()
+    FP2 = last3_df2['FP'].to_numpy()
+    FN2 = last3_df2['FN'].to_numpy()
+
+    TP1sum = last3_df1['TP'].sum()
+    FP1sum = last3_df1['FP'].sum()
+    FN1sum = last3_df1['FN'].sum()
+    TP2sum = last3_df2['TP'].sum()
+    FP2sum = last3_df2['FP'].sum()
+    FN2sum = last3_df2['FN'].sum()
+
+    return (TP1sum,FP1sum,FN1sum), (TP2sum,FP2sum,FN2sum) , (TP1,FP1,FN1), (TP2,FP2,FN2)
+
+
 def main():
-    #TP, FP, FN = get_TP_FP_FN_('RebeckaANN.csv')
-    #TP, FP, FN = get_TP_FP_FN_('JessicaANN.csv')
+    A1 , A2 ,A1arr, A2arr = file_to_dataframe('example_annotation1.csv','example_annotation2.csv')
 
+    precision1, recall1, fMeasure1 = precision_recall_fmeasure(A1[0], A1[1], A1[2])
+    precision2, recall2, fMeasure2 = precision_recall_fmeasure(A2[0], A2[1], A2[2])
 
+    print(f'Annotator 1:\nprecision1:\t{round(precision1,2)}\trecall1:\t{round(recall1,2)}\tf-Measure1:\t{round(fMeasure1,2)}\n')
+    print(f'Annotator 2:\nprecision2:\t{round(precision2,2)}\trecall2:\t{round(recall2,2)}\tf-Measure2:\t{round(fMeasure2,2)}\n\n')
 
-    pass
+    # our labelings:
+    labeler1TP = A1arr[0]
+    labeler2TP =  A2arr[0]
+    labeler1FP = A1arr[1]
+    labeler2FP = A2arr[1]
+    labeler1FN = A1arr[2]
+    labeler2FN = A2arr[2]
 
+    TP_kappa = round(get_IAA_KAPPA(labeler1TP, labeler2TP),4)
+    FP_kappa = round(get_IAA_KAPPA(labeler1FP, labeler2FP),4)
+    FN_kappa = round(get_IAA_KAPPA(labeler1FN, labeler2FN),4)
 
-
+    print(f'TP Kappa: {TP_kappa}\nFP Kappa: {FP_kappa}\nFN_Kappa: {FN_kappa}')
 
 if __name__ == '__main__':
     main()
