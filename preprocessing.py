@@ -74,8 +74,8 @@ def write_file(lines):
         for i,texts in enumerate(json_content,start=0):
 
             doc = nlp(lines[i])
-            print(lines[i])
-            print(str(i)+'\n')
+            #print(lines[i])
+            #print(str(i)+'\n')
 
             for o, token in enumerate(doc):
                 tokens.append(token.text)
@@ -103,23 +103,16 @@ def write_file(lines):
 
                 entity = get_entity(lines[i],cfStart,cfEnd)
                 entities.append(entity)
-
             for o,token in enumerate(doc):
                 f.write(f"{token.text}\t{token.lemma_}\t{token.pos_}\t\n")
 
-        print(len(entities))
-        print(len(tokens))
-        print(len(pos))
-        print(len(lemmas))
-        print(tok_on_off)
-        print(len(tok_on_off))
-        data = [list(i) for i in zip(tokens, lemmas, pos, tok_on_off, entities,synsetId,links)]
+        data = [list(i) for i in zip(tokens, lemmas, pos,tok_on_off,entities,synsetIds,links)]
         return data
 
 
 def write_csv(data):
     """creates a csv file for data"""
-    with open('create_csv','w',encoding='UTF8',newline='')as f:
+    with open('create_csv','w',encoding='UTF8',newline='\n')as f:
         header = ['token', 'lemma', 'pos', 'onset', 'offset', 'entity', 'babelfy_id(iob)', 'link']
         writer = csv.writer(f)
         writer.writerow(header)
@@ -166,6 +159,8 @@ def main():
     lines = read_file()
     write_file(lines)
     write_csv(data=write_file(lines))
+
+    # getting API-response from request and creating a json-file out of it
     datadis = {}
     for i,text in enumerate(params1['text'],start=1):
         params1['text'] = text
