@@ -30,7 +30,7 @@ def tag(lines):
 def main():
 	lines = read_file()
 	rows = tag(lines)
-	print(rows)
+	print(len(rows))
 
 
 if __name__ == "__main__":
