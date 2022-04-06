@@ -1,4 +1,4 @@
-token	lemma	pos	onset	offset	entity	babelfy_id(iob)	link
+token	lemma	pos	onset	offset	entity	babelfy_id(iob)	link	\TP	\FP	\FN
 Russian	russian	ADJ	
 forces	force	NOUN	
 have	have	AUX	

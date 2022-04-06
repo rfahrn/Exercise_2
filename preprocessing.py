@@ -60,7 +60,7 @@ def write_file(lines):
     """writes a file with the help of to a list of lines - lines includes 4 lines"""
     nlp = spacy.load("en_core_web_sm")
     with open('three_col.txt', 'w') as f:
-        f.write("token\tlemma\tpos\tonset\toffset\tentity\tbabelfy_id(iob)\tlink\n")
+        f.write("token\tlemma\tpos\tonset\toffset\tentity\tbabelfy_id(iob)\tlink\t\TP\t\FP\t\FN\n")
         json_content = read_json('json_response.json')
 
         entities = []  # contains list of entities according to their chr-onset,offset
@@ -113,8 +113,8 @@ def write_file(lines):
 def write_csv(data):
     """creates a csv file for data"""
     with open('create_csv','w',encoding='UTF8',newline='\n')as f:
-        header = ['token', 'lemma', 'pos', 'onset', 'offset', 'entity', 'babelfy_id(iob)', 'link']
-        writer = csv.writer(f)
+        header = ['token', 'lemma', 'pos', 'onset', 'offset', 'entity', 'babelfy_id(iob)', 'link','TP','FP','FN']
+        writer = csv.writer(f, delimiter ='\t')
         writer.writerow(header)
         writer.writerows(data)
 
