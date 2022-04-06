@@ -1,0 +1,27 @@
+token,lemma,pos,"(onset,offset)",entity,babelfy_id(iob),link,TP,FP,FN
+Russian,russian,ADJ,"(0, 0)",Russian,bn:00068624n,https://babelnet.org/synset?word=bn:00068624n&lang=EN&langTrans=DE,1,,
+forces,force,NOUN,"(0, 1)",Russian forces,bn:15995595n,https://babelnet.org/synset?word=bn:15995595n&lang=EN&langTrans=DE,,1,
+have,have,AUX,"(1, 1)",forces,bn:00035767n,https://babelnet.org/synset?word=bn:00035767n&lang=EN&langTrans=DE,,,1
+already,already,ADV,"(4, 4)",triggered,bn:00082306v,https://babelnet.org/synset?word=bn:00082306v&lang=EN&langTrans=DE,,1,
+triggered,trigger,VERB,"(6, 6)",humanitarian,bn:00104387a,https://babelnet.org/synset?word=bn:00104387a&lang=EN&langTrans=DE,,1,
+a,a,DET,"(7, 7)",catastrophe,bn:00014640n,https://babelnet.org/synset?word=bn:00014640n&lang=EN&langTrans=DE,,1,1
+humanitarian,humanitarian,ADJ,"(10, 10)",east,bn:00101959a,https://babelnet.org/synset?word=bn:00101959a&lang=EN&langTrans=DE,,,1
+catastrophe,catastrophe,NOUN,"(12, 12)",reducing,bn:00084079v,https://babelnet.org/synset?word=bn:00084079v&lang=EN&langTrans=DE,1,,
+in,in,ADP,"(13, 13)",Mariupol,bn:17355247n,https://babelnet.org/synset?word=bn:17355247n&lang=EN&langTrans=DE,,1,
+the,the,DET,"(15, 15)",ruins,bn:00068519n,https://babelnet.org/synset?word=bn:00068519n&lang=EN&langTrans=DE,,1,
+east,east,NOUN,"(20, 20)",failed,bn:00087966v,https://babelnet.org/synset?word=bn:00087966v&lang=EN&langTrans=DE,1,,
+",",",",PUNCT,"(22, 22)",inflict,bn:00084076v,https://babelnet.org/synset?word=bn:00084076v&lang=EN&langTrans=DE,,1,
+reducing,reduce,VERB,"(23, 23)",defeat,bn:00025855n,https://babelnet.org/synset?word=bn:00025855n&lang=EN&langTrans=DE,1,,
+Mariupol,Mariupol,PROPN,"(25, 25)",Ukraine,bn:00078872n,https://babelnet.org/synset?word=bn:00078872n&lang=EN&langTrans=DE,1,,
+to,to,PART,"(27, 27)",military,bn:00106724a,https://babelnet.org/synset?word=bn:00106724a&lang=EN&langTrans=DE,,1,
+ruins,ruin,VERB,"(29, 29)",Warning,bn:00095644v,https://babelnet.org/synset?word=bn:00095644v&lang=EN&langTrans=DE,1,,
+",",",",PUNCT,"(32, 32)",new,bn:00107273a,https://babelnet.org/synset?word=bn:00107273a&lang=EN&langTrans=DE,,,1
+but,but,CCONJ,"(33, 33)",onslaught,bn:00006994n,https://babelnet.org/synset?word=bn:00006994n&lang=EN&langTrans=DE,,1,
+they,they,PRON,"(36, 36)",east,bn:00101959a,https://babelnet.org/synset?word=bn:00101959a&lang=EN&langTrans=DE,,,
+have,have,AUX,"(38, 38)",President,bn:00064233n,https://babelnet.org/synset?word=bn:00064233n&lang=EN&langTrans=DE,,1,
+failed,fail,VERB,"(39, 39)",Volodymyr,bn:00374859n,https://babelnet.org/synset?word=bn:00374859n&lang=EN&langTrans=DE,,,1
+to,to,PART,"(40, 40)",Zelensky,bn:03398426n,https://babelnet.org/synset?word=bn:03398426n&lang=EN&langTrans=DE,,1,
+inflict,inflict,VERB,"(41, 41)",vowed,bn:00095582v,https://babelnet.org/synset?word=bn:00095582v&lang=EN&langTrans=DE,1,,
+defeat,defeat,NOUN,"(46, 46)",fight,bn:00085711v,https://babelnet.org/synset?word=bn:00085711v&lang=EN&langTrans=DE,,1,
+on,on,ADP,"(49, 49)",metre,bn:00052501n,https://babelnet.org/synset?word=bn:00052501n&lang=EN&langTrans=DE,1,,
+Ukraine,Ukraine,PROPN,"(52, 52)",land,bn:00023236n,https://babelnet.org/synset?word=bn:00023236n&lang=EN&langTrans=DE,,,
