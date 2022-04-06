@@ -10,23 +10,30 @@ import json
 import spacy
 from spacy.cli.download import download
 download(model='en_core_web_sm')
+
+# variables for URL-API information retrieval
 key = 'f18a3a58-5499-4e50-ad27-a9512055f56b'
 lang = 'EN'
 headers = {'Accept-Encoding': 'gzip'}
 text = ''
 lemma = ''
 
+#parameters of API-urls
 params1 = {
     'text':text,
     'lang':lang,
     'key': key,
 }
+
+# parameters of API-urls
 params2 = {
     'lemma':lemma,
     'lang':lang,
     'key':key
 }
-key = 'f18a3a58-5499-4e50-ad27-a9512055f56b'
+
+
+#  URL's for information retrieval of API
 service_url_disamiguate = 'https://babelfy.io/v1/disambiguate'
 service_url_retrivesynset = 'https://babelnet.io/v6/getSynsetIds'
 url_retrivesynsets = f'https://babelnet.io/v6/getSynsetIds?lemma{lemma}&searchLang={lang}&key={key}'.format(lemma=params2['lemma'],searchLang=params2['lang'],key=params2['key'])
@@ -36,11 +43,13 @@ url_disambiguate =  f'https://babelfy.io/v1/disambiguate?text={text}&lang={lang}
 
 
 def get_response(url,params):
+    """returns the api-response (json-format)"""
     response = requests.get(url, params=params, headers=headers)
     return response.json()
 
 
 def read_file():
+    """reads the input file and returns its lines"""
     with open('bbc_article.txt', 'r') as f:
         lines = [line.rstrip() for line in f if not line == '\n']
         params1['text'] = lines
@@ -48,6 +57,7 @@ def read_file():
 
 
 def write_file(lines):
+    """writes a file with the help of to a list of lines - lines includes 4 lines"""
     nlp = spacy.load("en_core_web_sm")
     with open('three_col.txt', 'w') as f:
         f.write("token\tlemma\tpos\tonset\toffset\tentity\tbabelfy_id(iob)\tlink\n")
@@ -107,21 +117,8 @@ def write_file(lines):
         return data
 
 
-            #for entity in entities:
-                #f.write(f'{entity}\n')
-
-
-"""
-        for line in lines:
-            enity = get_entity(line,onset,offset)
-            doc = nlp(line)
-
-            for i,token in enumerate(doc):"""
-
-                #f.write(f"{token.text}\t{token.lemma_}\t{token.pos_}\t{onset}\t{offset}\t{entity}\n")
-
-
-def write_csv(data): # data = list of list
+def write_csv(data):
+    """creates a csv file for data"""
     with open('create_csv','w',encoding='UTF8',newline='')as f:
         header = ['token', 'lemma', 'pos', 'onset', 'offset', 'entity', 'babelfy_id(iob)', 'link']
         writer = csv.writer(f)
@@ -129,30 +126,40 @@ def write_csv(data): # data = list of list
         writer.writerows(data)
 
 def bebelfy_id_IOB(babelSynsetID):
+    """should return the IOB-encoding of the SynsetID"""
     pass
+
+
 def get_link(babelsynsetID):
+    """returns the link of the NE according to its babelsynsetID"""
     url = f'https://babelnet.org/synset?word={babelsynsetID}&lang=EN&langTrans=DE'
     return url
+
+
 def get_entity(text,cfStart,cfEnd):
+    """returns the entity according to the character span (on off-set)"""
     return text[cfStart:cfEnd+1]
 
+
 def largest_span_enity(entity1_onset,entity1_offset,entity2_offset,entity2_onset,text):
+    """ returns the largest span entity"""
     if entity1_onset >= entity2_onset and entity1_offset <= entity2_offset:
         return get_entity(text,entity2_onset,entity2_offset)
     else:
         return get_entity(text,entity1_onset,entity1_offset)
 
 
-
 def read_json(file):
+    """ reads a json file and returns its content"""
     with open(file,'r')as j:
         json_content = json.loads(j.read())
         return json_content
 
+
 def create_json_file(data_disamiguate):
+    """creates a json file"""
     with open('json_response.json','w') as f:
         json.dump(data_disamiguate,f,indent=4)
-        #f.write(json.dumps(data_disamiguate,indent=4))
 
 
 def main():
