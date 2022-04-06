@@ -54,13 +54,20 @@ def read_file():
     return lines
 
 
-# TODO: change name
-def write_file(lines):
+def get_link(babelsynsetID):
+    """returns the link of the NE according to its babelsynsetID"""
+    url = f'https://babelnet.org/synset?word={babelsynsetID}&lang=EN&langTrans=DE'
+    return url
+
+
+def get_entity(text, cfStart, cfEnd):
+    """returns the entity according to the character span (on off-set)"""
+    return text[cfStart:cfEnd+1]
+
+
+def generate_data(lines):
     """writes a file with the help of to a list of lines - lines includes 4 lines"""
     nlp = spacy.load("en_core_web_sm")
-
-    # with open('three_col.txt', 'w') as f:
-    #     f.write("token\tlemma\tpos\tonset\toffset\tentity\tbabelfy_id(iob)\tlink\t\TP\t\FP\t\FN\n")
     json_content = read_json('json_response.json')
 
     entities = []  # contains list of entities according to their chr-onset,offset
@@ -82,8 +89,9 @@ def write_file(lines):
             pos.append(token.pos_)
 
         results_per_text = json_content[texts]
-        for result in results_per_text:
+        for result in results_per_text:  # result is a dict for one token with all its info
             # token from fragment retrieval
+            # TODO: I don't think we need this at all - what we want is a NE's span
             tokenFragment = result.get('tokenFragment')
             tfStart = tokenFragment.get('start')
             tfEnd = tokenFragment.get('end')
@@ -102,10 +110,12 @@ def write_file(lines):
             entity = get_entity(lines[i],cfStart,cfEnd)
             entities.append(entity)
 
-        # for o,token in enumerate(doc):
-        #     f.write(f"{token.text}\t{token.lemma_}\t{token.pos_}\t\n")
-
     # TODO
+    # for i in json_content['text 1']:  # is a list of dicts, each dict is for one token, has info like token and char span
+    #     print(i)
+    # print(entities)
+    # print(len(synsetIds))
+
     data = [list(i) for i in zip(tokens, lemmas, pos, tok_on_off, entities, synsetIds, links)]
 
     return data
@@ -113,7 +123,7 @@ def write_file(lines):
 
 def write_csv(data):
     """creates a csv file for data"""
-    with open('create_csv.csv', 'w', encoding='UTF8', newline='\n') as f:
+    with open('data.csv', 'w', encoding='UTF8', newline='\n') as f:
         header = ['token', 'lemma', 'pos', '(onset,offset)', 'entity', 'babelfy_id(iob)', 'link', 'TP', 'FP', 'FN']
         writer = csv.writer(f, delimiter='\t')
         writer.writerow(header)
@@ -124,17 +134,6 @@ def babelfy_id_IOB(babelSynsetID):
     """should return the IOB-encoding of the SynsetID"""
     #TODO
     pass
-
-
-def get_link(babelsynsetID):
-    """returns the link of the NE according to its babelsynsetID"""
-    url = f'https://babelnet.org/synset?word={babelsynsetID}&lang=EN&langTrans=DE'
-    return url
-
-
-def get_entity(text, cfStart, cfEnd):
-    """returns the entity according to the character span (on off-set)"""
-    return text[cfStart:cfEnd+1]
 
 
 def largest_span_entity(entity1_onset, entity1_offset, entity2_offset, entity2_onset, text):
@@ -152,16 +151,16 @@ def read_json(file):
         return json_content
 
 
-def create_json_file(data_disamiguate):
+def create_json_file(data_disambiguate):
     """creates a json file"""
     with open('json_response.json','w') as f:
-        json.dump(data_disamiguate, f, indent=4)
+        json.dump(data_disambiguate, f, indent=4)
 
 
 def main():
     lines = read_file()
-    write_file(lines)
-    write_csv(data=write_file(lines))
+    data = generate_data(lines)
+    # write_csv(data)
 
     # getting API-response from request and creating a json-file out of it
     datadis = {}
@@ -169,7 +168,7 @@ def main():
         params1['text'] = text
         response_dis = requests.get(service_url_disambiguate, params = params1, headers=headers)
         json_data_dis = response_dis.json()
-        datadis['text '+ str(i)] = json_data_dis
+        datadis['text ' + str(i)] = json_data_dis
 
     create_json_file(datadis)
 
