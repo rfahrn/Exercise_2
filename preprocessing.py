@@ -59,54 +59,53 @@ def read_file():
 def write_file(lines):
     """writes a file with the help of to a list of lines - lines includes 4 lines"""
     nlp = spacy.load("en_core_web_sm")
-    with open('three_col.txt', 'w') as f:
-        f.write("token\tlemma\tpos\tonset\toffset\tentity\tbabelfy_id(iob)\tlink\t\TP\t\FP\t\FN\n")
-        json_content = read_json('json_response.json')
 
-        entities = []  # contains list of entities according to their chr-onset,offset
-        tok_on_off = []  # list containing tuple (onset,offset)
-        tokens = []
-        lemmas = []
-        pos = []
-        links = []
-        synsetIds = []
+    json_content = read_json('json_response.json')
 
-        for i,texts in enumerate(json_content,start=0):
+    entities = []  # contains list of entities according to their chr-onset,offset
+    tok_on_off = []  # list containing tuple (onset,offset)
+    tokens = []
+    lemmas = []
+    pos = []
+    links = []
+    synsetIds = []
 
-            doc = nlp(lines[i])
-            #print(lines[i])
-            #print(str(i)+'\n')
+    for i,texts in enumerate(json_content,start=0):
 
-            for o, token in enumerate(doc):
-                tokens.append(token.text)
-                lemmas.append(token.lemma_)
-                pos.append(token.pos_)
+        doc = nlp(lines[i])
+        #print(lines[i])
+        #print(str(i)+'\n')
 
-            results_per_text = json_content[texts]
-            for result in results_per_text:
+        for o, token in enumerate(doc):
+            tokens.append(token.text)
+            lemmas.append(token.lemma_)
+            pos.append(token.pos_)
 
-                # token from fragment retrival
-                tokenFragment = result.get('tokenFragment')
-                tfStart = tokenFragment.get('start')
-                tfEnd = tokenFragment.get('end')
-                tok_on_off.append((tfStart, tfEnd))
+        results_per_text = json_content[texts]
+        for result in results_per_text:
 
-                # char from fragment retrival
-                charFragment = result.get('charFragment')
-                cfStart = charFragment.get('start')
-                cfEnd = charFragment.get('end')
+            # token from fragment retrival
+            tokenFragment = result.get('tokenFragment')
+            tfStart = tokenFragment.get('start')
+            tfEnd = tokenFragment.get('end')
+            tok_on_off.append((tfStart, tfEnd))
 
-                # Babelsynset ID retrival
-                synsetId = result.get('babelSynsetID')
-                synsetIds.append(synsetId)
-                links.append(get_link(synsetId))
+            # char from fragment retrival
+            charFragment = result.get('charFragment')
+            cfStart = charFragment.get('start')
+            cfEnd = charFragment.get('end')
 
-                entity = get_entity(lines[i],cfStart,cfEnd)
-                entities.append(entity)
-            for o,token in enumerate(doc):
-                f.write(f"{token.text}\t{token.lemma_}\t{token.pos_}\t\n")
+            # Babelsynset ID retrival
+            synsetId = result.get('babelSynsetID')
+            synsetIds.append(synsetId)
+            links.append(get_link(synsetId))
+
+            entity = get_entity(lines[i],cfStart,cfEnd)
+            entities.append(entity)
+
 
         data = [list(i) for i in zip(tokens, lemmas, pos,tok_on_off,entities,synsetIds,links)]
+
         return data
 
 
@@ -155,10 +154,6 @@ def create_json_file(data_disamiguate):
     with open('json_response.json','w') as f:
         json.dump(data_disamiguate,f,indent=4)
 
-
-def calculate_IAA():
-    # TODO:
-    pass
 
 def main():
     lines = read_file()
