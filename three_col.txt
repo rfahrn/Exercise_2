@@ -1,268 +1,263 @@
-token	lemma	pos	onset	offset	entity	babelfy_id(iob)	link
-<p orig_string='Russian forces have already triggered a humanitarian catastrophe in the east, reducing Mariupol to ruins, but they have failed to inflict defeat on Ukraine's military. Warning of a new onslaught on the east, President Volodymyr Zelensky vowed: "We will fight for every metre of our land."'>
-Russian	russian	ADJ	0	1
-forces	force	NOUN	1	2
-have	have	AUX	2	3
-already	already	ADV	3	4
-triggered	trigger	VERB	4	5
-a	a	DET	5	6
-humanitarian	humanitarian	ADJ	6	7
-catastrophe	catastrophe	NOUN	7	8
-in	in	ADP	8	9
-the	the	DET	9	10
-east	east	NOUN	10	11
-,	,	PUNCT	11	12
-reducing	reduce	VERB	12	13
-Mariupol	Mariupol	PROPN	13	14
-to	to	PART	14	15
-ruins	ruin	VERB	15	16
-,	,	PUNCT	16	17
-but	but	CCONJ	17	18
-they	they	PRON	18	19
-have	have	AUX	19	20
-failed	fail	VERB	20	21
-to	to	PART	21	22
-inflict	inflict	VERB	22	23
-defeat	defeat	NOUN	23	24
-on	on	ADP	24	25
-Ukraine	Ukraine	PROPN	25	26
-'s	's	PART	26	27
-military	military	NOUN	27	28
-.	.	PUNCT	28	29
-Warning	warning	NOUN	29	30
-of	of	ADP	30	31
-a	a	DET	31	32
-new	new	ADJ	32	33
-onslaught	onslaught	NOUN	33	34
-on	on	ADP	34	35
-the	the	DET	35	36
-east	east	NOUN	36	37
-,	,	PUNCT	37	38
-President	President	PROPN	38	39
-Volodymyr	Volodymyr	PROPN	39	40
-Zelensky	Zelensky	PROPN	40	41
-vowed	vow	VERB	41	42
-:	:	PUNCT	42	43
-"	"	PUNCT	43	44
-We	we	PRON	44	45
-will	will	AUX	45	46
-fight	fight	VERB	46	47
-for	for	ADP	47	48
-every	every	DET	48	49
-metre	metre	NOUN	49	50
-of	of	ADP	50	51
-our	our	PRON	51	52
-land	land	NOUN	52	53
-.	.	PUNCT	53	54
-"	"	PUNCT	54	55
-<p orig_string='Ukraine had already stationed its best-trained forces in the east because of an eight-year war with Russian-backed separatists. They are thought to have suffered heavy losses but are still a significant challenge to Russia's invading army.'>
-Ukraine	Ukraine	PROPN	0	1
-had	have	AUX	1	2
-already	already	ADV	2	3
-stationed	station	VERB	3	4
-its	its	PRON	4	5
-best	well	ADV	5	6
--	-	PUNCT	6	7
-trained	train	VERB	7	8
-forces	force	NOUN	8	9
-in	in	ADP	9	10
-the	the	DET	10	11
-east	east	NOUN	11	12
-because	because	SCONJ	12	13
-of	of	ADP	13	14
-an	an	DET	14	15
-eight	eight	NUM	15	16
--	-	PUNCT	16	17
-year	year	NOUN	17	18
-war	war	NOUN	18	19
-with	with	ADP	19	20
-Russian	Russian	PROPN	20	21
--	-	PUNCT	21	22
-backed	back	VERB	22	23
-separatists	separatist	NOUN	23	24
-.	.	PUNCT	24	25
-They	they	PRON	25	26
-are	be	AUX	26	27
-thought	think	VERB	27	28
-to	to	PART	28	29
-have	have	AUX	29	30
-suffered	suffer	VERB	30	31
-heavy	heavy	ADJ	31	32
-losses	loss	NOUN	32	33
-but	but	CCONJ	33	34
-are	be	AUX	34	35
-still	still	ADV	35	36
-a	a	DET	36	37
-significant	significant	ADJ	37	38
-challenge	challenge	NOUN	38	39
-to	to	ADP	39	40
-Russia	Russia	PROPN	40	41
-'s	's	PART	41	42
-invading	invade	VERB	42	43
-army	army	NOUN	43	44
-.	.	PUNCT	44	45
-<p orig_string='When President Putin talks of Donbas, he is referring to Ukraine's old coal and steel-producing area. But he really means the entirety of two big eastern regions, Luhansk and Donetsk, which run from outside Mariupol in the south all the way to the northern border.'>
-When	when	SCONJ	0	1
-President	President	PROPN	1	2
-Putin	Putin	PROPN	2	3
-talks	talk	NOUN	3	4
-of	of	ADP	4	5
-Donbas	Donbas	PROPN	5	6
-,	,	PUNCT	6	7
-he	he	PRON	7	8
-is	be	AUX	8	9
-referring	refer	VERB	9	10
-to	to	ADP	10	11
-Ukraine	Ukraine	PROPN	11	12
-'s	's	PART	12	13
-old	old	ADJ	13	14
-coal	coal	NOUN	14	15
-and	and	CCONJ	15	16
-steel	steel	NOUN	16	17
--	-	PUNCT	17	18
-producing	produce	VERB	18	19
-area	area	NOUN	19	20
-.	.	PUNCT	20	21
-But	but	CCONJ	21	22
-he	he	PRON	22	23
-really	really	ADV	23	24
-means	mean	VERB	24	25
-the	the	DET	25	26
-entirety	entirety	NOUN	26	27
-of	of	ADP	27	28
-two	two	NUM	28	29
-big	big	ADJ	29	30
-eastern	eastern	ADJ	30	31
-regions	region	NOUN	31	32
-,	,	PUNCT	32	33
-Luhansk	Luhansk	PROPN	33	34
-and	and	CCONJ	34	35
-Donetsk	Donetsk	PROPN	35	36
-,	,	PUNCT	36	37
-which	which	PRON	37	38
-run	run	VERB	38	39
-from	from	ADP	39	40
-outside	outside	ADJ	40	41
-Mariupol	Mariupol	PROPN	41	42
-in	in	ADP	42	43
-the	the	DET	43	44
-south	south	NOUN	44	45
-all	all	DET	45	46
-the	the	DET	46	47
-way	way	NOUN	47	48
-to	to	ADP	48	49
-the	the	DET	49	50
-northern	northern	ADJ	50	51
-border	border	NOUN	51	52
-.	.	PUNCT	52	53
-<p orig_string='Russian forces are trying to encircle Ukraine's army in the east. They have taken control of Izyum - a strategic town on the road between Ukraine's second city Kharkiv and the separatist areas - and have bombarded a succession of Luhansk towns, including Rubizhne, Lysychansk, Popasna and Severodonetsk, destroying blocks of flats and killing civilians in their homes.'>
-Russian	russian	ADJ	0	1
-forces	force	NOUN	1	2
-are	be	AUX	2	3
-trying	try	VERB	3	4
-to	to	PART	4	5
-encircle	encircle	VERB	5	6
-Ukraine	Ukraine	PROPN	6	7
-'s	's	PART	7	8
-army	army	NOUN	8	9
-in	in	ADP	9	10
-the	the	DET	10	11
-east	east	NOUN	11	12
-.	.	PUNCT	12	13
-They	they	PRON	13	14
-have	have	AUX	14	15
-taken	take	VERB	15	16
-control	control	NOUN	16	17
-of	of	ADP	17	18
-Izyum	Izyum	PROPN	18	19
--	-	PUNCT	19	20
-a	a	DET	20	21
-strategic	strategic	ADJ	21	22
-town	town	NOUN	22	23
-on	on	ADP	23	24
-the	the	DET	24	25
-road	road	NOUN	25	26
-between	between	ADP	26	27
-Ukraine	Ukraine	PROPN	27	28
-'s	's	PART	28	29
-second	second	ADJ	29	30
-city	city	NOUN	30	31
-Kharkiv	Kharkiv	PROPN	31	32
-and	and	CCONJ	32	33
-the	the	DET	33	34
-separatist	separatist	ADJ	34	35
-areas	area	NOUN	35	36
--	-	PUNCT	36	37
-and	and	CCONJ	37	38
-have	have	AUX	38	39
-bombarded	bombard	VERB	39	40
-a	a	DET	40	41
-succession	succession	NOUN	41	42
-of	of	ADP	42	43
-Luhansk	Luhansk	PROPN	43	44
-towns	town	NOUN	44	45
-,	,	PUNCT	45	46
-including	include	VERB	46	47
-Rubizhne	Rubizhne	PROPN	47	48
-,	,	PUNCT	48	49
-Lysychansk	Lysychansk	PROPN	49	50
-,	,	PUNCT	50	51
-Popasna	Popasna	PROPN	51	52
-and	and	CCONJ	52	53
-Severodonetsk	Severodonetsk	PROPN	53	54
-,	,	PUNCT	54	55
-destroying	destroy	VERB	55	56
-blocks	block	NOUN	56	57
-of	of	ADP	57	58
-flats	flat	NOUN	58	59
-and	and	CCONJ	59	60
-killing	kill	VERB	60	61
-civilians	civilian	NOUN	61	62
-in	in	ADP	62	63
-their	their	PRON	63	64
-homes	home	NOUN	64	65
-.	.	PUNCT	65	66
-<p orig_string='Civilians are being moved out ahead of the Russian advance. Local leader Serhiy Haidai said 20 children were led to safety from the basement of a kindergarten in Lysychansk on Thursday and some 200 civilians climbed on to buses in Severodonetsk.'>
-Civilians	civilian	NOUN	0	1
-are	be	AUX	1	2
-being	be	AUX	2	3
-moved	move	VERB	3	4
-out	out	ADV	4	5
-ahead	ahead	ADV	5	6
-of	of	ADP	6	7
-the	the	DET	7	8
-Russian	russian	ADJ	8	9
-advance	advance	NOUN	9	10
-.	.	PUNCT	10	11
-Local	local	ADJ	11	12
-leader	leader	NOUN	12	13
-Serhiy	Serhiy	PROPN	13	14
-Haidai	Haidai	PROPN	14	15
-said	say	VERB	15	16
-20	20	NUM	16	17
-children	child	NOUN	17	18
-were	be	AUX	18	19
-led	lead	VERB	19	20
-to	to	ADP	20	21
-safety	safety	NOUN	21	22
-from	from	ADP	22	23
-the	the	DET	23	24
-basement	basement	NOUN	24	25
-of	of	ADP	25	26
-a	a	DET	26	27
-kindergarten	kindergarten	NOUN	27	28
-in	in	ADP	28	29
-Lysychansk	Lysychansk	PROPN	29	30
-on	on	ADP	30	31
-Thursday	Thursday	PROPN	31	32
-and	and	CCONJ	32	33
-some	some	DET	33	34
-200	200	NUM	34	35
-civilians	civilian	NOUN	35	36
-climbed	climb	VERB	36	37
-on	on	ADP	37	38
-to	to	ADP	38	39
-buses	bus	NOUN	39	40
-in	in	ADP	40	41
-Severodonetsk	Severodonetsk	PROPN	41	42
-.	.	PUNCT	42	43
+token	lemma	pos	onset	offset	entity	babelfy_id(iob)	link	\TP	\FP	\FN
+Russian	russian	ADJ	
+forces	force	NOUN	
+have	have	AUX	
+already	already	ADV	
+triggered	trigger	VERB	
+a	a	DET	
+humanitarian	humanitarian	ADJ	
+catastrophe	catastrophe	NOUN	
+in	in	ADP	
+the	the	DET	
+east	east	NOUN	
+,	,	PUNCT	
+reducing	reduce	VERB	
+Mariupol	Mariupol	PROPN	
+to	to	PART	
+ruins	ruin	VERB	
+,	,	PUNCT	
+but	but	CCONJ	
+they	they	PRON	
+have	have	AUX	
+failed	fail	VERB	
+to	to	PART	
+inflict	inflict	VERB	
+defeat	defeat	NOUN	
+on	on	ADP	
+Ukraine	Ukraine	PROPN	
+'s	's	PART	
+military	military	NOUN	
+.	.	PUNCT	
+Warning	warning	NOUN	
+of	of	ADP	
+a	a	DET	
+new	new	ADJ	
+onslaught	onslaught	NOUN	
+on	on	ADP	
+the	the	DET	
+east	east	NOUN	
+,	,	PUNCT	
+President	President	PROPN	
+Volodymyr	Volodymyr	PROPN	
+Zelensky	Zelensky	PROPN	
+vowed	vow	VERB	
+:	:	PUNCT	
+"	"	PUNCT	
+We	we	PRON	
+will	will	AUX	
+fight	fight	VERB	
+for	for	ADP	
+every	every	DET	
+metre	metre	NOUN	
+of	of	ADP	
+our	our	PRON	
+land	land	NOUN	
+.	.	PUNCT	
+"	"	PUNCT	
+Ukraine	Ukraine	PROPN	
+had	have	AUX	
+already	already	ADV	
+stationed	station	VERB	
+its	its	PRON	
+best	well	ADV	
+-	-	PUNCT	
+trained	train	VERB	
+forces	force	NOUN	
+in	in	ADP	
+the	the	DET	
+east	east	NOUN	
+because	because	SCONJ	
+of	of	ADP	
+an	an	DET	
+eight	eight	NUM	
+-	-	PUNCT	
+year	year	NOUN	
+war	war	NOUN	
+with	with	ADP	
+Russian	Russian	PROPN	
+-	-	PUNCT	
+backed	back	VERB	
+separatists	separatist	NOUN	
+.	.	PUNCT	
+They	they	PRON	
+are	be	AUX	
+thought	think	VERB	
+to	to	PART	
+have	have	AUX	
+suffered	suffer	VERB	
+heavy	heavy	ADJ	
+losses	loss	NOUN	
+but	but	CCONJ	
+are	be	AUX	
+still	still	ADV	
+a	a	DET	
+significant	significant	ADJ	
+challenge	challenge	NOUN	
+to	to	ADP	
+Russia	Russia	PROPN	
+'s	's	PART	
+invading	invade	VERB	
+army	army	NOUN	
+.	.	PUNCT	
+When	when	SCONJ	
+President	President	PROPN	
+Putin	Putin	PROPN	
+talks	talk	NOUN	
+of	of	ADP	
+Donbas	Donbas	PROPN	
+,	,	PUNCT	
+he	he	PRON	
+is	be	AUX	
+referring	refer	VERB	
+to	to	ADP	
+Ukraine	Ukraine	PROPN	
+'s	's	PART	
+old	old	ADJ	
+coal	coal	NOUN	
+and	and	CCONJ	
+steel	steel	NOUN	
+-	-	PUNCT	
+producing	produce	VERB	
+area	area	NOUN	
+.	.	PUNCT	
+But	but	CCONJ	
+he	he	PRON	
+really	really	ADV	
+means	mean	VERB	
+the	the	DET	
+entirety	entirety	NOUN	
+of	of	ADP	
+two	two	NUM	
+big	big	ADJ	
+eastern	eastern	ADJ	
+regions	region	NOUN	
+,	,	PUNCT	
+Luhansk	Luhansk	PROPN	
+and	and	CCONJ	
+Donetsk	Donetsk	PROPN	
+,	,	PUNCT	
+which	which	PRON	
+run	run	VERB	
+from	from	ADP	
+outside	outside	ADJ	
+Mariupol	Mariupol	PROPN	
+in	in	ADP	
+the	the	DET	
+south	south	NOUN	
+all	all	DET	
+the	the	DET	
+way	way	NOUN	
+to	to	ADP	
+the	the	DET	
+northern	northern	ADJ	
+border	border	NOUN	
+.	.	PUNCT	
+Russian	russian	ADJ	
+forces	force	NOUN	
+are	be	AUX	
+trying	try	VERB	
+to	to	PART	
+encircle	encircle	VERB	
+Ukraine	Ukraine	PROPN	
+'s	's	PART	
+army	army	NOUN	
+in	in	ADP	
+the	the	DET	
+east	east	NOUN	
+.	.	PUNCT	
+They	they	PRON	
+have	have	AUX	
+taken	take	VERB	
+control	control	NOUN	
+of	of	ADP	
+Izyum	Izyum	PROPN	
+-	-	PUNCT	
+a	a	DET	
+strategic	strategic	ADJ	
+town	town	NOUN	
+on	on	ADP	
+the	the	DET	
+road	road	NOUN	
+between	between	ADP	
+Ukraine	Ukraine	PROPN	
+'s	's	PART	
+second	second	ADJ	
+city	city	NOUN	
+Kharkiv	Kharkiv	PROPN	
+and	and	CCONJ	
+the	the	DET	
+separatist	separatist	ADJ	
+areas	area	NOUN	
+-	-	PUNCT	
+and	and	CCONJ	
+have	have	AUX	
+bombarded	bombard	VERB	
+a	a	DET	
+succession	succession	NOUN	
+of	of	ADP	
+Luhansk	Luhansk	PROPN	
+towns	town	NOUN	
+,	,	PUNCT	
+including	include	VERB	
+Rubizhne	Rubizhne	PROPN	
+,	,	PUNCT	
+Lysychansk	Lysychansk	PROPN	
+,	,	PUNCT	
+Popasna	Popasna	PROPN	
+and	and	CCONJ	
+Severodonetsk	Severodonetsk	PROPN	
+,	,	PUNCT	
+destroying	destroy	VERB	
+blocks	block	NOUN	
+of	of	ADP	
+flats	flat	NOUN	
+and	and	CCONJ	
+killing	kill	VERB	
+civilians	civilian	NOUN	
+in	in	ADP	
+their	their	PRON	
+homes	home	NOUN	
+.	.	PUNCT	
+Civilians	civilian	NOUN	
+are	be	AUX	
+being	be	AUX	
+moved	move	VERB	
+out	out	ADV	
+ahead	ahead	ADV	
+of	of	ADP	
+the	the	DET	
+Russian	russian	ADJ	
+advance	advance	NOUN	
+.	.	PUNCT	
+Local	local	ADJ	
+leader	leader	NOUN	
+Serhiy	Serhiy	PROPN	
+Haidai	Haidai	PROPN	
+said	say	VERB	
+20	20	NUM	
+children	child	NOUN	
+were	be	AUX	
+led	lead	VERB	
+to	to	ADP	
+safety	safety	NOUN	
+from	from	ADP	
+the	the	DET	
+basement	basement	NOUN	
+of	of	ADP	
+a	a	DET	
+kindergarten	kindergarten	NOUN	
+in	in	ADP	
+Lysychansk	Lysychansk	PROPN	
+on	on	ADP	
+Thursday	Thursday	PROPN	
+and	and	CCONJ	
+some	some	DET	
+200	200	NUM	
+civilians	civilian	NOUN	
+climbed	climb	VERB	
+on	on	ADP	
+to	to	ADP	
+buses	bus	NOUN	
+in	in	ADP	
+Severodonetsk	Severodonetsk	PROPN	
+.	.	PUNCT	

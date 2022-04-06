@@ -1,0 +1,2018 @@
+{
+    "text 1": [
+        {
+            "tokenFragment": {
+                "start": 0,
+                "end": 0
+            },
+            "charFragment": {
+                "start": 0,
+                "end": 6
+            },
+            "babelSynsetID": "bn:00068624n",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00068624n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 0,
+                "end": 1
+            },
+            "charFragment": {
+                "start": 0,
+                "end": 13
+            },
+            "babelSynsetID": "bn:15995595n",
+            "DBpediaURL": "http://dbpedia.org/resource/Russian_Armed_Forces",
+            "BabelNetURL": "http://babelnet.org/rdf/s15995595n",
+            "score": 1.0,
+            "coherenceScore": 0.22727272727272727,
+            "globalScore": 0.037359900373599,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 1,
+                "end": 1
+            },
+            "charFragment": {
+                "start": 8,
+                "end": 13
+            },
+            "babelSynsetID": "bn:00035767n",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00035767n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 4,
+                "end": 4
+            },
+            "charFragment": {
+                "start": 28,
+                "end": 36
+            },
+            "babelSynsetID": "bn:00082306v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00082306v",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 6,
+                "end": 6
+            },
+            "charFragment": {
+                "start": 40,
+                "end": 51
+            },
+            "babelSynsetID": "bn:00104387a",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00104387a",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 7,
+                "end": 7
+            },
+            "charFragment": {
+                "start": 53,
+                "end": 63
+            },
+            "babelSynsetID": "bn:00014640n",
+            "DBpediaURL": "http://dbpedia.org/resource/Disaster",
+            "BabelNetURL": "http://babelnet.org/rdf/s00014640n",
+            "score": 0.8695652173913043,
+            "coherenceScore": 0.18181818181818182,
+            "globalScore": 0.012453300124533,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 10,
+                "end": 10
+            },
+            "charFragment": {
+                "start": 72,
+                "end": 75
+            },
+            "babelSynsetID": "bn:00101959a",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00101959a",
+            "score": 1.0,
+            "coherenceScore": 0.045454545454545456,
+            "globalScore": 0.0006226650062266501,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 12,
+                "end": 12
+            },
+            "charFragment": {
+                "start": 78,
+                "end": 85
+            },
+            "babelSynsetID": "bn:00084079v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00084079v",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 13,
+                "end": 13
+            },
+            "charFragment": {
+                "start": 87,
+                "end": 94
+            },
+            "babelSynsetID": "bn:17355247n",
+            "DBpediaURL": "http://dbpedia.org/resource/Mariupol",
+            "BabelNetURL": "http://babelnet.org/rdf/s17355247n",
+            "score": 0.7894736842105263,
+            "coherenceScore": 0.13636363636363635,
+            "globalScore": 0.00933997509339975,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 15,
+                "end": 15
+            },
+            "charFragment": {
+                "start": 99,
+                "end": 103
+            },
+            "babelSynsetID": "bn:00068519n",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00068519n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 20,
+                "end": 20
+            },
+            "charFragment": {
+                "start": 120,
+                "end": 125
+            },
+            "babelSynsetID": "bn:00087966v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00087966v",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 22,
+                "end": 22
+            },
+            "charFragment": {
+                "start": 130,
+                "end": 136
+            },
+            "babelSynsetID": "bn:00084076v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00084076v",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 23,
+                "end": 23
+            },
+            "charFragment": {
+                "start": 138,
+                "end": 143
+            },
+            "babelSynsetID": "bn:00025855n",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00025855n",
+            "score": 0.7272727272727273,
+            "coherenceScore": 0.18181818181818182,
+            "globalScore": 0.019925280199252802,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 25,
+                "end": 25
+            },
+            "charFragment": {
+                "start": 148,
+                "end": 154
+            },
+            "babelSynsetID": "bn:00078872n",
+            "DBpediaURL": "http://dbpedia.org/resource/Ukraine",
+            "BabelNetURL": "http://babelnet.org/rdf/s00078872n",
+            "score": 0.9831932773109243,
+            "coherenceScore": 0.4090909090909091,
+            "globalScore": 0.14570361145703611,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 27,
+                "end": 27
+            },
+            "charFragment": {
+                "start": 158,
+                "end": 165
+            },
+            "babelSynsetID": "bn:00106724a",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00106724a",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 29,
+                "end": 29
+            },
+            "charFragment": {
+                "start": 168,
+                "end": 174
+            },
+            "babelSynsetID": "bn:00095644v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00095644v",
+            "score": 1.0,
+            "coherenceScore": 0.09090909090909091,
+            "globalScore": 0.0024906600249066002,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 32,
+                "end": 32
+            },
+            "charFragment": {
+                "start": 181,
+                "end": 183
+            },
+            "babelSynsetID": "bn:00107273a",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00107273a",
+            "score": 1.0,
+            "coherenceScore": 0.045454545454545456,
+            "globalScore": 0.0006226650062266501,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 33,
+                "end": 33
+            },
+            "charFragment": {
+                "start": 185,
+                "end": 193
+            },
+            "babelSynsetID": "bn:00006994n",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00006994n",
+            "score": 0.8571428571428571,
+            "coherenceScore": 0.13636363636363635,
+            "globalScore": 0.007471980074719801,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 36,
+                "end": 36
+            },
+            "charFragment": {
+                "start": 202,
+                "end": 205
+            },
+            "babelSynsetID": "bn:00101959a",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00101959a",
+            "score": 1.0,
+            "coherenceScore": 0.045454545454545456,
+            "globalScore": 0.0006226650062266501,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 38,
+                "end": 38
+            },
+            "charFragment": {
+                "start": 208,
+                "end": 216
+            },
+            "babelSynsetID": "bn:00064233n",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00064233n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 39,
+                "end": 39
+            },
+            "charFragment": {
+                "start": 218,
+                "end": 226
+            },
+            "babelSynsetID": "bn:00374859n",
+            "DBpediaURL": "http://dbpedia.org/resource/Volodymyr_(name)",
+            "BabelNetURL": "http://babelnet.org/rdf/s00374859n",
+            "score": 0.8571428571428571,
+            "coherenceScore": 0.09090909090909091,
+            "globalScore": 0.0037359900373599006,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 40,
+                "end": 40
+            },
+            "charFragment": {
+                "start": 228,
+                "end": 235
+            },
+            "babelSynsetID": "bn:03398426n",
+            "DBpediaURL": "http://dbpedia.org/resource/Igor_Zelensky",
+            "BabelNetURL": "http://babelnet.org/rdf/s03398426n",
+            "score": 1.0,
+            "coherenceScore": 0.045454545454545456,
+            "globalScore": 0.0006226650062266501,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 41,
+                "end": 41
+            },
+            "charFragment": {
+                "start": 237,
+                "end": 241
+            },
+            "babelSynsetID": "bn:00095582v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00095582v",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 46,
+                "end": 46
+            },
+            "charFragment": {
+                "start": 253,
+                "end": 257
+            },
+            "babelSynsetID": "bn:00085711v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00085711v",
+            "score": 1.0,
+            "coherenceScore": 0.22727272727272727,
+            "globalScore": 0.015566625155666251,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 49,
+                "end": 49
+            },
+            "charFragment": {
+                "start": 269,
+                "end": 273
+            },
+            "babelSynsetID": "bn:00052501n",
+            "DBpediaURL": "http://dbpedia.org/resource/Metre",
+            "BabelNetURL": "http://babelnet.org/rdf/s00052501n",
+            "score": 0.8,
+            "coherenceScore": 0.13636363636363635,
+            "globalScore": 0.007471980074719801,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 52,
+                "end": 52
+            },
+            "charFragment": {
+                "start": 282,
+                "end": 285
+            },
+            "babelSynsetID": "bn:00023236n",
+            "DBpediaURL": "http://dbpedia.org/resource/State_(polity)",
+            "BabelNetURL": "http://babelnet.org/rdf/s00023236n",
+            "score": 0.8627450980392157,
+            "coherenceScore": 0.7272727272727273,
+            "globalScore": 0.3287671232876712,
+            "source": "BABELFY"
+        }
+    ],
+    "text 2": [
+        {
+            "tokenFragment": {
+                "start": 0,
+                "end": 0
+            },
+            "charFragment": {
+                "start": 0,
+                "end": 6
+            },
+            "babelSynsetID": "bn:00078872n",
+            "DBpediaURL": "http://dbpedia.org/resource/Ukraine",
+            "BabelNetURL": "http://babelnet.org/rdf/s00078872n",
+            "score": 0.8888888888888888,
+            "coherenceScore": 0.3333333333333333,
+            "globalScore": 0.029393753827311696,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 3,
+                "end": 3
+            },
+            "charFragment": {
+                "start": 20,
+                "end": 28
+            },
+            "babelSynsetID": "bn:00091677v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00091677v",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 6,
+                "end": 6
+            },
+            "charFragment": {
+                "start": 47,
+                "end": 52
+            },
+            "babelSynsetID": "bn:00035767n",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00035767n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 9,
+                "end": 9
+            },
+            "charFragment": {
+                "start": 61,
+                "end": 64
+            },
+            "babelSynsetID": "bn:00101959a",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00101959a",
+            "score": 1.0,
+            "coherenceScore": 0.08333333333333333,
+            "globalScore": 0.001224739742804654,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 14,
+                "end": 14
+            },
+            "charFragment": {
+                "start": 91,
+                "end": 93
+            },
+            "babelSynsetID": "bn:00080439n",
+            "DBpediaURL": "http://dbpedia.org/resource/Warfare",
+            "BabelNetURL": "http://babelnet.org/rdf/s00080439n",
+            "score": 0.8695652173913043,
+            "coherenceScore": 0.6666666666666666,
+            "globalScore": 0.1224739742804654,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 17,
+                "end": 17
+            },
+            "charFragment": {
+                "start": 115,
+                "end": 125
+            },
+            "babelSynsetID": "bn:00070549n",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00070549n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 21,
+                "end": 21
+            },
+            "charFragment": {
+                "start": 137,
+                "end": 143
+            },
+            "babelSynsetID": "bn:00083370v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00083370v",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 24,
+                "end": 24
+            },
+            "charFragment": {
+                "start": 153,
+                "end": 160
+            },
+            "babelSynsetID": "bn:00087618v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00087618v",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 25,
+                "end": 25
+            },
+            "charFragment": {
+                "start": 162,
+                "end": 166
+            },
+            "babelSynsetID": "bn:00104052a",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00104052a",
+            "score": 0.8275862068965517,
+            "coherenceScore": 0.3333333333333333,
+            "globalScore": 0.014696876913655848,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 26,
+                "end": 26
+            },
+            "charFragment": {
+                "start": 168,
+                "end": 173
+            },
+            "babelSynsetID": "bn:00052055n",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00052055n",
+            "score": 1.0,
+            "coherenceScore": 0.4166666666666667,
+            "globalScore": 0.027556644213104716,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 31,
+                "end": 31
+            },
+            "charFragment": {
+                "start": 191,
+                "end": 201
+            },
+            "babelSynsetID": "bn:00104681a",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00104681a",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 32,
+                "end": 32
+            },
+            "charFragment": {
+                "start": 203,
+                "end": 211
+            },
+            "babelSynsetID": "bn:00017557n",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00017557n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 36,
+                "end": 36
+            },
+            "charFragment": {
+                "start": 225,
+                "end": 232
+            },
+            "babelSynsetID": "bn:00089874v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00089874v",
+            "score": 1.0,
+            "coherenceScore": 0.3333333333333333,
+            "globalScore": 0.017146356399265157,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 37,
+                "end": 37
+            },
+            "charFragment": {
+                "start": 234,
+                "end": 237
+            },
+            "babelSynsetID": "bn:00005803n",
+            "DBpediaURL": "http://dbpedia.org/resource/Army",
+            "BabelNetURL": "http://babelnet.org/rdf/s00005803n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        }
+    ],
+    "text 3": [
+        {
+            "tokenFragment": {
+                "start": 1,
+                "end": 1
+            },
+            "charFragment": {
+                "start": 5,
+                "end": 13
+            },
+            "babelSynsetID": "bn:00064233n",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00064233n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 1,
+                "end": 2
+            },
+            "charFragment": {
+                "start": 5,
+                "end": 19
+            },
+            "babelSynsetID": "bn:00065367n",
+            "DBpediaURL": "http://dbpedia.org/resource/Vladimir_Putin",
+            "BabelNetURL": "http://babelnet.org/rdf/s00065367n",
+            "score": 1.0,
+            "coherenceScore": 0.25,
+            "globalScore": 0.05146533238027162,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 2,
+                "end": 2
+            },
+            "charFragment": {
+                "start": 15,
+                "end": 19
+            },
+            "babelSynsetID": "bn:00065367n",
+            "DBpediaURL": "http://dbpedia.org/resource/Vladimir_Putin",
+            "BabelNetURL": "http://babelnet.org/rdf/s00065367n",
+            "score": 0.9090909090909091,
+            "coherenceScore": 0.20833333333333334,
+            "globalScore": 0.035739814152966405,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 3,
+                "end": 3
+            },
+            "charFragment": {
+                "start": 21,
+                "end": 25
+            },
+            "babelSynsetID": "bn:00075965n",
+            "DBpediaURL": "http://dbpedia.org/resource/Talk_(software)",
+            "BabelNetURL": "http://babelnet.org/rdf/s00075965n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 5,
+                "end": 5
+            },
+            "charFragment": {
+                "start": 30,
+                "end": 35
+            },
+            "babelSynsetID": "bn:00028222n",
+            "DBpediaURL": "http://dbpedia.org/resource/Donets_Basin",
+            "BabelNetURL": "http://babelnet.org/rdf/s00028222n",
+            "score": 1.0,
+            "coherenceScore": 0.3333333333333333,
+            "globalScore": 0.091493924231594,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 9,
+                "end": 9
+            },
+            "charFragment": {
+                "start": 44,
+                "end": 52
+            },
+            "babelSynsetID": "bn:00082412v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00082412v",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 11,
+                "end": 11
+            },
+            "charFragment": {
+                "start": 57,
+                "end": 63
+            },
+            "babelSynsetID": "bn:00078872n",
+            "DBpediaURL": "http://dbpedia.org/resource/Ukraine",
+            "BabelNetURL": "http://babelnet.org/rdf/s00078872n",
+            "score": 1.0,
+            "coherenceScore": 0.5416666666666666,
+            "globalScore": 0.22301644031451037,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 13,
+                "end": 13
+            },
+            "charFragment": {
+                "start": 67,
+                "end": 69
+            },
+            "babelSynsetID": "bn:00107786a",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00107786a",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 14,
+                "end": 14
+            },
+            "charFragment": {
+                "start": 71,
+                "end": 74
+            },
+            "babelSynsetID": "bn:00020133n",
+            "DBpediaURL": "http://dbpedia.org/resource/Coal",
+            "BabelNetURL": "http://babelnet.org/rdf/s00020133n",
+            "score": 1.0,
+            "coherenceScore": 0.16666666666666666,
+            "globalScore": 0.017155110793423873,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 17,
+                "end": 17
+            },
+            "charFragment": {
+                "start": 96,
+                "end": 99
+            },
+            "babelSynsetID": "bn:00005513n",
+            "DBpediaURL": "http://dbpedia.org/resource/Area",
+            "BabelNetURL": "http://babelnet.org/rdf/s00005513n",
+            "score": 0.7246376811594203,
+            "coherenceScore": 0.20833333333333334,
+            "globalScore": 0.035739814152966405,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 21,
+                "end": 21
+            },
+            "charFragment": {
+                "start": 109,
+                "end": 114
+            },
+            "babelSynsetID": "bn:00116789r",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00116789r",
+            "score": 1.0,
+            "coherenceScore": 0.041666666666666664,
+            "globalScore": 0.0007147962830593281,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 22,
+                "end": 22
+            },
+            "charFragment": {
+                "start": 116,
+                "end": 120
+            },
+            "babelSynsetID": "bn:00089805v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00089805v",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 24,
+                "end": 24
+            },
+            "charFragment": {
+                "start": 126,
+                "end": 133
+            },
+            "babelSynsetID": "bn:00031025n",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00031025n",
+            "score": 1.0,
+            "coherenceScore": 0.041666666666666664,
+            "globalScore": 0.0007147962830593281,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 28,
+                "end": 28
+            },
+            "charFragment": {
+                "start": 146,
+                "end": 152
+            },
+            "babelSynsetID": "bn:00101967a",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00101967a",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 28,
+                "end": 29
+            },
+            "charFragment": {
+                "start": 146,
+                "end": 160
+            },
+            "babelSynsetID": "bn:01528460n",
+            "DBpediaURL": "http://dbpedia.org/resource/Eastern_Region_(Ghana)",
+            "BabelNetURL": "http://babelnet.org/rdf/s01528460n",
+            "score": 0.8,
+            "coherenceScore": 0.08333333333333333,
+            "globalScore": 0.0028591851322373124,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 29,
+                "end": 29
+            },
+            "charFragment": {
+                "start": 154,
+                "end": 160
+            },
+            "babelSynsetID": "bn:00066884n",
+            "DBpediaURL": "http://dbpedia.org/resource/Region",
+            "BabelNetURL": "http://babelnet.org/rdf/s00066884n",
+            "score": 0.8426966292134831,
+            "coherenceScore": 0.4166666666666667,
+            "globalScore": 0.10721944245889921,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 31,
+                "end": 31
+            },
+            "charFragment": {
+                "start": 163,
+                "end": 169
+            },
+            "babelSynsetID": "bn:00176737n",
+            "DBpediaURL": "http://dbpedia.org/resource/Luhansk",
+            "BabelNetURL": "http://babelnet.org/rdf/s00176737n",
+            "score": 1.0,
+            "coherenceScore": 0.25,
+            "globalScore": 0.04288777698355969,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 33,
+                "end": 33
+            },
+            "charFragment": {
+                "start": 175,
+                "end": 181
+            },
+            "babelSynsetID": "bn:00028223n",
+            "DBpediaURL": "http://dbpedia.org/resource/Donetsk",
+            "BabelNetURL": "http://babelnet.org/rdf/s00028223n",
+            "score": 0.7368421052631579,
+            "coherenceScore": 0.2916666666666667,
+            "globalScore": 0.06004288777698356,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 36,
+                "end": 36
+            },
+            "charFragment": {
+                "start": 190,
+                "end": 192
+            },
+            "babelSynsetID": "bn:00093170v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00093170v",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 38,
+                "end": 38
+            },
+            "charFragment": {
+                "start": 199,
+                "end": 205
+            },
+            "babelSynsetID": "bn:00108059a",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00108059a",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 45,
+                "end": 45
+            },
+            "charFragment": {
+                "start": 237,
+                "end": 239
+            },
+            "babelSynsetID": "bn:00033729n",
+            "DBpediaURL": "http://dbpedia.org/resource/Mode_(literature)",
+            "BabelNetURL": "http://babelnet.org/rdf/s00033729n",
+            "score": 0.8571428571428571,
+            "coherenceScore": 0.25,
+            "globalScore": 0.03002144388849178,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 48,
+                "end": 48
+            },
+            "charFragment": {
+                "start": 248,
+                "end": 255
+            },
+            "babelSynsetID": "bn:00107612a",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00107612a",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 49,
+                "end": 49
+            },
+            "charFragment": {
+                "start": 257,
+                "end": 262
+            },
+            "babelSynsetID": "bn:00012212n",
+            "DBpediaURL": "http://dbpedia.org/resource/Border",
+            "BabelNetURL": "http://babelnet.org/rdf/s00012212n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        }
+    ],
+    "text 4": [
+        {
+            "tokenFragment": {
+                "start": 0,
+                "end": 0
+            },
+            "charFragment": {
+                "start": 0,
+                "end": 6
+            },
+            "babelSynsetID": "bn:00068624n",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00068624n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 0,
+                "end": 1
+            },
+            "charFragment": {
+                "start": 0,
+                "end": 13
+            },
+            "babelSynsetID": "bn:15995595n",
+            "DBpediaURL": "http://dbpedia.org/resource/Russian_Armed_Forces",
+            "BabelNetURL": "http://babelnet.org/rdf/s15995595n",
+            "score": 1.0,
+            "coherenceScore": 0.14705882352941177,
+            "globalScore": 0.008752188047011753,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 1,
+                "end": 1
+            },
+            "charFragment": {
+                "start": 8,
+                "end": 13
+            },
+            "babelSynsetID": "bn:00035767n",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00035767n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 3,
+                "end": 3
+            },
+            "charFragment": {
+                "start": 19,
+                "end": 24
+            },
+            "babelSynsetID": "bn:00082844v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00082844v",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 5,
+                "end": 5
+            },
+            "charFragment": {
+                "start": 29,
+                "end": 36
+            },
+            "babelSynsetID": "bn:00084979v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00084979v",
+            "score": 1.0,
+            "coherenceScore": 0.029411764705882353,
+            "globalScore": 0.00012503125781445363,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 6,
+                "end": 6
+            },
+            "charFragment": {
+                "start": 38,
+                "end": 44
+            },
+            "babelSynsetID": "bn:00078872n",
+            "DBpediaURL": "http://dbpedia.org/resource/Ukraine",
+            "BabelNetURL": "http://babelnet.org/rdf/s00078872n",
+            "score": 0.9693877551020408,
+            "coherenceScore": 0.5882352941176471,
+            "globalScore": 0.09502375593898475,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 8,
+                "end": 8
+            },
+            "charFragment": {
+                "start": 48,
+                "end": 51
+            },
+            "babelSynsetID": "bn:00005803n",
+            "DBpediaURL": "http://dbpedia.org/resource/Army",
+            "BabelNetURL": "http://babelnet.org/rdf/s00005803n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 11,
+                "end": 11
+            },
+            "charFragment": {
+                "start": 60,
+                "end": 63
+            },
+            "babelSynsetID": "bn:00101959a",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00101959a",
+            "score": 1.0,
+            "coherenceScore": 0.029411764705882353,
+            "globalScore": 0.00025006251562890725,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 15,
+                "end": 16
+            },
+            "charFragment": {
+                "start": 76,
+                "end": 88
+            },
+            "babelSynsetID": "bn:00094755v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00094755v",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 16,
+                "end": 16
+            },
+            "charFragment": {
+                "start": 82,
+                "end": 88
+            },
+            "babelSynsetID": "bn:00022283n",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00022283n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 18,
+                "end": 18
+            },
+            "charFragment": {
+                "start": 93,
+                "end": 97
+            },
+            "babelSynsetID": "bn:02281447n",
+            "DBpediaURL": "http://dbpedia.org/resource/Izium",
+            "BabelNetURL": "http://babelnet.org/rdf/s02281447n",
+            "score": 1.0,
+            "coherenceScore": 0.29411764705882354,
+            "globalScore": 0.015003750937734433,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 21,
+                "end": 21
+            },
+            "charFragment": {
+                "start": 103,
+                "end": 111
+            },
+            "babelSynsetID": "bn:00111285a",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00111285a",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 22,
+                "end": 22
+            },
+            "charFragment": {
+                "start": 113,
+                "end": 116
+            },
+            "babelSynsetID": "bn:00077773n",
+            "DBpediaURL": "http://dbpedia.org/resource/Town",
+            "BabelNetURL": "http://babelnet.org/rdf/s00077773n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 25,
+                "end": 25
+            },
+            "charFragment": {
+                "start": 125,
+                "end": 128
+            },
+            "babelSynsetID": "bn:00067975n",
+            "DBpediaURL": "http://dbpedia.org/resource/Road",
+            "BabelNetURL": "http://babelnet.org/rdf/s00067975n",
+            "score": 0.875,
+            "coherenceScore": 0.20588235294117646,
+            "globalScore": 0.008752188047011753,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 27,
+                "end": 27
+            },
+            "charFragment": {
+                "start": 138,
+                "end": 144
+            },
+            "babelSynsetID": "bn:00078872n",
+            "DBpediaURL": "http://dbpedia.org/resource/Ukraine",
+            "BabelNetURL": "http://babelnet.org/rdf/s00078872n",
+            "score": 0.9693877551020408,
+            "coherenceScore": 0.5882352941176471,
+            "globalScore": 0.09502375593898475,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 29,
+                "end": 29
+            },
+            "charFragment": {
+                "start": 148,
+                "end": 153
+            },
+            "babelSynsetID": "bn:00095974a",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00095974a",
+            "score": 1.0,
+            "coherenceScore": 0.029411764705882353,
+            "globalScore": 0.00012503125781445363,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 30,
+                "end": 30
+            },
+            "charFragment": {
+                "start": 155,
+                "end": 158
+            },
+            "babelSynsetID": "bn:03335997n",
+            "DBpediaURL": "http://dbpedia.org/resource/City",
+            "BabelNetURL": "http://babelnet.org/rdf/s03335997n",
+            "score": 0.7281659388646288,
+            "coherenceScore": 0.6764705882352942,
+            "globalScore": 0.16679169792448112,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 31,
+                "end": 31
+            },
+            "charFragment": {
+                "start": 160,
+                "end": 166
+            },
+            "babelSynsetID": "bn:00049036n",
+            "DBpediaURL": "http://dbpedia.org/resource/Kharkiv",
+            "BabelNetURL": "http://babelnet.org/rdf/s00049036n",
+            "score": 1.0,
+            "coherenceScore": 0.29411764705882354,
+            "globalScore": 0.02250562640660165,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 34,
+                "end": 34
+            },
+            "charFragment": {
+                "start": 176,
+                "end": 185
+            },
+            "babelSynsetID": "bn:00070549n",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00070549n",
+            "score": 1.0,
+            "coherenceScore": 0.20588235294117646,
+            "globalScore": 0.007001750437609402,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 35,
+                "end": 35
+            },
+            "charFragment": {
+                "start": 187,
+                "end": 191
+            },
+            "babelSynsetID": "bn:00005513n",
+            "DBpediaURL": "http://dbpedia.org/resource/Area",
+            "BabelNetURL": "http://babelnet.org/rdf/s00005513n",
+            "score": 0.7428571428571429,
+            "coherenceScore": 0.29411764705882354,
+            "globalScore": 0.01625406351587897,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 39,
+                "end": 39
+            },
+            "charFragment": {
+                "start": 204,
+                "end": 212
+            },
+            "babelSynsetID": "bn:00083756v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00083756v",
+            "score": 1.0,
+            "coherenceScore": 0.08823529411764706,
+            "globalScore": 0.0011252813203300824,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 41,
+                "end": 41
+            },
+            "charFragment": {
+                "start": 216,
+                "end": 225
+            },
+            "babelSynsetID": "bn:00029655n",
+            "DBpediaURL": "http://dbpedia.org/resource/Ecological_succession",
+            "BabelNetURL": "http://babelnet.org/rdf/s00029655n",
+            "score": 0.8181818181818182,
+            "coherenceScore": 0.08823529411764706,
+            "globalScore": 0.0011252813203300824,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 43,
+                "end": 43
+            },
+            "charFragment": {
+                "start": 230,
+                "end": 236
+            },
+            "babelSynsetID": "bn:00176737n",
+            "DBpediaURL": "http://dbpedia.org/resource/Luhansk",
+            "BabelNetURL": "http://babelnet.org/rdf/s00176737n",
+            "score": 1.0,
+            "coherenceScore": 0.35294117647058826,
+            "globalScore": 0.025506376594148537,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 44,
+                "end": 44
+            },
+            "charFragment": {
+                "start": 238,
+                "end": 242
+            },
+            "babelSynsetID": "bn:00077773n",
+            "DBpediaURL": "http://dbpedia.org/resource/Town",
+            "BabelNetURL": "http://babelnet.org/rdf/s00077773n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 46,
+                "end": 46
+            },
+            "charFragment": {
+                "start": 245,
+                "end": 253
+            },
+            "babelSynsetID": "bn:00089660v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00089660v",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 47,
+                "end": 47
+            },
+            "charFragment": {
+                "start": 255,
+                "end": 262
+            },
+            "babelSynsetID": "bn:03544204n",
+            "DBpediaURL": "http://dbpedia.org/resource/Rubizhne",
+            "BabelNetURL": "http://babelnet.org/rdf/s03544204n",
+            "score": 1.0,
+            "coherenceScore": 0.29411764705882354,
+            "globalScore": 0.018754688672168042,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 49,
+                "end": 49
+            },
+            "charFragment": {
+                "start": 265,
+                "end": 274
+            },
+            "babelSynsetID": "bn:03109752n",
+            "DBpediaURL": "http://dbpedia.org/resource/Lysychansk",
+            "BabelNetURL": "http://babelnet.org/rdf/s03109752n",
+            "score": 1.0,
+            "coherenceScore": 0.29411764705882354,
+            "globalScore": 0.018754688672168042,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 51,
+                "end": 51
+            },
+            "charFragment": {
+                "start": 277,
+                "end": 283
+            },
+            "babelSynsetID": "bn:03544249n",
+            "DBpediaURL": "http://dbpedia.org/resource/Popasna",
+            "BabelNetURL": "http://babelnet.org/rdf/s03544249n",
+            "score": 1.0,
+            "coherenceScore": 0.2647058823529412,
+            "globalScore": 0.01350337584396099,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 53,
+                "end": 53
+            },
+            "charFragment": {
+                "start": 289,
+                "end": 301
+            },
+            "babelSynsetID": "bn:03109746n",
+            "DBpediaURL": "http://dbpedia.org/resource/Sievierodonetsk",
+            "BabelNetURL": "http://babelnet.org/rdf/s03109746n",
+            "score": 1.0,
+            "coherenceScore": 0.29411764705882354,
+            "globalScore": 0.018754688672168042,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 55,
+                "end": 55
+            },
+            "charFragment": {
+                "start": 304,
+                "end": 313
+            },
+            "babelSynsetID": "bn:00086698v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00086698v",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 56,
+                "end": 56
+            },
+            "charFragment": {
+                "start": 315,
+                "end": 320
+            },
+            "babelSynsetID": "bn:00011309n",
+            "DBpediaURL": "http://dbpedia.org/resource/City_block",
+            "BabelNetURL": "http://babelnet.org/rdf/s00011309n",
+            "score": 0.7714285714285715,
+            "coherenceScore": 0.2647058823529412,
+            "globalScore": 0.01350337584396099,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 56,
+                "end": 58
+            },
+            "charFragment": {
+                "start": 315,
+                "end": 329
+            },
+            "babelSynsetID": "bn:00044044n",
+            "DBpediaURL": "http://dbpedia.org/resource/Tower_block",
+            "BabelNetURL": "http://babelnet.org/rdf/s00044044n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 58,
+                "end": 58
+            },
+            "charFragment": {
+                "start": 325,
+                "end": 329
+            },
+            "babelSynsetID": "bn:00035079n",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00035079n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 60,
+                "end": 60
+            },
+            "charFragment": {
+                "start": 335,
+                "end": 341
+            },
+            "babelSynsetID": "bn:00090098v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00090098v",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 61,
+                "end": 61
+            },
+            "charFragment": {
+                "start": 343,
+                "end": 351
+            },
+            "babelSynsetID": "bn:00019380n",
+            "DBpediaURL": "http://dbpedia.org/resource/Civilian",
+            "BabelNetURL": "http://babelnet.org/rdf/s00019380n",
+            "score": 0.9130434782608695,
+            "coherenceScore": 0.08823529411764706,
+            "globalScore": 0.002625656414103526,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 64,
+                "end": 64
+            },
+            "charFragment": {
+                "start": 362,
+                "end": 366
+            },
+            "babelSynsetID": "bn:00000356n",
+            "DBpediaURL": "http://dbpedia.org/resource/Home",
+            "BabelNetURL": "http://babelnet.org/rdf/s00000356n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        }
+    ],
+    "text 5": [
+        {
+            "tokenFragment": {
+                "start": 0,
+                "end": 0
+            },
+            "charFragment": {
+                "start": 0,
+                "end": 8
+            },
+            "babelSynsetID": "bn:00019380n",
+            "DBpediaURL": "http://dbpedia.org/resource/Civilian",
+            "BabelNetURL": "http://babelnet.org/rdf/s00019380n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 5,
+                "end": 5
+            },
+            "charFragment": {
+                "start": 30,
+                "end": 34
+            },
+            "babelSynsetID": "bn:00114182r",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00114182r",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 8,
+                "end": 8
+            },
+            "charFragment": {
+                "start": 43,
+                "end": 49
+            },
+            "babelSynsetID": "bn:00068625n",
+            "DBpediaURL": "http://dbpedia.org/resource/Russian_language",
+            "BabelNetURL": "http://babelnet.org/rdf/s00068625n",
+            "score": 0.9333333333333333,
+            "coherenceScore": 0.5,
+            "globalScore": 0.15512465373961218,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 9,
+                "end": 9
+            },
+            "charFragment": {
+                "start": 51,
+                "end": 57
+            },
+            "babelSynsetID": "bn:00001548n",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00001548n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 11,
+                "end": 11
+            },
+            "charFragment": {
+                "start": 60,
+                "end": 64
+            },
+            "babelSynsetID": "bn:00051745n",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00051745n",
+            "score": 1.0,
+            "coherenceScore": 0.21428571428571427,
+            "globalScore": 0.0332409972299169,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 12,
+                "end": 12
+            },
+            "charFragment": {
+                "start": 66,
+                "end": 71
+            },
+            "babelSynsetID": "bn:00050371n",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00050371n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 14,
+                "end": 14
+            },
+            "charFragment": {
+                "start": 80,
+                "end": 85
+            },
+            "babelSynsetID": "bn:00070000n",
+            "DBpediaURL": "http://dbpedia.org/resource/Kombu",
+            "BabelNetURL": "http://babelnet.org/rdf/s00070000n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 15,
+                "end": 15
+            },
+            "charFragment": {
+                "start": 87,
+                "end": 90
+            },
+            "babelSynsetID": "bn:00093287v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00093287v",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 17,
+                "end": 17
+            },
+            "charFragment": {
+                "start": 95,
+                "end": 102
+            },
+            "babelSynsetID": "bn:00018346n",
+            "DBpediaURL": "http://dbpedia.org/resource/Child",
+            "BabelNetURL": "http://babelnet.org/rdf/s00018346n",
+            "score": 0.8148148148148148,
+            "coherenceScore": 0.2857142857142857,
+            "globalScore": 0.12188365650969529,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 19,
+                "end": 19
+            },
+            "charFragment": {
+                "start": 109,
+                "end": 111
+            },
+            "babelSynsetID": "bn:00085567v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00085567v",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 21,
+                "end": 21
+            },
+            "charFragment": {
+                "start": 116,
+                "end": 121
+            },
+            "babelSynsetID": "bn:00068799n",
+            "DBpediaURL": "http://dbpedia.org/resource/Safety",
+            "BabelNetURL": "http://babelnet.org/rdf/s00068799n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 24,
+                "end": 24
+            },
+            "charFragment": {
+                "start": 132,
+                "end": 139
+            },
+            "babelSynsetID": "bn:00008824n",
+            "DBpediaURL": "http://dbpedia.org/resource/Basement",
+            "BabelNetURL": "http://babelnet.org/rdf/s00008824n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 27,
+                "end": 27
+            },
+            "charFragment": {
+                "start": 146,
+                "end": 157
+            },
+            "babelSynsetID": "bn:00049129n",
+            "DBpediaURL": "http://dbpedia.org/resource/Kindergarten",
+            "BabelNetURL": "http://babelnet.org/rdf/s00049129n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 29,
+                "end": 29
+            },
+            "charFragment": {
+                "start": 162,
+                "end": 171
+            },
+            "babelSynsetID": "bn:03109752n",
+            "DBpediaURL": "http://dbpedia.org/resource/Lysychansk",
+            "BabelNetURL": "http://babelnet.org/rdf/s03109752n",
+            "score": 1.0,
+            "coherenceScore": 0.21428571428571427,
+            "globalScore": 0.04155124653739612,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 31,
+                "end": 31
+            },
+            "charFragment": {
+                "start": 176,
+                "end": 183
+            },
+            "babelSynsetID": "bn:00076744n",
+            "DBpediaURL": "http://dbpedia.org/resource/Thursday",
+            "BabelNetURL": "http://babelnet.org/rdf/s00076744n",
+            "score": 1.0,
+            "coherenceScore": 0.07142857142857142,
+            "globalScore": 0.002770083102493075,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 35,
+                "end": 35
+            },
+            "charFragment": {
+                "start": 198,
+                "end": 206
+            },
+            "babelSynsetID": "bn:00019380n",
+            "DBpediaURL": "http://dbpedia.org/resource/Civilian",
+            "BabelNetURL": "http://babelnet.org/rdf/s00019380n",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 36,
+                "end": 36
+            },
+            "charFragment": {
+                "start": 208,
+                "end": 214
+            },
+            "babelSynsetID": "bn:00085120v",
+            "DBpediaURL": "",
+            "BabelNetURL": "http://babelnet.org/rdf/s00085120v",
+            "score": 0.0,
+            "coherenceScore": 0.0,
+            "globalScore": 0.0,
+            "source": "MCS"
+        },
+        {
+            "tokenFragment": {
+                "start": 39,
+                "end": 39
+            },
+            "charFragment": {
+                "start": 222,
+                "end": 226
+            },
+            "babelSynsetID": "bn:00007329n",
+            "DBpediaURL": "http://dbpedia.org/resource/Bus",
+            "BabelNetURL": "http://babelnet.org/rdf/s00007329n",
+            "score": 0.9818181818181818,
+            "coherenceScore": 0.42857142857142855,
+            "globalScore": 0.14958448753462603,
+            "source": "BABELFY"
+        },
+        {
+            "tokenFragment": {
+                "start": 41,
+                "end": 41
+            },
+            "charFragment": {
+                "start": 231,
+                "end": 243
+            },
+            "babelSynsetID": "bn:03109746n",
+            "DBpediaURL": "http://dbpedia.org/resource/Sievierodonetsk",
+            "BabelNetURL": "http://babelnet.org/rdf/s03109746n",
+            "score": 1.0,
+            "coherenceScore": 0.14285714285714285,
+            "globalScore": 0.0221606648199446,
+            "source": "BABELFY"
+        }
+    ]
+}
