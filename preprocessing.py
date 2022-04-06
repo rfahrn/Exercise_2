@@ -53,18 +53,43 @@ def write_file(lines):
         onset = 0
         offset = 0
         json_content = read_json('json_response.json')
+        for i,texts in enumerate(json_content,start=1):
+            print(str(i)+'\n')
+            results_per_text = json_content[texts]
+            for result in results_per_text:
+
+                # token from fragment retrival
+                tokenFragment = result.get('tokenFragment')
+                tfStart = tokenFragment.get('start')
+                tfEnd = tokenFragment.get('end')
+                print(str(tfStart) + "\t" + str(tfEnd) )
+
+                # char from fragment retrival
+                charFragment = result.get('charFragment')
+                cfStart = charFragment.get('start')
+                cfEnd = charFragment.get('end')
+                print(str(cfStart) + "\t" + str(cfEnd))
+
+                # Babelsynset ID retrival
+                synsetId = result.get('babelSynsetID')
+                print(synsetId)
 
         for line in lines:
             doc = nlp(line)
-            
-
 
             for i,token in enumerate(doc):
-                onset = i
-                offset = i + 1
+
 
 
                 f.write(f"{token.text}\t{token.lemma_}\t{token.pos_}\t{onset}\t{offset}\n")
+
+def bebelfy_id_IOB(babelSynsetID):
+    pass
+
+
+def largest_span_enity(enity1,entity2):
+    pass
+
 
 
 def read_json(file):
@@ -77,11 +102,6 @@ def create_json_file(data_disamiguate):
         json.dump(data_disamiguate,f,indent=4)
         #f.write(json.dumps(data_disamiguate,indent=4))
 
-
-
-
-def largest_span_(tokenFragment):
-    pass
 
 
 
