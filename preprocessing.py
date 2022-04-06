@@ -20,7 +20,7 @@ lemma = ''
 
 #parameters of API-urls
 params1 = {
-    'text':text,
+    'text':text,  # list of strings from read_file()
     'lang':lang,
     'key': key,
 }
@@ -32,8 +32,7 @@ params2 = {
     'key':key
 }
 
-
-#  URL's for information retrieval of API
+#  URLs for information retrieval of API
 service_url_disambiguate = 'https://babelfy.io/v1/disambiguate'
 service_url_retrievesynset = 'https://babelnet.io/v6/getSynsetIds'
 url_retrievesynsets = f'https://babelnet.io/v6/getSynsetIds?lemma{lemma}&searchLang={lang}&key={key}'.format(lemma=params2['lemma'], searchLang=params2['lang'], key=params2['key'])
@@ -55,57 +54,61 @@ def read_file():
     return lines
 
 
+# TODO: change name
 def write_file(lines):
     """writes a file with the help of to a list of lines - lines includes 4 lines"""
     nlp = spacy.load("en_core_web_sm")
-    with open('three_col.txt', 'w') as f:
-        f.write("token\tlemma\tpos\tonset\toffset\tentity\tbabelfy_id(iob)\tlink\t\TP\t\FP\t\FN\n")
-        json_content = read_json('json_response.json')
 
-        entities = []  # contains list of entities according to their chr-onset,offset
-        tok_on_off = []  # list containing tuple (onset,offset)
-        tokens = []
-        lemmas = []
-        pos = []
-        links = []
-        synsetIds = []
+    # with open('three_col.txt', 'w') as f:
+    #     f.write("token\tlemma\tpos\tonset\toffset\tentity\tbabelfy_id(iob)\tlink\t\TP\t\FP\t\FN\n")
+    json_content = read_json('json_response.json')
 
-        for i,texts in enumerate(json_content, start=0):
-            doc = nlp(lines[i])
-            #print(lines[i])
-            #print(str(i)+'\n')
+    entities = []  # contains list of entities according to their chr-onset,offset
+    tok_on_off = []  # list containing tuple (onset,offset)
+    tokens = []
+    lemmas = []
+    pos = []
+    links = []
+    synsetIds = []
 
-            for o, token in enumerate(doc):
-                tokens.append(token.text)
-                lemmas.append(token.lemma_)
-                pos.append(token.pos_)
+    for i,texts in enumerate(json_content, start=0):
+        doc = nlp(lines[i])
+        #print(lines[i])
+        #print(str(i)+'\n')
 
-            results_per_text = json_content[texts]
-            for result in results_per_text:
-                # token from fragment retrieval
-                tokenFragment = result.get('tokenFragment')
-                tfStart = tokenFragment.get('start')
-                tfEnd = tokenFragment.get('end')
-                tok_on_off.append((tfStart, tfEnd))
+        for o, token in enumerate(doc):
+            tokens.append(token.text)
+            lemmas.append(token.lemma_)
+            pos.append(token.pos_)
 
-                # char from fragment retrieval
-                charFragment = result.get('charFragment')
-                cfStart = charFragment.get('start')
-                cfEnd = charFragment.get('end')
+        results_per_text = json_content[texts]
+        for result in results_per_text:
+            # token from fragment retrieval
+            tokenFragment = result.get('tokenFragment')
+            tfStart = tokenFragment.get('start')
+            tfEnd = tokenFragment.get('end')
+            tok_on_off.append((tfStart, tfEnd))
 
-                # Babelsynset ID retrieval
-                synsetId = result.get('babelSynsetID')
-                synsetIds.append(synsetId)
-                links.append(get_link(synsetId))
+            # char from fragment retrieval
+            charFragment = result.get('charFragment')
+            cfStart = charFragment.get('start')
+            cfEnd = charFragment.get('end')
 
-                entity = get_entity(lines[i],cfStart,cfEnd)
-                entities.append(entity)
+            # Babelsynset ID retrieval
+            synsetId = result.get('babelSynsetID')
+            synsetIds.append(synsetId)
+            links.append(get_link(synsetId))
 
-            for o,token in enumerate(doc):
-                f.write(f"{token.text}\t{token.lemma_}\t{token.pos_}\t\n")
+            entity = get_entity(lines[i],cfStart,cfEnd)
+            entities.append(entity)
 
-        data = [list(i) for i in zip(tokens, lemmas, pos,tok_on_off,entities,synsetIds,links)]
-        return data
+        # for o,token in enumerate(doc):
+        #     f.write(f"{token.text}\t{token.lemma_}\t{token.pos_}\t\n")
+
+    # TODO
+    data = [list(i) for i in zip(tokens, lemmas, pos, tok_on_off, entities, synsetIds, links)]
+
+    return data
 
 
 def write_csv(data):
@@ -134,7 +137,7 @@ def get_entity(text, cfStart, cfEnd):
     return text[cfStart:cfEnd+1]
 
 
-def largest_span_enity(entity1_onset, entity1_offset, entity2_offset, entity2_onset, text):
+def largest_span_entity(entity1_onset, entity1_offset, entity2_offset, entity2_onset, text):
     """ returns the largest span entity"""
     if entity1_onset >= entity2_onset and entity1_offset <= entity2_offset:
         return get_entity(text, entity2_onset, entity2_offset)
@@ -144,7 +147,7 @@ def largest_span_enity(entity1_onset, entity1_offset, entity2_offset, entity2_on
 
 def read_json(file):
     """ reads a json file and returns its content"""
-    with open(file, 'r')as j:
+    with open(file, 'r') as j:
         json_content = json.loads(j.read())
         return json_content
 
@@ -153,11 +156,6 @@ def create_json_file(data_disamiguate):
     """creates a json file"""
     with open('json_response.json','w') as f:
         json.dump(data_disamiguate, f, indent=4)
-
-
-def calculate_IAA():
-    # TODO:
-    pass
 
 
 def main():
