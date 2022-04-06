@@ -112,7 +112,7 @@ def write_file(lines):
 
 def write_csv(data):
     """creates a csv file for data"""
-    with open('create_csv','w',encoding='UTF8',newline='\n')as f:
+    with open('create_csv.csv','w',encoding='UTF8',newline='\n')as f:
         header = ['token', 'lemma', 'pos', '(onset,offset)', 'entity', 'babelfy_id(iob)', 'link','TP','FP','FN']
         writer = csv.writer(f, delimiter ='\t')
         writer.writerow(header)
