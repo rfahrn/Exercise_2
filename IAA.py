@@ -10,8 +10,6 @@ from sklearn.metrics import precision_recall_fscore_support
 Rebecka_labeling = []
 Jesica_labeling = []
 
-
-
 def get_TP_FP_FN_(file):
     TP = []
     FP = []
