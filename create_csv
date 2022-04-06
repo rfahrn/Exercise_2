@@ -1,4 +1,4 @@
-token	lemma	pos	onset	offset	entity	babelfy_id(iob)	link	TP	FP	FN
+token	lemma	pos	(onset,offset)	entity	babelfy_id(iob)	link	TP	FP	FN
 Russian	russian	ADJ	(0, 0)	Russian	bn:00068624n	https://babelnet.org/synset?word=bn:00068624n&lang=EN&langTrans=DE
 forces	force	NOUN	(0, 1)	Russian forces	bn:15995595n	https://babelnet.org/synset?word=bn:15995595n&lang=EN&langTrans=DE
 have	have	AUX	(1, 1)	forces	bn:00035767n	https://babelnet.org/synset?word=bn:00035767n&lang=EN&langTrans=DE
