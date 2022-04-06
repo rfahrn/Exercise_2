@@ -8,8 +8,8 @@ import csv
 import re
 import json
 import spacy
-from spacy.cli.download import download
-download(model='en_core_web_sm')
+# from spacy.cli.download import download
+# download(model='en_core_web_sm')
 
 # variables for URL-API information retrieval
 key = 'f18a3a58-5499-4e50-ad27-a9512055f56b'
@@ -34,12 +34,11 @@ params2 = {
 
 
 #  URL's for information retrieval of API
-service_url_disamiguate = 'https://babelfy.io/v1/disambiguate'
-service_url_retrivesynset = 'https://babelnet.io/v6/getSynsetIds'
-url_retrivesynsets = f'https://babelnet.io/v6/getSynsetIds?lemma{lemma}&searchLang={lang}&key={key}'.format(lemma=params2['lemma'],searchLang=params2['lang'],key=params2['key'])
-url_bublefyVersion =  f'https://babelnet.io/v6/getVersion?key={key}'.format(key=params1['key'])
-url_disambiguate =  f'https://babelfy.io/v1/disambiguate?text={text}&lang={lang}&key={key}'.format(text=params1['text'],lang=params1['lang'],key=params1['key'])
-
+service_url_disambiguate = 'https://babelfy.io/v1/disambiguate'
+service_url_retrievesynset = 'https://babelnet.io/v6/getSynsetIds'
+url_retrievesynsets = f'https://babelnet.io/v6/getSynsetIds?lemma{lemma}&searchLang={lang}&key={key}'.format(lemma=params2['lemma'], searchLang=params2['lang'], key=params2['key'])
+url_babelfyversion = f'https://babelnet.io/v6/getVersion?key={key}'.format(key=params1['key'])
+url_disambiguate = f'https://babelfy.io/v1/disambiguate?text={text}&lang={lang}&key={key}'.format(text=params1['text'],lang=params1['lang'],key=params1['key'])
 
 
 def get_response(url,params):
@@ -71,8 +70,7 @@ def write_file(lines):
         links = []
         synsetIds = []
 
-        for i,texts in enumerate(json_content,start=0):
-
+        for i,texts in enumerate(json_content, start=0):
             doc = nlp(lines[i])
             #print(lines[i])
             #print(str(i)+'\n')
@@ -84,25 +82,25 @@ def write_file(lines):
 
             results_per_text = json_content[texts]
             for result in results_per_text:
-
-                # token from fragment retrival
+                # token from fragment retrieval
                 tokenFragment = result.get('tokenFragment')
                 tfStart = tokenFragment.get('start')
                 tfEnd = tokenFragment.get('end')
                 tok_on_off.append((tfStart, tfEnd))
 
-                # char from fragment retrival
+                # char from fragment retrieval
                 charFragment = result.get('charFragment')
                 cfStart = charFragment.get('start')
                 cfEnd = charFragment.get('end')
 
-                # Babelsynset ID retrival
+                # Babelsynset ID retrieval
                 synsetId = result.get('babelSynsetID')
                 synsetIds.append(synsetId)
                 links.append(get_link(synsetId))
 
                 entity = get_entity(lines[i],cfStart,cfEnd)
                 entities.append(entity)
+
             for o,token in enumerate(doc):
                 f.write(f"{token.text}\t{token.lemma_}\t{token.pos_}\t\n")
 
@@ -112,13 +110,14 @@ def write_file(lines):
 
 def write_csv(data):
     """creates a csv file for data"""
-    with open('create_csv.csv','w',encoding='UTF8',newline='\n')as f:
-        header = ['token', 'lemma', 'pos', '(onset,offset)', 'entity', 'babelfy_id(iob)', 'link','TP','FP','FN']
-        writer = csv.writer(f, delimiter ='\t')
+    with open('create_csv.csv', 'w', encoding='UTF8', newline='\n') as f:
+        header = ['token', 'lemma', 'pos', '(onset,offset)', 'entity', 'babelfy_id(iob)', 'link', 'TP', 'FP', 'FN']
+        writer = csv.writer(f, delimiter='\t')
         writer.writerow(header)
         writer.writerows(data)
 
-def bebelfy_id_IOB(babelSynsetID):
+
+def babelfy_id_IOB(babelSynsetID):
     """should return the IOB-encoding of the SynsetID"""
     #TODO
     pass
@@ -130,22 +129,22 @@ def get_link(babelsynsetID):
     return url
 
 
-def get_entity(text,cfStart,cfEnd):
+def get_entity(text, cfStart, cfEnd):
     """returns the entity according to the character span (on off-set)"""
     return text[cfStart:cfEnd+1]
 
 
-def largest_span_enity(entity1_onset,entity1_offset,entity2_offset,entity2_onset,text):
+def largest_span_enity(entity1_onset, entity1_offset, entity2_offset, entity2_onset, text):
     """ returns the largest span entity"""
     if entity1_onset >= entity2_onset and entity1_offset <= entity2_offset:
-        return get_entity(text,entity2_onset,entity2_offset)
+        return get_entity(text, entity2_onset, entity2_offset)
     else:
-        return get_entity(text,entity1_onset,entity1_offset)
+        return get_entity(text, entity1_onset, entity1_offset)
 
 
 def read_json(file):
     """ reads a json file and returns its content"""
-    with open(file,'r')as j:
+    with open(file, 'r')as j:
         json_content = json.loads(j.read())
         return json_content
 
@@ -153,12 +152,13 @@ def read_json(file):
 def create_json_file(data_disamiguate):
     """creates a json file"""
     with open('json_response.json','w') as f:
-        json.dump(data_disamiguate,f,indent=4)
+        json.dump(data_disamiguate, f, indent=4)
 
 
 def calculate_IAA():
     # TODO:
     pass
+
 
 def main():
     lines = read_file()
@@ -169,10 +169,12 @@ def main():
     datadis = {}
     for i,text in enumerate(params1['text'],start=1):
         params1['text'] = text
-        response_dis = requests.get(service_url_disamiguate,params = params1,headers=headers)
+        response_dis = requests.get(service_url_disambiguate, params = params1, headers=headers)
         json_data_dis = response_dis.json()
-        datadis['text '+str(i)] = json_data_dis
+        datadis['text '+ str(i)] = json_data_dis
+
     create_json_file(datadis)
+
 
 if __name__ == "__main__":
     main()
