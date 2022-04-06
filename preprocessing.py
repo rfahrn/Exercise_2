@@ -36,7 +36,7 @@ url_disambiguate =  f'https://babelfy.io/v1/disambiguate?text={text}&lang={lang}
 
 def get_response(url,params):
     response = requests.get(url, params=params, headers=headers)
-    return response.text
+    return response.json()
 
 
 def read_file():
@@ -52,16 +52,31 @@ def write_file(lines):
         f.write("token\tlemma\tpos\tonset\toffset\tentity\tbabelfy_id(iob)\tlink\n")
         onset = 0
         offset = 0
+        json_content = read_json('json_response.json')
+
         for line in lines:
             doc = nlp(line)
+            
+
+
             for i,token in enumerate(doc):
                 onset = i
                 offset = i + 1
+
+
                 f.write(f"{token.text}\t{token.lemma_}\t{token.pos_}\t{onset}\t{offset}\n")
+
+
+def read_json(file):
+    with open(file,'r')as j:
+        contents = json.loads(j.read())
+        return contents
 
 def create_json_file(data_disamiguate):
     with open('json_response.json','w') as f:
-        f.write(json.dumps(data_disamiguate,indent=4))
+        json.dump(data_disamiguate,f,indent=4)
+        #f.write(json.dumps(data_disamiguate,indent=4))
+
 
 
 
@@ -73,12 +88,12 @@ def largest_span_(tokenFragment):
 def main():
     lines = read_file()
     write_file(lines)
-    datadis = []
+    datadis = {}
     for i,text in enumerate(params1['text'],start=1):
         params1['text'] = text
         response_dis = requests.get(service_url_disamiguate,params = params1,headers=headers)
         json_data_dis = response_dis.json()
-        datadis.append(json_data_dis)
+        datadis['text '+str(i)] = json_data_dis
     create_json_file(datadis)
 
 if __name__ == "__main__":

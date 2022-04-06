@@ -1,5 +1,5 @@
-[
-    [
+{
+    "text 1": [
         {
             "tokenFragment": {
                 "start": 0,
@@ -443,7 +443,7 @@
             "source": "BABELFY"
         }
     ],
-    [
+    "text 2": [
         {
             "tokenFragment": {
                 "start": 0,
@@ -683,7 +683,7 @@
             "source": "MCS"
         }
     ],
-    [
+    "text 3": [
         {
             "tokenFragment": {
                 "start": 1,
@@ -1076,7 +1076,7 @@
             "source": "MCS"
         }
     ],
-    [
+    "text 4": [
         {
             "tokenFragment": {
                 "start": 0,
@@ -1690,7 +1690,7 @@
             "source": "MCS"
         }
     ],
-    [
+    "text 5": [
         {
             "tokenFragment": {
                 "start": 0,
@@ -2015,4 +2015,4 @@
             "source": "BABELFY"
         }
     ]
-]
+}
