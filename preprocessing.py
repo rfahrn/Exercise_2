@@ -86,9 +86,6 @@ def write_file(lines):
                 cfStart = charFragment.get('start')
                 cfEnd = charFragment.get('end')
 
-
-
-
                 # Babelsynset ID retrival
                 synsetId = result.get('babelSynsetID')
                 synsetIds.append(synsetId)
@@ -134,7 +131,7 @@ def write_csv(data): # data = list of list
 def bebelfy_id_IOB(babelSynsetID):
     pass
 def get_link(babelsynsetID):
-    url = f'https://babelnet.org/synset?word={babelsynsetID}&lang=<EN>&langTrans=DE'
+    url = f'https://babelnet.org/synset?word={babelsynsetID}&lang=EN&langTrans=DE'
     return url
 def get_entity(text,cfStart,cfEnd):
     return text[cfStart:cfEnd+1]

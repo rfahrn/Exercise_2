@@ -1,13 +1,13 @@
 token,lemma,pos,onset,offset,entity,babelfy_id(iob),link
-Russian,russian,ADJ,"(0, 0)",Russian,b,https://babelnet.org/synset?word=bn:00068624n&lang=<EN>&langTrans=DE
-forces,force,NOUN,"(0, 1)",Russian forces,n,https://babelnet.org/synset?word=bn:15995595n&lang=<EN>&langTrans=DE
-have,have,AUX,"(1, 1)",forces,:,https://babelnet.org/synset?word=bn:00035767n&lang=<EN>&langTrans=DE
-already,already,ADV,"(4, 4)",triggered,0,https://babelnet.org/synset?word=bn:00082306v&lang=<EN>&langTrans=DE
-triggered,trigger,VERB,"(6, 6)",humanitarian,3,https://babelnet.org/synset?word=bn:00104387a&lang=<EN>&langTrans=DE
-a,a,DET,"(7, 7)",catastrophe,1,https://babelnet.org/synset?word=bn:00014640n&lang=<EN>&langTrans=DE
-humanitarian,humanitarian,ADJ,"(10, 10)",east,0,https://babelnet.org/synset?word=bn:00101959a&lang=<EN>&langTrans=DE
-catastrophe,catastrophe,NOUN,"(12, 12)",reducing,9,https://babelnet.org/synset?word=bn:00084079v&lang=<EN>&langTrans=DE
-in,in,ADP,"(13, 13)",Mariupol,7,https://babelnet.org/synset?word=bn:17355247n&lang=<EN>&langTrans=DE
-the,the,DET,"(15, 15)",ruins,4,https://babelnet.org/synset?word=bn:00068519n&lang=<EN>&langTrans=DE
-east,east,NOUN,"(20, 20)",failed,6,https://babelnet.org/synset?word=bn:00087966v&lang=<EN>&langTrans=DE
-",",",",PUNCT,"(22, 22)",inflict,n,https://babelnet.org/synset?word=bn:00084076v&lang=<EN>&langTrans=DE
+Russian,russian,ADJ,"(0, 0)",Russian,b,https://babelnet.org/synset?word=bn:00068624n&lang=EN&langTrans=DE
+forces,force,NOUN,"(0, 1)",Russian forces,n,https://babelnet.org/synset?word=bn:15995595n&lang=EN&langTrans=DE
+have,have,AUX,"(1, 1)",forces,:,https://babelnet.org/synset?word=bn:00035767n&lang=EN&langTrans=DE
+already,already,ADV,"(4, 4)",triggered,0,https://babelnet.org/synset?word=bn:00082306v&lang=EN&langTrans=DE
+triggered,trigger,VERB,"(6, 6)",humanitarian,3,https://babelnet.org/synset?word=bn:00104387a&lang=EN&langTrans=DE
+a,a,DET,"(7, 7)",catastrophe,1,https://babelnet.org/synset?word=bn:00014640n&lang=EN&langTrans=DE
+humanitarian,humanitarian,ADJ,"(10, 10)",east,0,https://babelnet.org/synset?word=bn:00101959a&lang=EN&langTrans=DE
+catastrophe,catastrophe,NOUN,"(12, 12)",reducing,9,https://babelnet.org/synset?word=bn:00084079v&lang=EN&langTrans=DE
+in,in,ADP,"(13, 13)",Mariupol,7,https://babelnet.org/synset?word=bn:17355247n&lang=EN&langTrans=DE
+the,the,DET,"(15, 15)",ruins,4,https://babelnet.org/synset?word=bn:00068519n&lang=EN&langTrans=DE
+east,east,NOUN,"(20, 20)",failed,6,https://babelnet.org/synset?word=bn:00087966v&lang=EN&langTrans=DE
+",",",",PUNCT,"(22, 22)",inflict,n,https://babelnet.org/synset?word=bn:00084076v&lang=EN&langTrans=DE
