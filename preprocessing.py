@@ -3,9 +3,7 @@
 # Author: Jessica Roady & Rebecka Fahrni
 
 import requests
-import gzip
 import csv
-import re
 import json
 import spacy
 # from spacy.cli.download import download
@@ -66,12 +64,11 @@ def get_entity(text, cfStart, cfEnd):
 
 
 def generate_data(lines):
-    """writes a file with the help of to a list of lines - lines includes 4 lines"""
     nlp = spacy.load("en_core_web_sm")
     json_content = read_json('json_response.json')
 
     entities = []  # contains list of entities according to their chr-onset,offset
-    tok_on_off = []  # list containing tuple (onset,offset)
+    tok_on_off = []  # list of tuples (onset,offset)
     tokens = []
     lemmas = []
     pos = []
@@ -80,8 +77,6 @@ def generate_data(lines):
 
     for i,texts in enumerate(json_content, start=0):
         doc = nlp(lines[i])
-        #print(lines[i])
-        #print(str(i)+'\n')
 
         for o, token in enumerate(doc):
             tokens.append(token.text)
@@ -89,14 +84,14 @@ def generate_data(lines):
             pos.append(token.pos_)
 
         results_per_text = json_content[texts]
-        for result in results_per_text:  # result is a dict for one token with all its info
+        for result in results_per_text:
             # token from fragment retrieval
-            # TODO: I don't think we need this at all - what we want is a NE's span
             tokenFragment = result.get('tokenFragment')
             tfStart = tokenFragment.get('start')
             tfEnd = tokenFragment.get('end')
             tok_on_off.append((tfStart, tfEnd))
 
+            # TODO: Do we need this?
             # char from fragment retrieval
             charFragment = result.get('charFragment')
             cfStart = charFragment.get('start')
@@ -107,15 +102,27 @@ def generate_data(lines):
             synsetIds.append(synsetId)
             links.append(get_link(synsetId))
 
-            entity = get_entity(lines[i],cfStart,cfEnd)
+            entity = get_entity(lines[i], cfStart, cfEnd)
             entities.append(entity)
 
-    # TODO
-    # for i in json_content['text 1']:  # is a list of dicts, each dict is for one token, has info like token and char span
-    #     print(i)
-    # print(entities)
-    # print(len(synsetIds))
+    ents_with_indices = list(zip(entities, tok_on_off))
+    for i, item in enumerate(ents_with_indices):
+        if i > 0:
+            e1 = ents_with_indices[i-1][0]
+            e1_on = ents_with_indices[i-1][1][0]
+            e1_off = ents_with_indices[i-1][1][1]
 
+            e2 = item[0]
+            e2_on = item[1][0]
+            e2_off = item[1][1]
+
+            # TODO: BIO-tagging somewhere here
+            if e1_on >= e2_on and e1_off <= e2_off:
+                entities.remove(e1)
+            if e1_on <= e2_on and e1_off >= e2_off:
+                entities.remove(e2)
+
+    # TODO: Align new list of entities with tokens
     data = [list(i) for i in zip(tokens, lemmas, pos, tok_on_off, entities, synsetIds, links)]
 
     return data
@@ -132,16 +139,7 @@ def write_csv(data):
 
 def babelfy_id_IOB(babelSynsetID):
     """should return the IOB-encoding of the SynsetID"""
-    #TODO
     pass
-
-
-def largest_span_entity(entity1_onset, entity1_offset, entity2_offset, entity2_onset, text):
-    """ returns the largest span entity"""
-    if entity1_onset >= entity2_onset and entity1_offset <= entity2_offset:
-        return get_entity(text, entity2_onset, entity2_offset)
-    else:
-        return get_entity(text, entity1_onset, entity1_offset)
 
 
 def read_json(file):
@@ -164,13 +162,13 @@ def main():
 
     # getting API-response from request and creating a json-file out of it
     datadis = {}
-    for i,text in enumerate(params1['text'],start=1):
+    for i, text in enumerate(params1['text'],start=1):
         params1['text'] = text
         response_dis = requests.get(service_url_disambiguate, params = params1, headers=headers)
         json_data_dis = response_dis.json()
         datadis['text ' + str(i)] = json_data_dis
 
-    create_json_file(datadis)
+    # create_json_file(datadis)
 
 
 if __name__ == "__main__":
