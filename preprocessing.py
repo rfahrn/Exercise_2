@@ -116,13 +116,15 @@ def generate_data(lines):
             e2_on = item[1][0]
             e2_off = item[1][1]
 
-            # TODO: BIO-tagging somewhere here
             if e1_on >= e2_on and e1_off <= e2_off:
                 entities.remove(e1)
             if e1_on <= e2_on and e1_off >= e2_off:
                 entities.remove(e2)
 
-    # TODO: Align new list of entities with tokens
+    print(entities)
+
+    # TODO: Align correct list of entities with tokens such that all tokens in a multi-word entity are aligned with
+    #  the same entity, then do BIO-tagging
     data = [list(i) for i in zip(tokens, lemmas, pos, tok_on_off, entities, synsetIds, links)]
 
     return data
