@@ -91,20 +91,20 @@ def generate_data(lines):
             tfEnd = tokenFragment.get('end')
             tok_on_off.append((tfStart, tfEnd))
 
-            # TODO: Do we need this?
-            # char from fragment retrieval
-            charFragment = result.get('charFragment')
-            cfStart = charFragment.get('start')
-            cfEnd = charFragment.get('end')
-
             # Babelsynset ID retrieval
             synsetId = result.get('babelSynsetID')
             synsetIds.append(synsetId)
             links.append(get_link(synsetId))
 
+            # char from fragment retrieval, needed for entity linking
+            charFragment = result.get('charFragment')
+            cfStart = charFragment.get('start')
+            cfEnd = charFragment.get('end')
+
             entity = get_entity(lines[i], cfStart, cfEnd)
             entities.append(entity)
 
+    # TODO: Maybe this chunk needs to be in a previous for-loop to make token alignment easier
     ents_with_indices = list(zip(entities, tok_on_off))
     for i, item in enumerate(ents_with_indices):
         if i > 0:
