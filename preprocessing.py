@@ -106,13 +106,14 @@ def generate_data(lines):
             entity = get_entity(lines[i], cfStart, cfEnd)
             entities.append(entity)
 
+
     # TODO: Maybe this chunk needs to be in a previous for-loop to make token alignment easier
-    ents_with_indices = list(zip(entities, ent_on_off))
-    for i, item in enumerate(ents_with_indices):
+    ent_info = list(zip(entities, ent_on_off, synsetIds, links))
+    for i, item in enumerate(ent_info):
         if i > 0:
-            e1 = ents_with_indices[i-1][0]
-            e1_on = ents_with_indices[i-1][1][0]
-            e1_off = ents_with_indices[i-1][1][1]
+            e1 = ent_info[i - 1][0]
+            e1_on = ent_info[i - 1][1][0]
+            e1_off = ent_info[i - 1][1][1]
 
             e2 = item[0]
             e2_on = item[1][0]
@@ -120,23 +121,26 @@ def generate_data(lines):
 
             if e1_on >= e2_on and e1_off <= e2_off:
                 # entities.remove(e1)
-                ents_with_indices[i-1] = list(ents_with_indices[i-1])  # using the type as a flag
-                # ents_with_indices.remove(ents_with_indices[i-1])
+                ent_info[i - 1] = list(ent_info[i - 1])  # using the type as a flag
+                # ent_info.remove(ent_info[i-1])
             if e1_on <= e2_on and e1_off >= e2_off:
                 # entities.remove(e2)
-                ents_with_indices[i] = list(ents_with_indices[i])
-                # ents_with_indices.remove(ents_with_indices[i])
+                ent_info[i] = list(ent_info[i])
+                # ent_info.remove(ent_info[i])
 
-    for i in ents_with_indices:
+    for i in ent_info:
         if isinstance(i, list):
-            ents_with_indices.remove(i)
+            ent_info.remove(i)
 
-    # padded_ents = []
-    # for t in tokens:
-    #     for e in ents_with_indices:
+    token_info = list(zip(tokens, lemmas, pos, tok_index))
+    rows = []
+    for t in token_info:
+        row = list(t)
+        for e in ent_info:
+            if t[0] == e[0] and e[1] == row[-1]:  # OK because no two identical tokens also have the same indices
+                row.append([e[0], e[2], e[3]])
+                print(row)
 
-    for i in zip(tokens, tok_index):
-        print(i)
 
     # TODO: Align correct list of entities with tokens such that all tokens in a multi-word entity are aligned with
     #  the same entity, then do BIO-tagging
@@ -185,7 +189,7 @@ def main():
         json_data_dis = response_dis.json()
         datadis['text ' + str(i)] = json_data_dis
 
-    # create_json_file(datadis)
+    create_json_file(datadis)
 
 
 if __name__ == "__main__":
