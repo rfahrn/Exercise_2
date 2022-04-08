@@ -6,7 +6,7 @@ import requests
 import csv
 import json
 import spacy
-from collections import Counter
+# Uncomment the following lines if spacy is making problems for you:
 # from spacy.cli.download import download
 # download(model='en_core_web_sm')
 
@@ -17,7 +17,7 @@ headers = {'Accept-Encoding': 'gzip'}
 text = ''
 lemma = ''
 
-#parameters of API-urls
+# parameters of API-urls
 params1 = {
     'text':text,  # list of strings from read_file()
     'lang':lang,
@@ -40,13 +40,12 @@ url_disambiguate = f'https://babelfy.io/v1/disambiguate?text={text}&lang={lang}&
 
 
 def get_response(url,params):
-    """returns the api-response (json-format)"""
+    """ Returns the API-response (json format)"""
     response = requests.get(url, params=params, headers=headers)
     return response.json()
 
 
 def read_file():
-    """reads the input file and returns its lines"""
     with open('bbc_article.txt', 'r') as f:
         lines = [line.rstrip() for line in f if not line == '\n']
         params1['text'] = lines
@@ -54,22 +53,23 @@ def read_file():
 
 
 def get_link(babelsynsetID):
-    """returns the link of the NE according to its babelsynsetID"""
+    """ Returns the link of the NE according to its babelsynsetID """
     url = f'https://babelnet.org/synset?word={babelsynsetID}&lang=EN&langTrans=DE'
     return url
 
 
 def get_entity(text, cfStart, cfEnd):
-    """returns the entity according to the character span (on off-set)"""
+    """ Returns the entity according to the character span """
     return text[cfStart:cfEnd+1]
 
 
+# TODO: break into more functions
 def generate_data(lines):
     nlp = spacy.load("en_core_web_sm")
     json_content = read_json('json_response.json')
 
-    entities = []  # contains list of entities according to their chr-onset,offset
-    ent_on_off = []  # list of tuples (onset,offset)
+    entities = []
+    ent_on_off = []
     tok_index = []
     tokens = []
     lemmas = []
@@ -85,8 +85,8 @@ def generate_data(lines):
             lemmas.append(token.lemma_)
             pos.append(token.pos_)
 
-        results_per_text = json_content[texts]  # text is the key, entities are the vals
-        for result in results_per_text:  # this is happening per text
+        results_per_text = json_content[texts]
+        for result in results_per_text:
             # token from fragment retrieval
             tokenFragment = result.get('tokenFragment')
             tfStart = tokenFragment.get('start')
@@ -106,95 +106,81 @@ def generate_data(lines):
             entity = get_entity(lines[i], cfStart, cfEnd)
             entities.append(entity)
 
-
-    # TODO: It would be nice if we could do this per text
     ent_info = list(zip(entities, ent_on_off, synsetIds, links))
     for i, item in enumerate(ent_info):
         if i > 0:
-            e1 = ent_info[i - 1][0]
             e1_on = ent_info[i - 1][1][0]
             e1_off = ent_info[i - 1][1][1]
-
-            e2 = item[0]
             e2_on = item[1][0]
             e2_off = item[1][1]
 
+            # Using the type as a flag for later removal, because if I just remove it the indices will get messed up
             if e1_on >= e2_on and e1_off <= e2_off:
-                # entities.remove(e1)
-                ent_info[i - 1] = list(ent_info[i - 1])  # using the type as a flag
-                # ent_info.remove(ent_info[i-1])
+                ent_info[i - 1] = list(ent_info[i - 1])
             if e1_on <= e2_on and e1_off >= e2_off:
-                # entities.remove(e2)
                 ent_info[i] = list(ent_info[i])
-                # ent_info.remove(ent_info[i])
 
     for i in ent_info:
         if isinstance(i, list):
             ent_info.remove(i)
 
-    token_info = list(zip(tokens, lemmas, pos, tok_index))
     rows = []
+    token_info = list(zip(tokens, lemmas, pos, tok_index))
     for t in token_info:
         row = list(t)
+
         for e in ent_info:
-            # TODO: BIO-tagging
             # Single-token entities:
-            if t[0] == e[0] and e[1] == row[-1]:  # OK because no two identical tokens also have the same indices
-                row.extend([e[0], e[2], e[3]])
+            if t[0] == e[0] and t[3] == e[1]:  # OK because no two identical tokens also have the same indices
+                row.extend([e[0], 'B-' + e[2], e[3]])
 
             # Multi-token entities:
-            #   if the onsets are the same
-            elif t[0] in e[0] and (t[3][0] == e[1][0]):
-                row.extend([e[0], e[2], e[3]])
-
-            # Non-entity tokens:
-            else:
-                row.extend('' * 3)
+            #   if the onset is the same:
+            elif t[0] + ' ' in e[0] and t[3][0] == e[1][0]:
+                if not len(row) == 7:  # needed to avoid appending the entity multiple times
+                    row.extend([e[0], 'B-' + e[2], e[3]])
+            #   if the offset is the same:
+            elif ' ' + t[0] in e[0] and t[3][1] == e[1][1]:
+                if not len(row) == 7:
+                    row.extend([e[0], 'I-' + e[2], e[3]])
+            #   if the onsets are within 1 of each other (this is enough because there are no entities longer than 3):
+            elif ' ' + t[0] + ' ' in e[0] and t[3][0] - 1 == e[1][0]:
+                if not len(row) == 7:
+                    row.extend([e[0], 'I-' + e[2], e[3]])
 
         rows.append(row)
 
-    print(rows)
-
-    # TODO: Align correct list of entities with tokens such that all tokens in a multi-word entity are aligned with
-    #  the same entity, then do BIO-tagging
-    data = [list(i) for i in zip(tokens, lemmas, pos, ent_on_off, entities, synsetIds, links)]
-
-    return data
+    return rows
 
 
 def write_csv(data):
-    """creates a csv file for data"""
-    with open('data.csv', 'w', encoding='UTF8', newline='\n') as f:
-        header = ['token', 'lemma', 'pos', '(onset,offset)', 'entity', 'babelfy_id(iob)', 'link', 'TP', 'FP', 'FN']
+    """ Creates a .tsv file of data """
+    with open('data.tsv', 'w', encoding='UTF8', newline='\n') as f:
+        header = ['token', 'lemma', 'pos', '(onset, offset)', 'entity', 'babelfy_id(iob)', 'link', 'TP', 'FP', 'FN']
         writer = csv.writer(f, delimiter='\t')
         writer.writerow(header)
         writer.writerows(data)
 
 
-def babelfy_id_IOB(babelSynsetID):
-    """should return the IOB-encoding of the SynsetID"""
-    pass
-
-
 def read_json(file):
-    """ reads a json file and returns its content"""
+    """ Reads a json file and returns its content """
     with open(file, 'r') as j:
         json_content = json.loads(j.read())
         return json_content
 
 
 def create_json_file(data_disambiguate):
-    """creates a json file"""
-    with open('json_response.json','w') as f:
+    """ Creates a json file """
+    with open('json_response.json', 'w') as f:
         json.dump(data_disambiguate, f, indent=4)
 
 
 def main():
     lines = read_file()
     data = generate_data(lines)
-    # write_csv(data)
+    write_csv(data)
 
-    # getting API-response from request and creating a json-file out of it
+    # Getting API-response from request and creating a .json file out of it
     datadis = {}
     for i, text in enumerate(params1['text'], start=1):
         params1['text'] = text
