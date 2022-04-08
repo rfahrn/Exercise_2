@@ -6,6 +6,7 @@ import requests
 import csv
 import json
 import spacy
+from collections import Counter
 # from spacy.cli.download import download
 # download(model='en_core_web_sm')
 
@@ -68,7 +69,8 @@ def generate_data(lines):
     json_content = read_json('json_response.json')
 
     entities = []  # contains list of entities according to their chr-onset,offset
-    tok_on_off = []  # list of tuples (onset,offset)
+    ent_on_off = []  # list of tuples (onset,offset)
+    tok_index = []
     tokens = []
     lemmas = []
     pos = []
@@ -77,19 +79,19 @@ def generate_data(lines):
 
     for i,texts in enumerate(json_content, start=0):
         doc = nlp(lines[i])
-
         for o, token in enumerate(doc):
             tokens.append(token.text)
+            tok_index.append((token.i, token.i))
             lemmas.append(token.lemma_)
             pos.append(token.pos_)
 
-        results_per_text = json_content[texts]
-        for result in results_per_text:
+        results_per_text = json_content[texts]  # text is the key, entities are the vals
+        for result in results_per_text:  # this is happening per text
             # token from fragment retrieval
             tokenFragment = result.get('tokenFragment')
             tfStart = tokenFragment.get('start')
             tfEnd = tokenFragment.get('end')
-            tok_on_off.append((tfStart, tfEnd))
+            ent_on_off.append((tfStart, tfEnd))
 
             # Babelsynset ID retrieval
             synsetId = result.get('babelSynsetID')
@@ -105,7 +107,7 @@ def generate_data(lines):
             entities.append(entity)
 
     # TODO: Maybe this chunk needs to be in a previous for-loop to make token alignment easier
-    ents_with_indices = list(zip(entities, tok_on_off))
+    ents_with_indices = list(zip(entities, ent_on_off))
     for i, item in enumerate(ents_with_indices):
         if i > 0:
             e1 = ents_with_indices[i-1][0]
@@ -117,15 +119,28 @@ def generate_data(lines):
             e2_off = item[1][1]
 
             if e1_on >= e2_on and e1_off <= e2_off:
-                entities.remove(e1)
+                # entities.remove(e1)
+                ents_with_indices[i-1] = list(ents_with_indices[i-1])  # using the type as a flag
+                # ents_with_indices.remove(ents_with_indices[i-1])
             if e1_on <= e2_on and e1_off >= e2_off:
-                entities.remove(e2)
+                # entities.remove(e2)
+                ents_with_indices[i] = list(ents_with_indices[i])
+                # ents_with_indices.remove(ents_with_indices[i])
 
-    print(entities)
+    for i in ents_with_indices:
+        if isinstance(i, list):
+            ents_with_indices.remove(i)
+
+    # padded_ents = []
+    # for t in tokens:
+    #     for e in ents_with_indices:
+
+    for i in zip(tokens, tok_index):
+        print(i)
 
     # TODO: Align correct list of entities with tokens such that all tokens in a multi-word entity are aligned with
     #  the same entity, then do BIO-tagging
-    data = [list(i) for i in zip(tokens, lemmas, pos, tok_on_off, entities, synsetIds, links)]
+    data = [list(i) for i in zip(tokens, lemmas, pos, ent_on_off, entities, synsetIds, links)]
 
     return data
 
@@ -164,9 +179,9 @@ def main():
 
     # getting API-response from request and creating a json-file out of it
     datadis = {}
-    for i, text in enumerate(params1['text'],start=1):
+    for i, text in enumerate(params1['text'], start=1):
         params1['text'] = text
-        response_dis = requests.get(service_url_disambiguate, params = params1, headers=headers)
+        response_dis = requests.get(service_url_disambiguate, params=params1, headers=headers)
         json_data_dis = response_dis.json()
         datadis['text ' + str(i)] = json_data_dis
 
