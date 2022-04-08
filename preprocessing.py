@@ -107,7 +107,7 @@ def generate_data(lines):
             entities.append(entity)
 
 
-    # TODO: Maybe this chunk needs to be in a previous for-loop to make token alignment easier
+    # TODO: It would be nice if we could do this per text
     ent_info = list(zip(entities, ent_on_off, synsetIds, links))
     for i, item in enumerate(ent_info):
         if i > 0:
@@ -137,10 +137,23 @@ def generate_data(lines):
     for t in token_info:
         row = list(t)
         for e in ent_info:
+            # TODO: BIO-tagging
+            # Single-token entities:
             if t[0] == e[0] and e[1] == row[-1]:  # OK because no two identical tokens also have the same indices
-                row.append([e[0], e[2], e[3]])
-                print(row)
+                row.extend([e[0], e[2], e[3]])
 
+            # Multi-token entities:
+            #   if the onsets are the same
+            elif t[0] in e[0] and (t[3][0] == e[1][0]):
+                row.extend([e[0], e[2], e[3]])
+
+            # Non-entity tokens:
+            else:
+                row.extend('' * 3)
+
+        rows.append(row)
+
+    print(rows)
 
     # TODO: Align correct list of entities with tokens such that all tokens in a multi-word entity are aligned with
     #  the same entity, then do BIO-tagging
