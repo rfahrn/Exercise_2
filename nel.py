@@ -39,14 +39,14 @@ url_babelfyversion = f'https://babelnet.io/v6/getVersion?key={key}'.format(key=p
 url_disambiguate = f'https://babelfy.io/v1/disambiguate?text={text}&lang={lang}&key={key}'.format(text=params1['text'],lang=params1['lang'],key=params1['key'])
 
 
-def get_response(url,params):
+def get_response(url, params):
     """ Returns the API-response (json format)"""
     response = requests.get(url, params=params, headers=headers)
     return response.json()
 
 
-def read_file():
-    with open('bbc_article.txt', 'r') as f:
+def read_file(file):
+    with open(file, 'r') as f:
         lines = [line.rstrip() for line in f if not line == '\n']
         params1['text'] = lines
     return lines
@@ -63,8 +63,8 @@ def get_entity(text, cfStart, cfEnd):
     return text[cfStart:cfEnd+1]
 
 
-# TODO: break into more functions
 def generate_data(lines):
+    """ Tokenization, lemmatization, POS-tagging, NE linking """
     nlp = spacy.load("en_core_web_sm")
     json_content = read_json('json_response.json')
 
@@ -77,7 +77,7 @@ def generate_data(lines):
     links = []
     synsetIds = []
 
-    for i,texts in enumerate(json_content, start=0):
+    for i, texts in enumerate(json_content, start=0):
         doc = nlp(lines[i])
         for o, token in enumerate(doc):
             tokens.append(token.text)
@@ -106,7 +106,13 @@ def generate_data(lines):
             entity = get_entity(lines[i], cfStart, cfEnd)
             entities.append(entity)
 
+    return tokens, lemmas, pos, tok_index, entities, ent_on_off, synsetIds, links
+
+
+def remove_duplicate_ents(entities, ent_on_off, synsetIds, links):
+    """ Removes shortest-span entities """
     ent_info = list(zip(entities, ent_on_off, synsetIds, links))
+
     for i, item in enumerate(ent_info):
         if i > 0:
             e1_on = ent_info[i - 1][1][0]
@@ -124,8 +130,14 @@ def generate_data(lines):
         if isinstance(i, list):
             ent_info.remove(i)
 
-    rows = []
+    return ent_info
+
+
+def align_toks_to_ents(tokens, lemmas, pos, tok_index, ent_info):
+    """ Aligns tokens with entities """
+    data = []
     token_info = list(zip(tokens, lemmas, pos, tok_index))
+
     for t in token_info:
         row = list(t)
 
@@ -148,9 +160,22 @@ def generate_data(lines):
                 if not len(row) == 7:
                     row.extend([e[0], 'I-' + e[2], e[3]])
 
-        rows.append(row)
+        data.append(row)
 
-    return rows
+    return data
+
+
+def read_json(file):
+    """ Reads a json file and returns its content """
+    with open(file, 'r') as j:
+        json_content = json.loads(j.read())
+    return json_content
+
+
+def create_json_file(data_disambiguate):
+    """ Creates a json file """
+    with open('json_response.json', 'w') as f:
+        json.dump(data_disambiguate, f, indent=4)
 
 
 def write_tsv(data):
@@ -162,22 +187,11 @@ def write_tsv(data):
         writer.writerows(data)
 
 
-def read_json(file):
-    """ Reads a json file and returns its content """
-    with open(file, 'r') as j:
-        json_content = json.loads(j.read())
-        return json_content
-
-
-def create_json_file(data_disambiguate):
-    """ Creates a json file """
-    with open('json_response.json', 'w') as f:
-        json.dump(data_disambiguate, f, indent=4)
-
-
-def main():  # TODO: Change script name
-    lines = read_file()
-    data = generate_data(lines)
+def main():
+    lines = read_file('bbc_article.txt')
+    tokens, lemmas, pos, tok_index, entities, ent_on_off, synsetIds, links = generate_data(lines)
+    ent_info = remove_duplicate_ents(entities, ent_on_off, synsetIds, links)
+    data = align_toks_to_ents(tokens, lemmas, pos, tok_index, ent_info)
     write_tsv(data)
 
     # Getting API-response from request and creating a .json file out of it
