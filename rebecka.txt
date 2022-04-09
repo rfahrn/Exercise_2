@@ -1,0 +1,263 @@
+token	lemma	pos	"(onset, offset)"	entity	babelfy_id(iob)	link	TP	FP	FN
+Russian	russian	ADJ	"(0, 0)"	Russian forces	B-bn:15995595n	https://babelnet.org/synset?word=bn:15995595n&lang=EN&langTrans=DE	1		
+forces	force	NOUN	"(1, 1)"	Russian forces	I-bn:15995595n	https://babelnet.org/synset?word=bn:15995595n&lang=EN&langTrans=DE	1		
+have	have	AUX	"(2, 2)"						
+already	already	ADV	"(3, 3)"						
+triggered	trigger	VERB	"(4, 4)"	triggered	B-bn:00082306v	https://babelnet.org/synset?word=bn:00082306v&lang=EN&langTrans=DE	1		
+a	a	DET	"(5, 5)"						
+humanitarian	humanitarian	ADJ	"(6, 6)"	humanitarian	B-bn:00104387a	https://babelnet.org/synset?word=bn:00104387a&lang=EN&langTrans=DE	1		
+catastrophe	catastrophe	NOUN	"(7, 7)"	catastrophe	B-bn:00014640n	https://babelnet.org/synset?word=bn:00014640n&lang=EN&langTrans=DE	1		
+in	in	ADP	"(8, 8)"						
+the	the	DET	"(9, 9)"						
+east	east	NOUN	"(10, 10)"	east	B-bn:00101959a	https://babelnet.org/synset?word=bn:00101959a&lang=EN&langTrans=DE	1		
+","	","	PUNCT	"(11, 11)"						
+reducing	reduce	VERB	"(12, 12)"	reducing	B-bn:00084079v	https://babelnet.org/synset?word=bn:00084079v&lang=EN&langTrans=DE		1	
+Mariupol	Mariupol	PROPN	"(13, 13)"	Mariupol	B-bn:17355247n	https://babelnet.org/synset?word=bn:17355247n&lang=EN&langTrans=DE	1		
+to	to	PART	"(14, 14)"						
+ruins	ruin	VERB	"(15, 15)"	ruins	B-bn:00068519n	https://babelnet.org/synset?word=bn:00068519n&lang=EN&langTrans=DE	1		
+","	","	PUNCT	"(16, 16)"						
+but	but	CCONJ	"(17, 17)"						
+they	they	PRON	"(18, 18)"						
+have	have	AUX	"(19, 19)"						
+failed	fail	VERB	"(20, 20)"	failed	B-bn:00087966v	https://babelnet.org/synset?word=bn:00087966v&lang=EN&langTrans=DE	1		
+to	to	PART	"(21, 21)"						
+inflict	inflict	VERB	"(22, 22)"	inflict	B-bn:00084076v	https://babelnet.org/synset?word=bn:00084076v&lang=EN&langTrans=DE	1		
+defeat	defeat	NOUN	"(23, 23)"	defeat	B-bn:00025855n	https://babelnet.org/synset?word=bn:00025855n&lang=EN&langTrans=DE	1		
+on	on	ADP	"(24, 24)"						
+Ukraine	Ukraine	PROPN	"(25, 25)"	Ukraine	B-bn:00078872n	https://babelnet.org/synset?word=bn:00078872n&lang=EN&langTrans=DE		1	
+'s	's	PART	"(26, 26)"						
+military	military	NOUN	"(27, 27)"	military	B-bn:00106724a	https://babelnet.org/synset?word=bn:00106724a&lang=EN&langTrans=DE		1	
+.	.	PUNCT	"(28, 28)"						
+Warning	warning	NOUN	"(29, 29)"	Warning	B-bn:00095644v	https://babelnet.org/synset?word=bn:00095644v&lang=EN&langTrans=DE	1		
+of	of	ADP	"(30, 30)"						
+a	a	DET	"(31, 31)"						
+new	new	ADJ	"(32, 32)"	new	B-bn:00107273a	https://babelnet.org/synset?word=bn:00107273a&lang=EN&langTrans=DE		1	
+onslaught	onslaught	NOUN	"(33, 33)"	onslaught	B-bn:00006994n	https://babelnet.org/synset?word=bn:00006994n&lang=EN&langTrans=DE	1		
+on	on	ADP	"(34, 34)"						
+the	the	DET	"(35, 35)"						
+east	east	NOUN	"(36, 36)"	east	B-bn:00101959a	https://babelnet.org/synset?word=bn:00101959a&lang=EN&langTrans=DE	1		
+","	","	PUNCT	"(37, 37)"						
+President	President	PROPN	"(38, 38)"	President	B-bn:00064233n	https://babelnet.org/synset?word=bn:00064233n&lang=EN&langTrans=DE		1	
+Volodymyr	Volodymyr	PROPN	"(39, 39)"	Volodymyr	B-bn:00374859n	https://babelnet.org/synset?word=bn:00374859n&lang=EN&langTrans=DE		1	
+Zelensky	Zelensky	PROPN	"(40, 40)"	Zelensky	B-bn:03398426n	https://babelnet.org/synset?word=bn:03398426n&lang=EN&langTrans=DE		1	
+vowed	vow	VERB	"(41, 41)"	vowed	B-bn:00095582v	https://babelnet.org/synset?word=bn:00095582v&lang=EN&langTrans=DE	1		
+:	:	PUNCT	"(42, 42)"						
+""""	""""	PUNCT	"(43, 43)"						
+We	we	PRON	"(44, 44)"						
+will	will	AUX	"(45, 45)"						
+fight	fight	VERB	"(46, 46)"	fight	B-bn:00085711v	https://babelnet.org/synset?word=bn:00085711v&lang=EN&langTrans=DE	1		
+for	for	ADP	"(47, 47)"						
+every	every	DET	"(48, 48)"						
+metre	metre	NOUN	"(49, 49)"	metre	B-bn:00052501n	https://babelnet.org/synset?word=bn:00052501n&lang=EN&langTrans=DE	1		
+of	of	ADP	"(50, 50)"						
+our	our	PRON	"(51, 51)"						
+land	land	NOUN	"(52, 52)"	land	B-bn:00023236n	https://babelnet.org/synset?word=bn:00023236n&lang=EN&langTrans=DE	1		
+.	.	PUNCT	"(53, 53)"						
+""""	""""	PUNCT	"(54, 54)"						
+Ukraine	Ukraine	PROPN	"(0, 0)"	Ukraine	B-bn:00078872n	https://babelnet.org/synset?word=bn:00078872n&lang=EN&langTrans=DE	1		
+had	have	AUX	"(1, 1)"						
+already	already	ADV	"(2, 2)"						
+stationed	station	VERB	"(3, 3)"	stationed	B-bn:00091677v	https://babelnet.org/synset?word=bn:00091677v&lang=EN&langTrans=DE	1		
+its	its	PRON	"(4, 4)"						
+best	well	ADV	"(5, 5)"						
+-	-	PUNCT	"(6, 6)"						
+trained	train	VERB	"(7, 7)"						
+forces	force	NOUN	"(8, 8)"						1
+in	in	ADP	"(9, 9)"						
+the	the	DET	"(10, 10)"						
+east	east	NOUN	"(11, 11)"	east	B-bn:00101959a	https://babelnet.org/synset?word=bn:00101959a&lang=EN&langTrans=DE	1		
+because	because	SCONJ	"(12, 12)"						
+of	of	ADP	"(13, 13)"						
+an	an	DET	"(14, 14)"						
+eight	eight	NUM	"(15, 15)"						
+-	-	PUNCT	"(16, 16)"						
+year	year	NOUN	"(17, 17)"						
+war	war	NOUN	"(18, 18)"						
+with	with	ADP	"(19, 19)"						
+Russian	Russian	PROPN	"(20, 20)"						1
+-	-	PUNCT	"(21, 21)"						
+backed	back	VERB	"(22, 22)"						
+separatists	separatist	NOUN	"(23, 23)"						1
+.	.	PUNCT	"(24, 24)"						
+They	they	PRON	"(25, 25)"						
+are	be	AUX	"(26, 26)"						
+thought	think	VERB	"(27, 27)"						
+to	to	PART	"(28, 28)"						
+have	have	AUX	"(29, 29)"						
+suffered	suffer	VERB	"(30, 30)"						
+heavy	heavy	ADJ	"(31, 31)"						
+losses	loss	NOUN	"(32, 32)"						
+but	but	CCONJ	"(33, 33)"						
+are	be	AUX	"(34, 34)"						
+still	still	ADV	"(35, 35)"						
+a	a	DET	"(36, 36)"						
+significant	significant	ADJ	"(37, 37)"						
+challenge	challenge	NOUN	"(38, 38)"						
+to	to	ADP	"(39, 39)"						
+Russia	Russia	PROPN	"(40, 40)"						1
+'s	's	PART	"(41, 41)"						
+invading	invade	VERB	"(42, 42)"						
+army	army	NOUN	"(43, 43)"						
+.	.	PUNCT	"(44, 44)"						
+When	when	SCONJ	"(0, 0)"						
+President	President	PROPN	"(1, 1)"	President Putin	B-bn:00065367n	https://babelnet.org/synset?word=bn:00065367n&lang=EN&langTrans=DE	1		
+Putin	Putin	PROPN	"(2, 2)"	President Putin	I-bn:00065367n	https://babelnet.org/synset?word=bn:00065367n&lang=EN&langTrans=DE	1		
+talks	talk	NOUN	"(3, 3)"	talks	B-bn:00075965n	https://babelnet.org/synset?word=bn:00075965n&lang=EN&langTrans=DE	1		
+of	of	ADP	"(4, 4)"						
+Donbas	Donbas	PROPN	"(5, 5)"	Donbas	B-bn:00028222n	https://babelnet.org/synset?word=bn:00028222n&lang=EN&langTrans=DE	1		
+","	","	PUNCT	"(6, 6)"						
+he	he	PRON	"(7, 7)"						
+is	be	AUX	"(8, 8)"						
+referring	refer	VERB	"(9, 9)"	referring	B-bn:00082412v	https://babelnet.org/synset?word=bn:00082412v&lang=EN&langTrans=DE	1		
+to	to	ADP	"(10, 10)"						
+Ukraine	Ukraine	PROPN	"(11, 11)"	Ukraine	B-bn:00078872n	https://babelnet.org/synset?word=bn:00078872n&lang=EN&langTrans=DE	1		
+'s	's	PART	"(12, 12)"						
+old	old	ADJ	"(13, 13)"	old	B-bn:00107786a	https://babelnet.org/synset?word=bn:00107786a&lang=EN&langTrans=DE	1		
+coal	coal	NOUN	"(14, 14)"	coal	B-bn:00020133n	https://babelnet.org/synset?word=bn:00020133n&lang=EN&langTrans=DE	1		
+and	and	CCONJ	"(15, 15)"						
+steel	steel	NOUN	"(16, 16)"						
+-	-	PUNCT	"(17, 17)"						
+producing	produce	VERB	"(18, 18)"						
+area	area	NOUN	"(19, 19)"						
+.	.	PUNCT	"(20, 20)"						
+But	but	CCONJ	"(21, 21)"						
+he	he	PRON	"(22, 22)"						
+really	really	ADV	"(23, 23)"						
+means	mean	VERB	"(24, 24)"						
+the	the	DET	"(25, 25)"						
+entirety	entirety	NOUN	"(26, 26)"						
+of	of	ADP	"(27, 27)"						
+two	two	NUM	"(28, 28)"						
+big	big	ADJ	"(29, 29)"						
+eastern	eastern	ADJ	"(30, 30)"						
+regions	region	NOUN	"(31, 31)"						
+","	","	PUNCT	"(32, 32)"						
+Luhansk	Luhansk	PROPN	"(33, 33)"						1
+and	and	CCONJ	"(34, 34)"						
+Donetsk	Donetsk	PROPN	"(35, 35)"						1
+","	","	PUNCT	"(36, 36)"						
+which	which	PRON	"(37, 37)"						
+run	run	VERB	"(38, 38)"						
+from	from	ADP	"(39, 39)"						
+outside	outside	ADJ	"(40, 40)"						
+Mariupol	Mariupol	PROPN	"(41, 41)"						1
+in	in	ADP	"(42, 42)"						
+the	the	DET	"(43, 43)"						
+south	south	NOUN	"(44, 44)"						
+all	all	DET	"(45, 45)"						
+the	the	DET	"(46, 46)"						
+way	way	NOUN	"(47, 47)"						
+to	to	ADP	"(48, 48)"						
+the	the	DET	"(49, 49)"						
+northern	northern	ADJ	"(50, 50)"						
+border	border	NOUN	"(51, 51)"						
+.	.	PUNCT	"(52, 52)"						
+Russian	russian	ADJ	"(0, 0)"	Russian forces	B-bn:15995595n	https://babelnet.org/synset?word=bn:15995595n&lang=EN&langTrans=DE	1		
+forces	force	NOUN	"(1, 1)"	Russian forces	I-bn:15995595n	https://babelnet.org/synset?word=bn:15995595n&lang=EN&langTrans=DE	1		
+are	be	AUX	"(2, 2)"						
+trying	try	VERB	"(3, 3)"	trying	B-bn:00082844v	https://babelnet.org/synset?word=bn:00082844v&lang=EN&langTrans=DE	1		
+to	to	PART	"(4, 4)"						
+encircle	encircle	VERB	"(5, 5)"	encircle	B-bn:00084979v	https://babelnet.org/synset?word=bn:00084979v&lang=EN&langTrans=DE	1		
+Ukraine	Ukraine	PROPN	"(6, 6)"	Ukraine	B-bn:00078872n	https://babelnet.org/synset?word=bn:00078872n&lang=EN&langTrans=DE		1	
+'s	's	PART	"(7, 7)"						
+army	army	NOUN	"(8, 8)"	army	B-bn:00005803n	https://babelnet.org/synset?word=bn:00005803n&lang=EN&langTrans=DE		1	
+in	in	ADP	"(9, 9)"						
+the	the	DET	"(10, 10)"						
+east	east	NOUN	"(11, 11)"	east	B-bn:00101959a	https://babelnet.org/synset?word=bn:00101959a&lang=EN&langTrans=DE	1		
+.	.	PUNCT	"(12, 12)"						
+They	they	PRON	"(13, 13)"						
+have	have	AUX	"(14, 14)"						
+taken	take	VERB	"(15, 15)"	taken control	B-bn:00094755v	https://babelnet.org/synset?word=bn:00094755v&lang=EN&langTrans=DE	1		
+control	control	NOUN	"(16, 16)"	taken control	I-bn:00094755v	https://babelnet.org/synset?word=bn:00094755v&lang=EN&langTrans=DE	1		
+of	of	ADP	"(17, 17)"						
+Izyum	Izyum	PROPN	"(18, 18)"	Izyum	B-bn:02281447n	https://babelnet.org/synset?word=bn:02281447n&lang=EN&langTrans=DE	1		
+-	-	PUNCT	"(19, 19)"						
+a	a	DET	"(20, 20)"						
+strategic	strategic	ADJ	"(21, 21)"	strategic	B-bn:00111285a	https://babelnet.org/synset?word=bn:00111285a&lang=EN&langTrans=DE	1		
+town	town	NOUN	"(22, 22)"	town	B-bn:00077773n	https://babelnet.org/synset?word=bn:00077773n&lang=EN&langTrans=DE	1		
+on	on	ADP	"(23, 23)"						
+the	the	DET	"(24, 24)"						
+road	road	NOUN	"(25, 25)"	road	B-bn:00067975n	https://babelnet.org/synset?word=bn:00067975n&lang=EN&langTrans=DE	1		
+between	between	ADP	"(26, 26)"						
+Ukraine	Ukraine	PROPN	"(27, 27)"	Ukraine	B-bn:00078872n	https://babelnet.org/synset?word=bn:00078872n&lang=EN&langTrans=DE	1		
+'s	's	PART	"(28, 28)"						
+second	second	ADJ	"(29, 29)"	second	B-bn:00095974a	https://babelnet.org/synset?word=bn:00095974a&lang=EN&langTrans=DE	1		
+city	city	NOUN	"(30, 30)"	city	B-bn:03335997n	https://babelnet.org/synset?word=bn:03335997n&lang=EN&langTrans=DE	1		
+Kharkiv	Kharkiv	PROPN	"(31, 31)"	Kharkiv	B-bn:00049036n	https://babelnet.org/synset?word=bn:00049036n&lang=EN&langTrans=DE	1		
+and	and	CCONJ	"(32, 32)"						
+the	the	DET	"(33, 33)"						
+separatist	separatist	ADJ	"(34, 34)"	separatist	B-bn:00070549n	https://babelnet.org/synset?word=bn:00070549n&lang=EN&langTrans=DE	1		
+areas	area	NOUN	"(35, 35)"	areas	B-bn:00005513n	https://babelnet.org/synset?word=bn:00005513n&lang=EN&langTrans=DE	1		
+-	-	PUNCT	"(36, 36)"						
+and	and	CCONJ	"(37, 37)"						
+have	have	AUX	"(38, 38)"						
+bombarded	bombard	VERB	"(39, 39)"	bombarded	B-bn:00083756v	https://babelnet.org/synset?word=bn:00083756v&lang=EN&langTrans=DE	1		
+a	a	DET	"(40, 40)"						
+succession	succession	NOUN	"(41, 41)"	succession	B-bn:00029655n	https://babelnet.org/synset?word=bn:00029655n&lang=EN&langTrans=DE		1	
+of	of	ADP	"(42, 42)"						
+Luhansk	Luhansk	PROPN	"(43, 43)"	Luhansk	B-bn:00176737n	https://babelnet.org/synset?word=bn:00176737n&lang=EN&langTrans=DE	1		
+towns	town	NOUN	"(44, 44)"	towns	B-bn:00077773n	https://babelnet.org/synset?word=bn:00077773n&lang=EN&langTrans=DE	1		
+","	","	PUNCT	"(45, 45)"						
+including	include	VERB	"(46, 46)"	including	B-bn:00089660v	https://babelnet.org/synset?word=bn:00089660v&lang=EN&langTrans=DE	1		
+Rubizhne	Rubizhne	PROPN	"(47, 47)"	Rubizhne	B-bn:03544204n	https://babelnet.org/synset?word=bn:03544204n&lang=EN&langTrans=DE	1		
+","	","	PUNCT	"(48, 48)"						
+Lysychansk	Lysychansk	PROPN	"(49, 49)"	Lysychansk	B-bn:03109752n	https://babelnet.org/synset?word=bn:03109752n&lang=EN&langTrans=DE	1		
+","	","	PUNCT	"(50, 50)"						
+Popasna	Popasna	PROPN	"(51, 51)"	Popasna	B-bn:03544249n	https://babelnet.org/synset?word=bn:03544249n&lang=EN&langTrans=DE	1		
+and	and	CCONJ	"(52, 52)"						
+Severodonetsk	Severodonetsk	PROPN	"(53, 53)"	Severodonetsk	B-bn:03109746n	https://babelnet.org/synset?word=bn:03109746n&lang=EN&langTrans=DE	1		
+","	","	PUNCT	"(54, 54)"						
+destroying	destroy	VERB	"(55, 55)"	destroying	B-bn:00086698v	https://babelnet.org/synset?word=bn:00086698v&lang=EN&langTrans=DE	1		
+blocks	block	NOUN	"(56, 56)"	blocks of flats	B-bn:00044044n	https://babelnet.org/synset?word=bn:00044044n&lang=EN&langTrans=DE	1		
+of	of	ADP	"(57, 57)"	blocks of flats	I-bn:00044044n	https://babelnet.org/synset?word=bn:00044044n&lang=EN&langTrans=DE	1		
+flats	flat	NOUN	"(58, 58)"	blocks of flats	I-bn:00044044n	https://babelnet.org/synset?word=bn:00044044n&lang=EN&langTrans=DE	1		
+and	and	CCONJ	"(59, 59)"						
+killing	kill	VERB	"(60, 60)"	killing	B-bn:00090098v	https://babelnet.org/synset?word=bn:00090098v&lang=EN&langTrans=DE	1		
+civilians	civilian	NOUN	"(61, 61)"	civilians	B-bn:00019380n	https://babelnet.org/synset?word=bn:00019380n&lang=EN&langTrans=DE	1		
+in	in	ADP	"(62, 62)"						
+their	their	PRON	"(63, 63)"						
+homes	home	NOUN	"(64, 64)"	homes	B-bn:00000356n	https://babelnet.org/synset?word=bn:00000356n&lang=EN&langTrans=DE	1		
+.	.	PUNCT	"(65, 65)"						
+Civilians	civilian	NOUN	"(0, 0)"	Civilians	B-bn:00019380n	https://babelnet.org/synset?word=bn:00019380n&lang=EN&langTrans=DE	1		
+are	be	AUX	"(1, 1)"						
+being	be	AUX	"(2, 2)"						
+moved	move	VERB	"(3, 3)"						
+out	out	ADV	"(4, 4)"						
+ahead	ahead	ADV	"(5, 5)"	ahead	B-bn:00114182r	https://babelnet.org/synset?word=bn:00114182r&lang=EN&langTrans=DE	1		
+of	of	ADP	"(6, 6)"						
+the	the	DET	"(7, 7)"						
+Russian	russian	ADJ	"(8, 8)"	Russian	B-bn:00068625n	https://babelnet.org/synset?word=bn:00068625n&lang=EN&langTrans=DE	1		
+advance	advance	NOUN	"(9, 9)"	advance	B-bn:00001548n	https://babelnet.org/synset?word=bn:00001548n&lang=EN&langTrans=DE	1		
+.	.	PUNCT	"(10, 10)"						
+Local	local	ADJ	"(11, 11)"	Local	B-bn:00051745n	https://babelnet.org/synset?word=bn:00051745n&lang=EN&langTrans=DE		1	
+leader	leader	NOUN	"(12, 12)"	leader	B-bn:00050371n	https://babelnet.org/synset?word=bn:00050371n&lang=EN&langTrans=DE	1		
+Serhiy	Serhiy	PROPN	"(13, 13)"						1
+Haidai	Haidai	PROPN	"(14, 14)"	Haidai	B-bn:00070000n	https://babelnet.org/synset?word=bn:00070000n&lang=EN&langTrans=DE		1	
+said	say	VERB	"(15, 15)"	said	B-bn:00093287v	https://babelnet.org/synset?word=bn:00093287v&lang=EN&langTrans=DE	1		
+20	20	NUM	"(16, 16)"						
+children	child	NOUN	"(17, 17)"	children	B-bn:00018346n	https://babelnet.org/synset?word=bn:00018346n&lang=EN&langTrans=DE	1		
+were	be	AUX	"(18, 18)"						
+led	lead	VERB	"(19, 19)"	led	B-bn:00085567v	https://babelnet.org/synset?word=bn:00085567v&lang=EN&langTrans=DE	1		
+to	to	ADP	"(20, 20)"						
+safety	safety	NOUN	"(21, 21)"	safety	B-bn:00068799n	https://babelnet.org/synset?word=bn:00068799n&lang=EN&langTrans=DE	1		
+from	from	ADP	"(22, 22)"						
+the	the	DET	"(23, 23)"						
+basement	basement	NOUN	"(24, 24)"	basement	B-bn:00008824n	https://babelnet.org/synset?word=bn:00008824n&lang=EN&langTrans=DE	1		
+of	of	ADP	"(25, 25)"						
+a	a	DET	"(26, 26)"						
+kindergarten	kindergarten	NOUN	"(27, 27)"	kindergarten	B-bn:00049129n	https://babelnet.org/synset?word=bn:00049129n&lang=EN&langTrans=DE	1		
+in	in	ADP	"(28, 28)"						
+Lysychansk	Lysychansk	PROPN	"(29, 29)"	Lysychansk	B-bn:03109752n	https://babelnet.org/synset?word=bn:03109752n&lang=EN&langTrans=DE	1		
+on	on	ADP	"(30, 30)"						
+Thursday	Thursday	PROPN	"(31, 31)"	Thursday	B-bn:00076744n	https://babelnet.org/synset?word=bn:00076744n&lang=EN&langTrans=DE	1		
+and	and	CCONJ	"(32, 32)"						
+some	some	DET	"(33, 33)"						
+200	200	NUM	"(34, 34)"						
+civilians	civilian	NOUN	"(35, 35)"	civilians	B-bn:00019380n	https://babelnet.org/synset?word=bn:00019380n&lang=EN&langTrans=DE	1		
+climbed	climb	VERB	"(36, 36)"	climbed	B-bn:00085120v	https://babelnet.org/synset?word=bn:00085120v&lang=EN&langTrans=DE	1		
+on	on	ADP	"(37, 37)"						
+to	to	ADP	"(38, 38)"						
+buses	bus	NOUN	"(39, 39)"	buses	B-bn:00007329n	https://babelnet.org/synset?word=bn:00007329n&lang=EN&langTrans=DE	1		
+in	in	ADP	"(40, 40)"						
+Severodonetsk	Severodonetsk	PROPN	"(41, 41)"	Severodonetsk	B-bn:03109746n	https://babelnet.org/synset?word=bn:03109746n&lang=EN&langTrans=DE	1		
+.	.	PUNCT	"(42, 42)"						

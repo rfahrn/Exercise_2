@@ -1,12 +1,12 @@
 #!/usr/local/bin/python3
 # *-* coding: UTF-8 *-*
-# Author: Jessica Roady & Rebecka Fahrni
+# Authors: Jessica Roady & Rebecka Fahrni
 
 import requests
 import csv
 import json
 import spacy
-# Uncomment the following lines if spacy is making problems for you:
+# Uncomment the following lines if spaCy is making problems for you:
 # from spacy.cli.download import download
 # download(model='en_core_web_sm')
 
@@ -153,7 +153,7 @@ def generate_data(lines):
     return rows
 
 
-def write_csv(data):
+def write_tsv(data):
     """ Creates a .tsv file of data """
     with open('data.tsv', 'w', encoding='UTF8', newline='\n') as f:
         header = ['token', 'lemma', 'pos', '(onset, offset)', 'entity', 'babelfy_id(iob)', 'link', 'TP', 'FP', 'FN']
@@ -175,10 +175,10 @@ def create_json_file(data_disambiguate):
         json.dump(data_disambiguate, f, indent=4)
 
 
-def main():
+def main():  # TODO: Change script name
     lines = read_file()
     data = generate_data(lines)
-    write_csv(data)
+    write_tsv(data)
 
     # Getting API-response from request and creating a .json file out of it
     datadis = {}
