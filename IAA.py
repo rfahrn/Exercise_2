@@ -48,9 +48,9 @@ def main():
     precision2, recall2, fMeasure2 = precision_recall_fmeasure(A2[0], A2[1], A2[2])
 
     print(f'Annotator 1:\n'
-          f'Precision:\t{round(precision1,2)}\tRecall:\t{round(recall1,2)}\tF-measure:\t{round(fMeasure1,2)}\n')
+          f'\tPrecision: {round(precision1,2)}\tRecall: {round(recall1,2)}\tF-measure: {round(fMeasure1,2)}\n')
     print(f'Annotator 2:\n'
-          f'Precision:\t{round(precision2,2)}\tRecall:\t{round(recall2,2)}\tF-measure:\t{round(fMeasure2,2)}\n\n')
+          f'\tPrecision: {round(precision2,2)}\tRecall: {round(recall2,2)}\tF-measure: {round(fMeasure2,2)}\n')
 
     # Our labels:
     labeler1TP = A1arr[0]
